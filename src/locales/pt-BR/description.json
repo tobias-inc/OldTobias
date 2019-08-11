@@ -1,0 +1,39 @@
+{
+    "commands": {
+    "ban": "Bane um membro.",
+    "kick": "Chuta um membro.",
+    "dell": "Apaga uma certa quantidade de mensagens.",
+    "ascii": "Converte um texto para o formato ascii.",
+    "beijar": "Beija um membro.",
+    "tapa": "Dá um tapa em um membro.",
+    "lyrics": "Mostra a letra de uma musica.",
+    "say": "Eu replico algo.",
+    "abraçar": "Abraça um usuário.",
+    "botinfo": "Informações sobre o bot",
+    "bugreport": "Reporta um mal acontecimento ocorrido no uso de alguma função",
+    "help": "Painel de ajuda do bot",
+    "staff": "Envolvidos em minha criação",
+    "eval": "Executa códigos em JS",
+    "reload": "Recarrega o comando inserido",
+    "reloadlocales": "Recarrega o sistema de linguagem",
+    "set": "Seta um cargo ao usuário inserido",
+    "avatar": "Avatar de um usuário",
+    "channelinfo": "Informações sobre um cargo",
+    "roleinfo": "Informações sobre um cargo",
+    "serverinfo": "Informações sobre o servidor",
+    "userinfo": "Informações sobre um usuário",
+    "emojiinfo": "Informações sobre um emoji",
+    "prefix": "Modifica o prefixo do servidor",
+    "language": "Modifica a tradução do servidor",
+    "ping": "Tempo de resposta do bot",
+    "creatememe": "Cria um meme escolhido pelo usuário",
+    "vip": "Informações sobre o seu acesso vip",
+    "memetextcolor": "Altera a cor do texto do meme a ser criado",
+    "spotify": "Mostra a música que o usuário está ouvindo no spotify"
+},
+"subcommands": {
+    "vip": {
+        "notifier": "Ativa ou desativa as notificações sobre o **vip** na DM"
+        }
+    }
+}

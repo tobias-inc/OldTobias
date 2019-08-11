@@ -1,0 +1,24 @@
+{
+    "CommandError": {
+        "description1": "An Error Has Occurred - Try to run the command again!",
+        "description": "An Error Has Occurred - Try to run the command again!\nIf error persists a **report**:\nUsing ***`{{prefix}} bugreport`***, or enter my **[support server]({{support}})** and report the bug!",
+        "footer": "Sincerely, {{user}} team"
+    },
+    "play":{
+        "notfound": "I could not find any results for the inserted music!",
+        "noArgs": "Please enter the **link** or **name** of the desired song! (Youtube)"
+    },
+    "noArgs": "You need to write something to **continue**!",
+    "noClientDeveloper": "You need to be a **bot** developer to use this **command**!",
+    "noClientOwner": "Sorry, you need to be one of my owners to use this **command**!",
+    "noVipActive": "sorry this command is only for those who have **vip** access!",
+    "isClientBlackListed": "Sorry, but you can not use me `(BlackList)`!",
+    "awaitReloadCommandNoCMD": "The update of **{{cmd}}**, was not read as a command!",
+    "botMissingOnePermission": "I need permission {{permission}} to execute this **command**!",
+    "botMissingMultiplePermissions": "I need the {{permission}} permissions to execute this **command**!",
+    "missingOnePermission": "You need permission {{permission}} to execute this **command**!",
+    "missingMultiplePermissions": "You need the {{permission}} permissions to execute this **command**!",
+    "isCommandMaintence": "sorry but this command is in ** maintenance **!",
+    "isClientMaintence": "sorry but I'm in **maintenance** at the moment! tend later 😪.",
+    "noSpecified": "An unspecified error has occurred!"
+}

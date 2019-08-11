@@ -1,0 +1,126 @@
+{
+    "dell":{
+        "noArgs": "Enter the number of messages to delete. Correct form: ``{{PARTS}} 10``",
+        "noNum": "Looks like you used are not numbers. Correct form: ``{{PARTS}} 10``",
+        "maxLen": "You can only delete up to 100 messages at a time"
+    },
+    "lyrics": "Add a message to this song please try again following the `` artist - music`` pattern!",
+    "say": "You need to enter arguments so I can replicate",
+    "ascii":{
+        "noArgs": "You need to enter arguments so I can convert",
+        "maxLen": "You have exceeded the character limit ``26``"
+    },
+    "kick": {
+        "noUser": "You need to mention a user to kick",
+        "noPerm": "I do not have to forgive to kick",
+        "authorNoPerm": "It looks like you do not have the necessary permissions to run a kick",
+        "Error": "Could not kick {{USER}}... \n Do I have a bigger position than him?",
+        "lucky": "{{AUTHOR}} gave up kick {{USER}} How lucky isn't it?"
+    },
+    "ban": {
+        "noUser": "You need to mention a user to ban",
+        "noPerm": "I do not have to forgive to ban",
+        "authorNoPerm": "It looks like you do not have the necessary permissions to run a ban",
+        "Error": "Could not ban {{USER}}... \n Do I have a bigger position than him?",
+        "lucky": "{{AUTHOR}} gave up ban {{USER}} How lucky isn't it?"
+    },
+    "kiss": {
+        "kissyourself": "You can`t kiss yourself",
+        "noArgs": "You need to mention someone to give a kiss",
+        "Client": "Get out {{USER}} I do not want to kiss you"
+    },
+    "tapa": {
+        "slapyourself": "You can`t slap yourself... There's something wrong?",
+        "noArgs": "You need to mention someone to give a slap",
+        "Client": "Hey why do you want to hit me?"
+    },
+    "abraçar": {
+        "hugyourself": "You can't hug yourself... Are you okay?"
+    },
+    "mentionBot": "use **`{{prefix}} help`** to learn more!",
+    "reloadlocales": {
+        "loaded": "I reloaded the language system successfully!",
+        "noloaded": "sorry, an error occurred while trying to load!"
+    },
+    "reload": {
+        "noArgs": "please enter the`[name|aliase]`of the command to be **recharged**!",
+        "noCommand": "sorry, but the command **{{cmd}}** was not found",
+        "error": "an error occurred while trying to reload: **{{err}}**",
+        "reloaded": "the command **{{cmd}}** was **successfully** reloaded!"
+    },
+    "set": {
+        "noUserDb": "the user **{{user}}** is not registered in my `DATABASE`",
+        "hasApplied": "só, you can not **apply**!",
+        "noUserIdentify": "please, **ping** or enter the desired user **id**",
+        "noAliaseContent": "sorry, the **parameter** used is invalid, the parameters are: `{{parameters}}`",
+        "noParameters": "please, use a *argument*: `{{parameters}}`",
+        "setTo": "the user **{{user}}** was set to **`{{type}}`**!",
+        "banTo": "the user **{{user}}** was added to **`{{type}}`**!",
+        "unBanTo": "the user **{{user}}** has been removed from **`{{type}}`**!",
+        "unSetTo": "the user **{{user}}** has been removed from **`{{type}}`**! "
+    },
+    "roleinfo": {
+        "noArgs": "please enter `[id||mention||name]` of the *post* desired!",
+        "noRole": "sorry I could not find **any** search: ***{{searsh}}***!"
+    },
+    "channelinfo": {
+        "error": "channelinfo, did not find channel **root**!"
+    },
+    "bugreport": {
+        "wait": "Describe the event in **detail** `(2m)`. If you can provide screenshots (link with the image of the event). \nMore details, early meas will be solved 👍!",
+        "timeOut": "Sorry, the response time has run out! Try **again**.",
+        "bugSend": "The bug was successfully sent! Fo more information go to my **[support server]({{support}})** 👍. \nAcess what you have sent: **{{link}}**",
+        "fewFwords": "Please, specify more the problem!! `(minimum 30 characters)`",
+        "lotOfwords": "Please be brief, write less!! `(maximum 30 characters)`"
+    },
+    "emojiinfo": {
+        "noArgs": "please enter [id|name] of the **emoji** desired!",
+        "noEmoji": "sorry I could not find **any** emoji for the search: ***{{searsh}}***!"
+    },
+    "prefix": {
+        "noArgs": "please enter the desired prefix!",
+        "setPrefix": "my prefix on this server is now **{{PREFIX}}**",
+        "exceededLength": "the inserted prefix has exceeded the character limit `(max 3)`!",
+        "containsSpaces": "The inserted prefix has spaces, **remove them** and try again!"
+    },
+    "language": {
+        "noArgs": "please enter the desired language!\nUse **`{{prefix}} {{name}} {{help}}`** and see **languages​** available.",
+        "noLang": "sorry for the inserted language **({{lang}})** is invalid!\nUse **`{{prefix}} {{name}} {{help}}`** and see available **languages**.",
+        "setLang": "the language has been modified to: **{{lang}}**",
+        "help": "The languages ​​available are:\n{{langs}}\n\nChange the language using `{{prefix}} {{name}} <id>`"
+    },
+    "creatememe": {
+        "panel": "welcome to my **memes** creation panel!\nPlease respond with a number of **1** a **{{size}}** for the meme you want **create** just below! `(30sec)`",
+        "unavailableTemplate": "Sorry for the template you selected is currently unavailable!\nTry another **day** or enter my **[support server] ({{support}})** and learn more!",
+        "noResponseNumber": "Sorry for the response ** Inserted ** is not a number!\nRun the command again by entering a number of **1** a **{{size}}**",
+        "unavailableNumber": "Sorry, the number you entered is invalid.\nExecute the command **again** by entering a number of **1** a **{{size}}**",
+        "timeOut": "Sorry, the response time has run out! Try **again**.",
+        "inserText": "enter the **{{i}}°** text: `({{carac}}carac.)` `(60sec)`",
+        "surpassedLength": "Sorry you have exceeded the character limit `({{length}}carac.)`! Try **again**."
+    },
+    "maintencecmd": {
+        "alreadyUnMaintence": "sorry but the command **{{command}}** is not under maintenance!",
+        "alreadyInMaintence": "sorry but the command **{{command}}** is already under maintenance!",
+        "commandInMaintence": "The command **{{command}}** has been upgraded!",
+        "commandUnMaintence": "command **{{command}}** has been removed from maintenance!",
+        "noCommandDatabase": "the command **{{command}}** is not registered in my `DATABASE`",
+        "noCommand": "please enter the desired command name to proceed!",
+        "noOption": "please enter an option: **`{{options}}`**",
+        "MaintenceList": {
+            "commands": "Commands in Maintenance:\n**{{list}}**",
+            "me": "Am I in Maintenance?\n**{{res}}**",
+            "ctx": "Maintenance",
+            "none": "None",
+            "yes": "Yes",
+            "no": "No"
+        },
+        "subcommands": {
+            "client": {
+                "falseUnSet": "sorry but I'm not in **maintenance**!",
+                "falseSet": "sorry but I'm already in **maintenance**!",
+                "trueSet": "I have been successfully **maintained**!",
+                "trueUnSet": "I was successfully removed from **maintenance**!"
+            }
+        }
+    }
+}

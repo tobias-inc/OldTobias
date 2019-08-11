@@ -1,0 +1,12 @@
+{
+    "categories": {
+        "bot": "Bot",
+        "developer": "Developers",
+        "information": "Information",
+        "fun": "Fun",
+        "configuration": "Configuration",
+        "vip": "Vip",
+        "moderation": "Moderation",
+        "music": "Music"
+    }
+}

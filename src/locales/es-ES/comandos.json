@@ -1,0 +1,89 @@
+{
+    "mentionBot": "Utilice **`{{prefix}} help`** para saber más!",
+    "reloadlocales": {
+        "loaded": "Rehacer el idioma del sistema correctamente!",
+        "noloaded": "Lo siento, un error ocurrido mientras se intenta cargar!"
+    },
+    "reload": {
+        "noArgs": "Por favor escriba `[name|aliase]` del comando para ser **recargado**!",
+        "noCommand": "Lo siento, pero el comando **{{cmd}}** no fue encontrado",
+        "error": "Se produjo un error al intentar recargar: **{{err}}**",
+        "reloaded": "El comando **{{cmd}}** fue **recargado** con éxito!"
+    },
+    "set": {
+        "noUserDb": "El usuario **{{user}}**  no está registrado en mi `BASE DE DATOS`",
+        "hasApplied": "Só, no puedes **aplicar**!",
+        "noUserIdentify": "Por favor **mencione** o introduzca el **id** del usuario deseado!",
+        "noAliaseContent": "Lo sentimos, el **parámetro** utilizado no es válido, los parámetros son: `{{parameters}}`",
+        "noParameters": "Por favor, use un *argumento*: `{{parameters}}`",
+        "setTo": "El usuario **{{user}}** se ha establecido como **`{{type}}`**!",
+        "banTo": "El usuario **{{user}}** fue agregado a **`{{type}}`**!",
+        "unBanTo": "El usuario **{{user}}** se ha eliminado de **`{{type}}`**!",
+        "unSetTo": "El usuario **{{user}}** se ha eliminado de **`{{type}}`**!"
+    },
+    "roleinfo": {
+        "noArgs": "Por favor introduzca **el/a** `[id, mención, nombre]` del *cargo* deseado!",
+        "noRole": "Lo siento no puedo encontrar **ningún** cargo para la búsqueda: ***{{searsh}}***!"
+    },
+    "channelinfo": {
+        "error": "channelinfo, no encontró el canal **raíz**!"
+  },
+    "bugreport": {
+    "wait": "Escriba lo sucedido **detalle `(2m)`**. Si puede proporcionar screenshots (link con la imagen de lo ocurrido)!.\nCuanto más detalles, más pronto será resuelto👍!",
+    "timeOut": "¡Lo siento el tiempo de respuesta se ha agotado! intentar **de nuevo**.",
+    "bugSend": "Lo bug se ha enviado con éxito! para más información entre en mi.**[servidor de soporte]({{support}})** 👍.\nAcceda a lo que ha enviado: **{{link}}**",
+    "fewFwords": "Por favor epecifique más el problema !! `(min. 30 carac.)`.",
+    "lotOfwords": "Por favor sea breve, escriba menos !! `(max 150 carac.)`."
+},
+"emojiinfo": {
+    "noArgs": "Por favor introduzca`[id||nombre]` del *emoji* deseado!",
+    "noEmoji": "Lo siento no puedo encontrar ** ningún ** enoji para la búsqueda: ***{{searsh}}***!",
+    "getHelp": "tengo las opciones:\n**`{{options}}`**\n\nUso `{{prefix}} {{name}} <emoji> <option>` y **se divierte!**"
+},
+"prefix": {
+    "noArgs": "Por favor introduzca el prefijo deseado!",
+    "setPrefix": "El prefijo de este servidor ahora es **{{PREFIX}}**",
+    "ultrapassedLength": "El prefijo insertado sobrepasó el límite de caractéres `(max 3)`!",
+    "containsSpaces": "el prefijo insertado tiene espacios, ** quítalos ** y vuelva a intentarlo!"
+},
+"language": {
+    "noArgs": "¡Por favor introduzca el idiomas deseado!.\nUso **`{{prefix}} {{name}} {{help}}`** y vea los **idiomas** disponibles.",
+    "noLang": "Disculpa el lenguaje insertado **({{lang}})** es inválida!\nUso **`{{prefix}} {{name}} {{help}}`** y vea los **idiomas** disponibles.",
+    "setLang": "El lenguaje del bot en el servidor se ha modificado para: **{{lang}}**",
+    "help": "Los lenguajes disponibles son:\n{{langs}}\n\nCambie el lenguaje que utiliza `{{prefix}} {{name}} <id>`"
+},
+"creatememe": {
+    "panel": "¡Bienvenido a mi panel de creación de ** memes **! \n Por favor responda con un número de ** 1 ** a ** {{size}} ** correspondiente al meme que desea ** crear ** justo debajo! `(30seg)`",
+    "unavailableTemplate": "¡Excusa la plantilla elegida no está **disponible** ahora mismo! \n No trate otro **día** o ponerse en mi [servidor de apoyo]({{support}}) ** y aprender!",
+    "noResponseNumber": "¡Lo siento la respuesta ** insertada ** no es un número! \n Execute el comando de nuevo insertando un número de **1 ** a**{{size}}**",
+    "unavailableNumber": "Lo siento el número insertado es invalido. \nExecute el comando ** de nuevo ** insertando un. número de **1** a **{{size}}**",
+    "timeOut": "¡Lo siento el tiempo de respuesta se ha agotado! Inténtalo de **nuevo*.",
+    "inserText": "Inserte el **{{i}}°** texto: `({{carac}}carac.)` `(60seg)`",
+    "surpassedLength": "¡Lo siento que has sobrepasado el límite de caractéres `({{length}}carac.)`! Inténtalo de **nuevo**."
+},
+"maintencecmd": {
+    "alreadyUnMaintence": "¡Lo siento pero el comando **{{command}}** no está en mantenimiento!",
+    "alreadyInMaintence": "¡Lo siento pero el comando **{{command}}** ya está en mantenimiento!",
+    "commandInMaintence": "¡El comando **{{command}}** se puso en mantenimiento!",
+    "commandUnMaintence": "¡El comando **{{command}}** se ha retirado del mantenimiento!",
+    "noCommandDatabase": "¡El comando **{{command}}** no está registrado en mi `DATABASE`",
+    "noCommand": "Por favor introduzca el nombre de comando deseado para continuar!",
+    "noOption": "Por favor introduzca una opción: **`{{options}}`**",
+    "MaintenceList": {
+        "commands": "Comandos en Mantenimiento:\n**{{list}}**",
+        "me": "¿Estoy en Mantenimiento?\n**{{res}}**",
+        "ctx": "Mantenimiento",
+        "none": "cualquier",
+        "yes": "Si",
+        "no": "No"
+    },
+    "subcommands": {
+        "client": {
+            "falseUnSet": "Lo siento pero no estoy en **Mantenimiento**!",
+            "falseSet": "Lo siento pero ya estoy en **Mantenimiento**!",
+            "trueSet": "Me he puesto en **Mantenimiento** con éxito!",
+            "trueUnSet": "me he retirado de la **Mantenimiento** con éxito!"
+            }
+        }
+    }
+}

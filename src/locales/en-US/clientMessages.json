@@ -1,0 +1,296 @@
+{
+    "Command":{
+        "connect": "Please connect to a voice channel!",
+        "connectme": "Please connect to the voice channel that I am conected to!",
+        "roledj": "Sorry, you need to have the role ** dj ** or have the ** manage server ** permission to run this command!"
+    },
+    "Clear": {
+        "clearedqueue": "The was clean queue successfully!",
+        "nomoremusic": "There is no song after the current!",
+        "noPlaying": "I'm not touching anything at the **moment**"
+    },
+    "Jump": {
+        "insertaNumber": "Please enter a numerical value! in **1 to {{LEN}}**",
+        "skipNumber": "Please enter the song number so I can jump! **[1 to {{LEN}}]**",
+        "noMusic": "There is no song after the current!",
+        "insertaNumberat": "Please enter a number of **1 to {{LEN}}**!",
+        "noMusicat": "I'm not touching anything at the **moment**"
+    },
+    "Play": {
+        "stop": "The playlist is over!",
+        "start": "Starting to play:{{song}}",
+        "errorsong": "There was an error while trying to play the song: **{{song}}**",
+        "queue": "I added **{{LEN}}** musics in queue!",
+        "addmusic": "I added the music **{{song}}** in queue!",
+        "addmusics": "I added**{{LEN}}** musics in queue!"
+    },
+    "Reset": "The queue has been reset!",
+    "Queue": {
+        "title": "Playlist in {{NAME}}",
+        "time": "Estimated Play Time:",
+        "songlist": "Playlist",
+        "more": "\nand more {{LEN}} musics",
+        "by": "Added By"
+    },
+    "Loop": {
+        "active": "The self-repetition of the queue is **active**!",
+        "inactive": "The self-repetition of the queue is **inactive**!"
+    },
+    "Np": {
+        "playngnow": "Playing now: {{NAME}}",
+        "addedby": "Added By",
+        "duration": "Duration",
+        "position": "Position in Queue"
+    },
+    "Remove": {
+        "insertnum": "Please enter a numerical value! from **1 to {{LEN}}**`",
+        "removed": "I removed the music **{{song}}** of queue!",
+        "insertnumb": "Please enter the song number to remove!**[1 to {{LEN}}]**"
+    },
+    "Search": {
+        "name": "Music name",
+        "addedby": "Added By",
+        "position": "Position in Queue",
+        "np": "Playing now",
+        "channel": "Channel Posted",
+        "published": "Post date",
+        "noArgs": "Please enter the **name** or **number** of the song you want to get!"
+    },
+    "Skip": "There is no song after that!",
+    "Stop": "A queue has been finalized!",
+    "Volume": {
+        "insertnum": "Please enter a numerical value! from  **1 á 300**`",
+        "insertargs": "Please enter the desired volume of **0 á 300**",
+        "changed": "The volume was changed to: **{{VOL}}**"
+    },
+    "Unban": {
+        "initialmessage": "Are you sure you want to unban {{USER}}?,\n React {{REACTION}} to confirm",
+        "description": "The user {{USER}} was absolved for breaking the rules of this guild",
+        "unbanauthor": "Unban author",
+        "punishment": "Punishment",
+        "punished": "Punished user",
+        "reason": "Reason of punishment",
+        "noReason": "No reason"
+    },
+    "Dell": "The chat was cleaned by {{USER}}, e tambem foram excluidas {{COUNT}} posts!",
+    "Lyrics": {
+        "description": "Displaying lyrics from{{MUSIC}}",
+        "artist": "By",
+        "otherArtists": "Producers"
+    },
+    "Say": "Asked me to say this:",
+    "kick": {
+        "initialmessage": "Are you sure you want to kick {{USER}}?,\n React {{REACTION}} to confirm",
+        "description": "The user {{USER}} was punished for breaking the rules of this guild",
+        "kickauthor": "Ban author",
+        "punishment": "Punishment",
+        "punished": "Punished user",
+        "reason": "Reason of punishment",
+        "noReason": "No reason"
+    },
+    "ban": {
+        "initialmessage": "Are you sure you want to ban {{USER}}?,\n React {{REACTION}} to confirm",
+        "description": "The user {{USER}} was punished for breaking the rules of this guild",
+        "banauthor": "Ban author",
+        "punishment": "Punishment",
+        "punished": "Punished user",
+        "reason": "Reason of punishment",
+        "noReason": "No reason"
+    },
+    "Tapa": {
+        "slaped": "slaped"
+    },
+    "Abracar": {
+        "huged": "Huged"
+    },
+    "Kiss": {
+        "kissed": "Kissed"
+    },
+    "botinfo": {
+        "description": "",
+        "usedCommands": "Total Commands Used",
+        "sharedServers": {
+            "ctx": "Shared Servers **({{size}})**",
+            "more": " and more **{{size}}**...",
+            "none": "None"
+        },
+        "others": {
+            "ctx": "More informations",
+            "text": "• Partition: **{{shard}}**\n• Uptime: {{uptime}}"
+        },
+        "host": {
+            "ctx": "Host",
+            "text": "• RAM Used: **{{ram}}**\n• Latency: **{{ping}}**\n• Node Version: **{{version}}**"
+        },
+        "stats": {
+            "ctx": "Statistics",
+            "text": "• Executed Commands: **{{usages}}**\n• Servers: **{{guilds}}**\n• Users: **{{users}}**"
+        },
+        "links": {
+            "ctx": "Support",
+            "urls": "[Support Server]({{support}})"
+        }
+    },
+    "serverinfo": {
+        "name": "Name",
+        "region": "Region",
+        "createdAt": "Creation Date",
+        "owner": "Owner",
+        "verify": {
+            "ctx": "Verification",
+            "level": {
+                "0": "None **(0)**",
+                "1": "Low **(1)**",
+                "2": "Medium **(2)**",
+                "3": "High **(3)**",
+                "4": "Very High **(4)**"
+            }
+        },
+        "members": {
+            "ctx": "Members **({{size}})**",
+            "users": "Users: ",
+            "bots": "Robots: "
+        },
+        "channels": {
+            "ctx": "Channels **({{length}})**",
+            "text": "Text: ",
+            "voice": "Voice: ",
+            "category": "Category: "
+        },
+        "role": {
+            "ctx": "Roles **({{length}})**",
+            "managed": "Manageable: ",
+            "noTags": "None",
+            "tags": "and More **{{length}}**..."
+        }
+    },
+    "staff": {
+        "owner": "Owners",
+        "dev": "Developers",
+        "transl": "Translators",
+        "dzn": "Designers",
+        "none": "**None**"
+    },
+    "roleinfo": {
+        "name": "Name",
+        "id": "Identification",
+        "hexColor": "Hexadecimal",
+        "mentionable": {
+            "ctx": "Mentionable",
+            "true": "Yes",
+            "false": "No"
+        },
+        "createdAt": "Creation Date",
+        "members": {
+            "ctx": "Members **({{size}})**",
+            "none": "None",
+            "and": " and More ***{{size}}***..."
+        },
+        "hoist": {
+            "ctx": "Detachable",
+            "true": "Yes",
+            "false": "No"
+        },
+        "position": {
+            "ctx": "Position",
+            "get": "**{{position}}°** of **{{size}}**"
+        }
+    },
+    "userinfo": {
+        "name": "Name",
+        "id": "Identification",
+        "createdAt": "Creation Date",
+        "joinedAt": "Joined the server in",
+        "permissions": "Permissions",
+        "nickname": {
+            "ctx": "Nickname",
+            "none": "None"
+        },
+        "status": {
+            "ctx": "Status",
+            "dnd": "Do Not Disturb",
+            "idle": "Absent",
+            "offline": "Unavailable",
+            "online": "Available"
+        },
+        "bot": {
+            "ctx": "Robot",
+            "true": "Yes",
+            "false": "No"
+        },
+        "role": {
+            "ctx": "Roles **({{size}})**",
+            "and": " and More ***{{size}}***...",
+            "none": "None"
+        }
+    },
+    "channelinfo": {
+        "name": "Name",
+        "createdAt": "Creation Date",
+        "id": "Identification",
+        "position": "Position",
+        "topic": {
+            "ctx": "Topic",
+            "noTopic": "None",
+            "topicImpossible": "Impossible"
+        },
+        "type": {
+            "ctx": "Type",
+            "voice": "Voice Channel",
+            "category": "Category",
+            "text": "Text Channel"
+        }
+    },
+    "help": {
+        "description": "Use *`{{prefix}} {{usage}} <command>`* to learn more about a command!",
+        "command": {
+            "name": "Name",
+            "usages": "Utilization",
+            "aliases": {
+                "ctx": "Alternatives",
+                "none": "None"
+            },
+            "description": {
+                "ctx": "Description",
+                "none": "None"
+            },
+            "mePerms": {
+                "ctx": "My Permissions",
+                "none": "None"
+            },
+            "userPerms": {
+                "ctx": "User Permissions",
+                "none": "None"
+            },
+            "needGuild": {
+                "ctx": "Reply DM",
+                "true": "No",
+                "false": "Yes"
+            }
+        }
+    },
+    "emojiinfo": {
+        "name": "Name",
+        "id": "Identification",
+        "identifier": "Identifier",
+        "createdAt": "Creation Date",
+        "animated": {
+            "ctx": "Animated",
+            "true": "Yes",
+            "false": "No"
+        },
+        "link": {
+            "ctx": "Link of Emoji",
+            "Clickhere": "[Click here](https://cdn.discordapp.com/emojis/{{EMOJI.id}}.png)"
+        }
+    },
+    "vip": {
+        "vipSet": "foram adicionadas **{{hours}}** horas de acesso **VIP** referente ao voto da {{dbl}}!\nObrigado por me apoiar. Faça bem proveito do acesso **VIP**!",
+        "vipSetMultiple": "foram adicionadas **{{hours}}** horas de acesso **VIP** referente aos votos da {{dbl}}!\nObrigado por me apoiar. Faça bem proveito do acesso **VIP**!",
+        "vipUnSet": "o **vip** referente ao voto da {{dbl}} se esgotou. Você já pode votar novamente! Vote e **reative** o seu vip!",
+        "vipUnSetMultiple": "o **vip** referente aos votos da {{dbl}}! se esgotaram. Você já pode votar novamente!\nVote e **reative** o seu vip!"
+    },
+    "footer": {
+        "team": "por Equipe do {{user}} - todos os direitos reservados."
+    }
+}

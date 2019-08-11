@@ -1,0 +1,18 @@
+{
+    "CommandError": {
+        "description": "Se ha producido un error - Intente ejecutar el comando de nuevo!\nSi el error persiste, envíe un ** report **:\nUso ***`{{prefix}} bugreport`***, o entre en mi ** [servidor de soporte]({{support}})** y reporte el bug!",
+        "footer": "Recuerdos, equipo del Tobias de Chapéu Bot"
+    },
+    "noArgs": "Usted necesita escribir algo para ** proseguir **!",
+    "noClientDeveloper": "Usted necesita ser un desarrollador del ** bot ** para utilizar ese ** comando **",
+    "noClientOwner": "Lo siento, usted necesita ser uno de mis dueños para utilizar este ** comando **",
+    "isClientBlackListed": "Lo siento, pero usted no puede utilizarme (Lista Negra) `!",
+    "awaitReloadCommandNoCMD": "La actualización de **{{cmd}}**, no fue leído como un comando!",
+    "botMissingOnePermission": "Necesito el permiso {{permission}} para ejecutar este ** comando **!",
+    "botMissingMultiplePermissions": "Necesito los permisos {{permission}} para ejecutar este **comando**!",
+    "missingOnePermission": "Usted necesita el permiso {{permission}} para ejecutar este **comando**!",
+    "missingMultiplePermissions": "Usted necesita los permisos {{permission}} para ejecutar este **comando**!",
+    "isCommandMaintence": "Lo siento pero este comando está en ** mantenimiento **!",
+    "isClientMaintence": "¡Lo siento pero estoy en ** mantenimiento ** en el momento! tiende más tarde 😪.",
+    "noSpecified": "se produjo un error no especificado!"
+}

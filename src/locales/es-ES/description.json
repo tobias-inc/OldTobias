@@ -1,0 +1,20 @@
+{
+    "botinfo": "Información sobre el bot",
+    "bugreport": "Reporta un mal acontecimiento ocurrido en el uso de alguna función",
+    "help": "Panel de ayuda del Consejo bot",
+    "staff": "Involucrados en mi creación",
+    "eval": "Ejecuta códigos en JS",
+    "reload": "Recarga el comando insertado",
+    "reloadlocales": "Recarga el sistema de lenguaje",
+    "set": "Flecha un cargo al usuario insertado",
+    "avatar": " Avatar de Usuario",
+    "channelinfo": "Información sobre un canal",
+    "roleinfo": "Información sobre un puesto",
+    "serverinfo": "Información del servidor",
+    "userinfo": "Información de un usuario",
+    "emojiinfo": "Información sobre un emoji",
+    "prefix": "Modifica el prefijo del servidor",
+    "language": "Modifica la traducción del servidor",
+    "ping": "Tiempo de respuesta del bot",
+    "creatememe": "Crea un meme elegido por el usuario"
+}

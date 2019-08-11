@@ -1,0 +1,16 @@
+{
+    "links": [
+        {
+            "name": "support",
+            "redirect": "https://discord.gg/EngnQmk"
+        },
+        {
+            "name": "vote",
+            "redirect": "[DiscordBotList](https://discordbots.org/bot/{{userID}}), [BotsPraDiscord](https://botsparadiscord.xyz/bots/{{userID}})"
+        },
+        {
+            "name": "invite",
+            "redirect": "https://discordapp.com/oauth2/authorize?client_id={{userID}}&scope=bot&permissions=271903816"
+        }
+    ]
+}

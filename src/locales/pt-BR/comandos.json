@@ -1,0 +1,180 @@
+{  
+    "dell":{
+        "noArgs": "Informe o número de mensagens para eu deletar. Forma correta: ``{{PARTS}} 10``",
+        "noNum": "Parece que você usou não são números. Forma correta: ``{{PARTS}} 10``",
+        "maxLen": "Você só pode apagar até 100 mensagens por vez"
+    },
+    "say": "Você precisa inserir argumentos para que eu possa replicar",
+    "ascii":{
+        "noArgs": "Você precisa inserir argumentos para que eu possa converter",
+        "maxLen": "Você excedeu o limite de caracteres ``26``"
+    },
+    "kick": {
+        "noUser": "Você precisa mencionar um usuario para chutar",
+        "Error": "Não foi possivel chutar {{USER}}... \n Você tem cargo maior que ele?",
+        "lucky": "{{AUTHOR}} desistiu de chutar {{USER}} que sorte não?"
+    },
+    "unban": {
+        "noUser": "Você precisa mencionar um usuario para desbanir",
+        "Error": "Não foi possivel desbanir {{USER}}...",
+        "badluck": "{{AUTHOR}} desistiu de desbanir {{USER}} que azar não?"
+    },
+    "ban": {
+        "noUser": "Você precisa mencionar um usuario para banir",
+        "Error": "Não foi possivel banir {{USER}}... \n Você tem cargo maior que ele?",
+        "lucky": "{{AUTHOR}} desistiu de banir {{USER}} que sorte não?"
+    },
+    "kiss": {
+        "kissyourself": "Você não pode se beijar",
+        "noArgs": "Você precisa mencionar alguém para beijar",
+        "Client": "Sái fora {{USER}} eu não quero te beijar"
+    },
+    "tapa": {
+        "slapyourself": "Você não pode dar um tapa em você mesmo... Há algo de errado?",
+        "noArgs": "Você precisa mencionar alguém para dar um tapa",
+        "Client": "Oxi por que você quer me bater?"
+    },
+    "abraçar": {
+        "hugyourself": "Você não pode se abraçar... Está tudo bem?",
+        "noArgs": "Você precisa mencionar alguém para abraçar",
+        "Client": "Você não pode abraçar um bot... Está tudo bem?"
+    },
+    "mentionBot": "utilize **`{{prefix}} help`** para saber mais!",
+    "reloadlocales": {
+        "loaded": "recarreguei o sistema de linguagem com sucesso!",
+        "noloaded": "desculpe ocorreu um erro ao tentar recarregar!"
+    },
+    "reload": {
+        "noArgs": "por favor insira o `[nome|aliase]` do comando a ser **recarregado**!",
+        "noCommand": "desculpe mas o comando **{{cmd}}** não foi encontrado",
+        "error": "ocorreu um erro ao tentar recarregar: **{{err}}**",
+        "reloaded": "o comando **{{cmd}}** foi recarregado com **sucesso**!"
+    },
+    "set": {
+        "noUserDb": "o usuário **{{user}}** não está cadastrado em minha `DATABASE`",
+        "hasApplied": "desculpe você não pode se **candidatar**!",
+        "noUserIdentify": "por favor **mencione** ou insira o **id** do usuário desejado!",
+        "noAliaseContent": "desculpe o **parâmetro** utilizado é inválido, os parâmetro são:\n`{{parameters}}`",
+        "noParameters": "Por favor utilize um *argumento*:\n `{{parameters}}`",
+        "setTo": "o usuário **{{user}}** foi setado como **`{{type}}`**!",
+        "banTo": "o usuário **{{user}}** foi adicionado à **`{{type}}`**!",
+        "unBanTo": "o usuário **{{user}}** foi removido da **`{{type}}`**!",
+        "unSetTo": "o usuário **{{user}}** foi removido de **`{{type}}`**!"
+    },
+    "roleinfo": {
+        "noArgs": "por favor insira [id||menção||nome]` do *cargo* desejado!",
+        "noRole": "desculpe não consegui encontrar **nenhum** cargo para a pesquisa: ***{{searsh}}***!"
+    },
+    "bugreport": {
+        "wait": "Escreva o acontecido **detalhadamente `(2m)`**. Se puder forneça screenshots (link com a imagem do ocorrido)!.\nMais detalhes, mais cedo será resolvido 👍!",
+        "timeOut": "desculpe o tempo de resposta se esgotou! Tente **novamente**.",
+        "bugSend": "o bug foi enviado com sucesso! para mais informações entre em meu **[servidor de suporte]({{support}})** 👍.\nAcesse o que você enviou: **{{link}}**",
+        "fewFwords": "por favor epecifique mais o problema!! `(min. 30 carac.)`.",
+        "lotOfwords": "por favor seja breve, escreva menos!! `(max 150 carac.)`."
+    },
+    "emojiinfo": {
+        "noArgs": "por favor insira `[id|nome]` do **emoji** desejado!",
+        "noEmoji": "desculpe não consegui encontrar **nenhum** emoji para a pesquisa: ***{{searsh}}***!"
+    },
+    "prefix": {
+        "noArgs": "por favor insira o prefixo desejado!",
+        "setPrefix": "meu prefixo neste servidor agora é **{{PREFIX}}**",
+        "ultrapassedLength": "o prefixo inserido ultrapassou o limite de caractéres `(max 3)`!",
+        "containsSpaces": "o prefixo inserido possui espaços, **remova-os** e tente novamente!"
+    },
+    "language": {
+        "noArgs": "por favor insira a linguagem desejada!.\nUtilize **`{{prefix}} {{name}} {{help}}`** e veja as **linguagens** disponíveis.",
+        "noLang": "desculpe a linguagem inserida **({{lang}})** é inválida!\nUtilize **`{{prefix}} {{name}} {{help}}`** e veja as **linguagens** disponíveis.",
+        "setLang": "a linguagem foi modificada para: **{{lang}}**",
+        "help": "As linguagens disponíveis são:\n{{langs}}\n\nAltere a linguagem utilizando `{{prefix}} {{name}} <id>`"
+    },
+    "creatememe": {
+        "panel": "bem vindo ao meu painel de criação de **memes**!\nPor favor responda com um número de **1** a **{{size}}** respectivo ao meme que deseja **criar** logo abaixo! `(30seg)`",
+        "unavailableTemplate": "desculpe o template escolhido está **indisponível** no momento!\nTente outro **dia** ou entre em meu **[servidor de suporte]({{support}})** e saiba mais!",
+        "noResponseNumber": "desculpe a resposta **inserida** não é um número!\nExecute o comando novamente inserindo um número de **1** a **{{size}}**",
+        "unavailableNumber": "desculpe o número inserido é invalido.\nExecute o comando **novamente** inserindo um número de **1** a **{{size}}**",
+        "timeOut": "desculpe o tempo de resposta se esgotou! Tente **novamente**.",
+        "inserText": "insira o **{{i}}°** texto: `({{carac}}carac.)` `(60seg)`",
+        "surpassedLength": "desculpe você ultrapassou o limite de caractéres `({{length}}carac.)`! Tente **novamente**."
+    },
+    "maintencecmd": {
+        "alreadyUnMaintence": "desculpe mas o comando **{{command}}** não está em manutenção!",
+        "alreadyInMaintence": "desculpe mas o comando **{{command}}** já está em manutenção!",
+        "commandInMaintence": "o comando **{{command}}** foi colocado em manutenção!",
+        "commandUnMaintence": "o comando **{{command}}** foi retirado da manutenção!",
+        "noCommandDatabase": "o comando **{{command}}** não está registrado em minha `DATABASE`",
+        "noCommand": "por favor insira o nome comando desejado para prosseguir!",
+        "noOption": "por favor insira uma opção: **`{{options}}`**",
+        "maintence": {
+            "subcommands": {
+                "list": {
+                    "commands": "Comandos em Manutenção:\n**{{list}}**",
+                    "me": "Estou em Manutenção ?\n**{{res}}**",
+                    "ctx": "Manutenção",
+                    "none": "Nenhum",
+                    "yes": "Sim",
+                    "no": "Não"
+                },
+                "unset": {
+                    "commandUnMaintence": "o comando **{{command}}** foi retirado da manutenção!",
+                    "noCommand": "por favor insira o nome comando desejado para prosseguir!",
+                    "alreadyUnMaintence": "desculpe mas o comando **{{command}}** não está em manutenção!",
+                    "client": {
+                        "falseUnSet": "desculpe mas eu não estou em **manutenção**!",
+                        "trueUnSet": "fui retirado da **manutenção** com sucesso!"
+                    }
+                },
+                "set": {
+                    "noCommand": "por favor insira o nome comando desejado para prosseguir!",
+                    "commandInMaintence": "o comando **{{command}}** foi colocado em manutenção!",
+                    "alreadyInMaintence": "desculpe mas o comando **{{command}}** já está em manutenção!",
+                    "client": {
+                        "falseSet": "desculpe mas eu já estou em **manutenção**!",
+                        "trueSet": "fui colocado em **manutenção** com sucesso!"
+                    }
+                }
+            }
+        },
+        "subcommands": {
+            "client": {
+                "falseUnSet": "desculpe mas eu não estou em **manutenção**!",
+                "falseSet": "desculpe mas eu já estou em **manutenção**!",
+                "trueSet": "fui colocado em **manutenção** com sucesso!",
+                "trueUnSet": "fui retirado da **manutenção** com sucesso!"
+            }
+        }
+    },
+    "vip": {
+        "infoTitle": "Informações sobre o **vip** de **{{user}}**",
+        "temp": "Tempo Restando",
+        "active": {
+            "ctx": "Ativado ?",
+            "true": "Sim",
+            "false": "Não"
+        },
+        "getActiveInfo": {
+            "ctx": "Como Ativar ?",
+            "type": "**Vote em mim clicando [aqui]({{vote}})**!"
+        },
+        "dmNotifier": {
+            "ctx": "Deseja ativar ou desativar as notificações em sua DM ?",
+            "usage": "**Use `{{prefix}} {{name}} notifier`!**"
+        },
+        "notifier": {
+            "true": "As notificações em seu privado foram **ativadas**!",
+            "false": "As notificações em seu privado foram **desativadas**!"
+        }
+    },
+    "memetextcolor": {
+        "errArgs": "Por favor insira o **hexadecimal** da cor que deseja setar! **ex. `#0000FF`**",
+        "errColor": "Por favor insria uma cor válida! **ex. `#0000FF`**",
+        "colorSet": "A cor do texto dos memes **pedido por você** agora será: **{{color}}** até o seu vip acabar!"
+    },
+    "spotify": {
+        "notListening": "não está ouvindo Spotify..."
+    },
+    "lyrics": {
+        "noSong": "por favor insira o nome da **música** desejada!",
+        "footer": "Página {{page}} de {{total}}"
+    }
+}

@@ -1,0 +1,83 @@
+{
+    "templates": [
+        {
+            "name": "UserAvatar",
+            "function": "Avatar",
+            "type": 0
+        },
+        {
+            "name": "Spotify",
+            "function": "SpotifyTemplate",
+            "type": 0
+        },
+        {
+            "name": "DrakeHot",
+            "function": "DrakeHotline",
+            "type": 1,
+            "loop": 2,
+            "texts": {
+                "1": 98,
+                "2": 98
+            }
+        },
+        {
+            "name": "MindExplosion",
+            "function": "MindExplosion",
+            "type": 1,
+            "loop": 4,
+            "texts": {
+                "1": 100,
+                "2": 100,
+                "3": 100,
+                "4": 100
+            }
+        },
+        {
+            "name": "DibreDeMalandro",
+            "function": "DibreMalandro",
+            "type": 1,
+            "loop": 1,
+            "texts": {
+                "1": 93
+            }
+        },
+        {
+            "name": "DibreGringo",
+            "function": "DibreGringo",
+            "type": 1,
+            "loop": 1,
+            "texts": {
+                "1": 92
+            }
+        },
+        {
+            "name": "AquiTemCorage",
+            "function": "TemCorage",
+            "type": 1,
+            "loop": 1,
+            "texts": {
+                "1": 172
+            }
+        },
+        {
+            "name": "PinguPutasso",
+            "function": "PinguPuto",
+            "type": 1,
+            "loop": 2,
+            "texts": {
+                "1": 70,
+                "2": 80
+            }
+        }
+    ],
+    "utils": {
+        "1": "DrakeHot",
+        "2": "DibreDeMalandro",
+        "3": "MindExplosion",
+        "4": "DibreGringo",
+        "5": "AquiTemCorage",
+        "6": "null",
+        "7": "null",
+        "8": "null"
+    }
+}

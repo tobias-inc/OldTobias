@@ -1,0 +1,307 @@
+{
+    "Mute": {
+        "time": "Tempo de mute",
+        "Notime": "Insira por quanto tempo você deseja mutar o usuario mencionado ",
+        "description": "O usuário {{USER}} foi punido(a) por desrespeitar as regras do servidor!",
+        "nouser": "Você precisa mencionar um usuario para silenciar",
+        "unmute": "{{user}} foi desmutado",
+        "muteAuthor": "Mutado por"
+    },
+    "Command": {
+        "connect": "Por favor conecte-se a um canal de voz!",
+        "connectme": "Por favor conecte-se ao canal de voz que eu estou!",
+        "roledj": "Desculpe, você precisa ter a role **dj** ou ter a permissão **gerenciar servidor** para executar esse comando!",
+        "noperm": "Não possuo permissões necessárias para {{ERR}} nesse canal de voz!",
+        "speak": "falar",
+        "connecta": "connectar"
+    },
+    "Clear": {
+        "clearedqueue": "Queue limpa com sucesso!",
+        "nomoremusic": "Não há nehuma música depois da atual!",
+        "noPlaying": "Não estou tocando nada no **momento**"
+    },
+    "Jump": {
+        "insertaNumber": "Por favor insira um valor numérico! de **1 á {{LEN}}**",
+        "skipNumber": "Por favor insira o numero da música para eu pular! **[1 á {{LEN}}]**",
+        "noMusic": "Não há nehuma música depois da atual!",
+        "insertaNumberat": "Por favor insira um número de **1 á {{LEN}}**!",
+        "noMusicat": "Não estou tocando nada no **momento**"
+    },
+    "Play": {
+        "stop": "A lista de reprodução acabou!",
+        "start": "Começando a tocar:{{song}}",
+        "errorsong": "Ocorreu um erro ao tentar reproduzir a música: **{{song}}**",
+        "queue": "Adicionei **{{LEN}}** musicas na queue!",
+        "addmusic": "Adicionei a música **{{song}}** na queue!",
+        "addmusics": "Adicionei **{{LEN}}** musicas na queue!"
+    },
+    "Reset": "A queue foi resetada!",
+    "Queue": {
+        "title": "Lista de Reprodução em {{NAME}}",
+        "time": "Tempo estimado de Reprodução:",
+        "songlist": "Lista de Reprodução",
+        "more": "\ne mais {{LEN}} musicas",
+        "by": "adicionado por"
+    },
+    "Loop": {
+        "active": "A auto repetição da queue está **ativa**!",
+        "inactive": "A auto repetição da queue está **inativa**!"
+    },
+    "Np": {
+        "playngnow": "Tocando agora: {{NAME}}",
+        "addedby": "Adicionado Por",
+        "duration": "Duração",
+        "position": "Posição na Queue"
+    },
+    "Remove": {
+        "insertnum": "Por favor insira um valor numérico! de **1 á {{LEN}}**`",
+        "removed": "Removi a música **{{song}}** da queue!",
+        "insertnumb": "Por favor insira o numero da música para eu remover! **[1 á {{LEN}}]**"
+    },
+    "Search": {
+        "name": "Nome da Música",
+        "addedby": "Adicionado Por",
+        "position": "Posição na Queue",
+        "np": "Tocando Agora",
+        "channel": "Canal Postado",
+        "published": "Data de Postagem",
+        "noArgs": "Por favor insira o **nome** ou o **número** da música que deseja obter!"
+    },
+    "Skip": "Não há nehuma música depois dessa!",
+    "Stop": "A queue foi finalizada!",
+    "Volume": {
+        "insertnum": "Por favor insira um valor numérico! de **1 á 300**`",
+        "insertargs": "Por favor insira o volume desejado de **0 á 300**",
+        "changed": "O volume foi alterado para: **{{VOL}}**"
+    },
+    "Unban": {
+        "initialmessage": "Você tem certeza que deseja desbanir {{USER}}?,\n Reaja com {{REACTION}} para confirmar",
+        "description": "O usuário {{USER}} foi absorvido(a) por desrespeitar as regras do servidor!",
+        "unbanauthor": "absorvido por",
+        "punishment": "Punição",
+        "punished": "Usuario absorvido",
+        "reason": "Motivo da absorção",
+        "noReason": "Sem motivo"
+    },
+    "Dell": "O chat foi limpo por {{USER}}, e tambem foram excluidas {{COUNT}} mensagens!",
+    "Lyrics": {
+        "description": "Exibindo letra de **{{TITLE}}**",
+        "artist": "Por",
+        "otherArtists": "Produtores"
+    },
+    "Say": "Me pediu para dizer isto:",
+    "Kick": {
+        "initialmessage": "Você tem certeza que deseja chutar {{USER}} ?,\n Reaja com {{REACTION}} para confirmar",
+        "description": "O usuário {{USER}} foi punido(a) por desrespeitar as regras do servidor!",
+        "kickAuthor": "Chutado por",
+        "punishment": "Punição",
+        "punished": "Usuario punido",
+        "reason": "Motivo da punição",
+        "noReason": "Sem motivo "
+    },
+    "ban": {
+        "initialmessage": "Você tem certeza que deseja banir {{USER}}?,\n Reaja com {{REACTION}} para confirmar",
+        "description": "O usuário {{USER}} foi punido(a) por desrespeitar as regras do servidor!",
+        "banauthor": "banido por",
+        "punishment": "Punição",
+        "punished": "Usuario punido",
+        "reason": "Motivo da punição",
+        "noReason": "Sem motivo "
+    },
+    "Tapa": {
+        "slaped": "Deu um tapa em"
+    },
+    "Abracar": {
+        "huged": "Abraçou"
+    },
+    "Kiss": {
+        "kissed": "Beijou"
+    },
+    "botinfo": {
+        "description": "",
+        "usedCommands": "Total de Comandos Usados",
+        "sharedServers": {
+            "ctx": "Servidores Compartilhados **({{size}})**",
+            "more": " e mais **{{size}}**...",
+            "none": "Nenhum"
+        },
+        "others": {
+            "ctx": "Mais Informações",
+            "text": "• Repartição: **{{shard}}**\n• Online há: {{uptime}}"
+        },
+        "host": {
+            "ctx": "Hospedagem",
+            "text": "• RAM Usada: **{{ram}}**\n• Latência: **{{ping}}**\n• Versão do Node: **{{version}}**"
+        },
+        "stats": {
+            "ctx": "Estatísticas",
+            "text": "• Comandos Executados: **{{usages}}**\n• Servidores: **{{guilds}}**\n• Usuários: **{{users}}**"
+        },
+        "links": {
+            "ctx": "Apoio",
+            "urls": "[Servidor de Suporte]({{support}})\n[Me Convide]({{invite}})\n[Vote em Mim]({{vote}})"
+        }
+    },
+    "serverinfo": {
+        "name": "Nome",
+        "region": "Região",
+        "createdAt": "Data de Criação",
+        "owner": "Dono",
+        "verify": {
+            "ctx": "Verificação",
+            "level": {
+                "0": "Nenhum **(0)**",
+                "1": "Baixo **(1)**",
+                "2": "Médio **(2)**",
+                "3": "Alto **(3)**",
+                "4": "Muito Alto **(4)**"
+            }
+        },
+        "members": {
+            "ctx": "Membros **({{size}})**",
+            "users": "Usuários: ",
+            "bots": "Robôs: "
+        },
+        "channels": {
+            "ctx": "Canais **({{length}})**",
+            "text": "Texto: ",
+            "voice": "Voz: ",
+            "category": "Categoria: "
+        },
+        "role": {
+            "ctx": "Cargos **({{length}})**",
+            "managed": "Gerenciáveis: ",
+            "noTags": "Nenhum",
+            "tags": "e mais **{{length}}**..."
+        }
+    },
+    "staff": {
+        "owner": "Donos",
+        "dev": "Desenvolvedores",
+        "transl": "Tradutores",
+        "dzn": "Designers",
+        "none": "**Nenhum**"
+    },
+    "roleinfo": {
+        "name": "Nome",
+        "id": "Identificação",
+        "hexColor": "Hexadecimal",
+        "mentionable": {
+            "ctx": "Mencionável",
+            "true": "Sim",
+            "false": "Não"
+        },
+        "createdAt": "Data de Criação",
+        "members": {
+            "ctx": "Membros **({{size}})**",
+            "none": "Nenhum",
+            "and": " e mais ***{{size}}***..."
+        },
+        "hoist": {
+            "ctx": "Destacável",
+            "true": "Sim",
+            "false": "Não"
+        },
+        "position": {
+            "ctx": "Posição",
+            "get": "**{{position}}°** de **{{size}}**"
+        }
+    },
+    "userinfo": {
+        "name": "Nome",
+        "id": "Identificação",
+        "createdAt": "Data de Criação",
+        "joinedAt": "Entrou no servidor em",
+        "permissions": "Permissões",
+        "nickname": {
+            "ctx": "Apelido",
+            "none": "Nenhum"
+        },
+        "status": {
+            "ctx": "Status",
+            "dnd": "Não Pertube",
+            "idle": "Ausente",
+            "offline": "Indisponível",
+            "online": "Disponível"
+        },
+        "bot": {
+            "ctx": "Robô",
+            "true": "Sim",
+            "false": "Não"
+        },
+        "role": {
+            "ctx": "Cargos **({{size}})**",
+            "and": " e mais ***{{size}}***...",
+            "none": "Nenhum"
+        }
+    },
+    "channelinfo": {
+        "name": "Nome",
+        "createdAt": "Data de Criação",
+        "id": "Identificação",
+        "position": "Posição",
+        "topic": {
+            "ctx": "Tópico",
+            "noTopic": "Nenhum",
+            "topicImpossible": "Impossível"
+        },
+        "type": {
+            "ctx": "Tipo",
+            "voice": "Canal de Voz",
+            "category": "Categoria",
+            "text": "Canal de Texto"
+        }
+    },
+    "help": {
+        "description": "Use *`{{prefix}} {{usage}} <command>`* para saber mais sobre um comando!",
+        "command": {
+            "name": "Nome",
+            "usages": "Utilizações",
+            "aliases": {
+                "ctx": "Alternativas",
+                "none": "Nenhuma"
+            },
+            "description": {
+                "ctx": "Descrição",
+                "none": "Nenhuma"
+            },
+            "mePerms": {
+                "ctx": "Minhas Permissões",
+                "none": "Nenhuma"
+            },
+            "userPerms": {
+                "ctx": "Permissões do Usuário",
+                "none": "Nenhuma"
+            },
+            "needGuild": {
+                "ctx": "Responde DM",
+                "true": "Não",
+                "false": "Sim"
+            }
+        }
+    },
+    "emojiinfo": {
+        "name": "Nome",
+        "id": "Identificação",
+        "identifier": "Identificador",
+        "createdAt": "Data de Criação",
+        "animated": {
+            "ctx": "Animado",
+            "true": "Sim",
+            "false": "Não"
+        },
+        "link": {
+            "ctx": "Link do Emoji",
+            "Clickhere": "[Clique aqui](https://cdn.discordapp.com/emojis/{{Link}}.png)"
+        }
+    },
+    "vip": {
+        "vipSet": "foram adicionadas **{{hours}}** horas de acesso **vip** referente ao voto da {{dbl}}!\nObrigado por me apoiar. Faça bem proveito do acesso **vip**!",
+        "vipSetMultiple": "foram adicionadas **{{hours}}** horas de acesso **vip** referente aos votos da {{dbl}}!\nObrigado por me apoiar. Faça bem proveito do acesso **vip**!",
+        "vipUnSet": "o **vip** referente ao voto da {{dbl}} se esgotou. Você já pode votar novamente!\nVote e **reative** o seu vip!",
+        "vipUnSetMultiple": "o **vip** referente aos votos da {{dbl} se esgotaram. Você já pode votar novamente!\nVote e **reative** o seu vip!"
+    },
+    "footer": {
+        "team": "por Equipe do {{user}} - todos os direitos reservados."
+    }
+}
