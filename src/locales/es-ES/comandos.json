@@ -1,4 +1,46 @@
 {
+    "Servericon": "O servidor {{guild}} **não possui** um icone",
+    "Ping": "Meu ping atual é **{{Ping}}**",
+    "dell": {
+        "noArgs": "Informe o número de mensagens para eu deletar. Forma correta: ``{{PARTS}} 10``",
+        "noNum": "Parece que você usou não são números. Forma correta: ``{{PARTS}} 10``",
+        "maxLen": "Você só pode apagar até 100 mensagens por vez"
+    },
+    "say": "Você precisa inserir argumentos para que eu possa replicar",
+    "ascii": {
+        "noArgs": "Você precisa inserir argumentos para que eu possa converter",
+        "maxLen": "Você excedeu o limite de caracteres ``26``"
+    },
+    "kick": {
+        "noUser": "Você precisa mencionar um usuario para chutar",
+        "Error": "Não foi possivel chutar {{USER}}... \n Você tem cargo maior que ele?",
+        "lucky": "{{AUTHOR}} desistiu de chutar {{USER}} que sorte não?"
+    },
+    "unban": {
+        "noUser": "Você precisa mencionar um usuario para desbanir",
+        "Error": "Não foi possivel desbanir {{USER}}...",
+        "badluck": "{{AUTHOR}} desistiu de desbanir {{USER}} que azar não?"
+    },
+    "ban": {
+        "noUser": "Você precisa mencionar um usuario para banir",
+        "Error": "Não foi possivel banir {{USER}}... \n Você tem cargo maior que ele?",
+        "lucky": "{{AUTHOR}} desistiu de banir {{USER}} que sorte não?"
+    },
+    "kiss": {
+        "kissyourself": "Você não pode se beijar",
+        "noArgs": "Você precisa mencionar alguém para beijar",
+        "Client": "Sái fora {{USER}} eu não quero te beijar"
+    },
+    "tapa": {
+        "slapyourself": "Você não pode dar um tapa em você mesmo... Há algo de errado?",
+        "noArgs": "Você precisa mencionar alguém para dar um tapa",
+        "Client": "Oxi por que você quer me bater?"
+    },
+    "abraçar": {
+        "hugyourself": "Você não pode se abraçar... Está tudo bem?",
+        "noArgs": "Você precisa mencionar alguém para abraçar",
+        "Client": "Você não pode abraçar um bot... Está tudo bem?"
+    },
     "mentionBot": "Utilice **`{{prefix}} help`** para saber más!",
     "reloadlocales": {
         "loaded": "Rehacer el idioma del sistema correctamente!",
@@ -27,63 +69,103 @@
     },
     "channelinfo": {
         "error": "channelinfo, no encontró el canal **raíz**!"
-  },
-    "bugreport": {
-    "wait": "Escriba lo sucedido **detalle `(2m)`**. Si puede proporcionar screenshots (link con la imagen de lo ocurrido)!.\nCuanto más detalles, más pronto será resuelto👍!",
-    "timeOut": "¡Lo siento el tiempo de respuesta se ha agotado! intentar **de nuevo**.",
-    "bugSend": "Lo bug se ha enviado con éxito! para más información entre en mi.**[servidor de soporte]({{support}})** 👍.\nAcceda a lo que ha enviado: **{{link}}**",
-    "fewFwords": "Por favor epecifique más el problema !! `(min. 30 carac.)`.",
-    "lotOfwords": "Por favor sea breve, escriba menos !! `(max 150 carac.)`."
-},
-"emojiinfo": {
-    "noArgs": "Por favor introduzca`[id||nombre]` del *emoji* deseado!",
-    "noEmoji": "Lo siento no puedo encontrar ** ningún ** enoji para la búsqueda: ***{{searsh}}***!",
-    "getHelp": "tengo las opciones:\n**`{{options}}`**\n\nUso `{{prefix}} {{name}} <emoji> <option>` y **se divierte!**"
-},
-"prefix": {
-    "noArgs": "Por favor introduzca el prefijo deseado!",
-    "setPrefix": "El prefijo de este servidor ahora es **{{PREFIX}}**",
-    "ultrapassedLength": "El prefijo insertado sobrepasó el límite de caractéres `(max 3)`!",
-    "containsSpaces": "el prefijo insertado tiene espacios, ** quítalos ** y vuelva a intentarlo!"
-},
-"language": {
-    "noArgs": "¡Por favor introduzca el idiomas deseado!.\nUso **`{{prefix}} {{name}} {{help}}`** y vea los **idiomas** disponibles.",
-    "noLang": "Disculpa el lenguaje insertado **({{lang}})** es inválida!\nUso **`{{prefix}} {{name}} {{help}}`** y vea los **idiomas** disponibles.",
-    "setLang": "El lenguaje del bot en el servidor se ha modificado para: **{{lang}}**",
-    "help": "Los lenguajes disponibles son:\n{{langs}}\n\nCambie el lenguaje que utiliza `{{prefix}} {{name}} <id>`"
-},
-"creatememe": {
-    "panel": "¡Bienvenido a mi panel de creación de ** memes **! \n Por favor responda con un número de ** 1 ** a ** {{size}} ** correspondiente al meme que desea ** crear ** justo debajo! `(30seg)`",
-    "unavailableTemplate": "¡Excusa la plantilla elegida no está **disponible** ahora mismo! \n No trate otro **día** o ponerse en mi [servidor de apoyo]({{support}}) ** y aprender!",
-    "noResponseNumber": "¡Lo siento la respuesta ** insertada ** no es un número! \n Execute el comando de nuevo insertando un número de **1 ** a**{{size}}**",
-    "unavailableNumber": "Lo siento el número insertado es invalido. \nExecute el comando ** de nuevo ** insertando un. número de **1** a **{{size}}**",
-    "timeOut": "¡Lo siento el tiempo de respuesta se ha agotado! Inténtalo de **nuevo*.",
-    "inserText": "Inserte el **{{i}}°** texto: `({{carac}}carac.)` `(60seg)`",
-    "surpassedLength": "¡Lo siento que has sobrepasado el límite de caractéres `({{length}}carac.)`! Inténtalo de **nuevo**."
-},
-"maintencecmd": {
-    "alreadyUnMaintence": "¡Lo siento pero el comando **{{command}}** no está en mantenimiento!",
-    "alreadyInMaintence": "¡Lo siento pero el comando **{{command}}** ya está en mantenimiento!",
-    "commandInMaintence": "¡El comando **{{command}}** se puso en mantenimiento!",
-    "commandUnMaintence": "¡El comando **{{command}}** se ha retirado del mantenimiento!",
-    "noCommandDatabase": "¡El comando **{{command}}** no está registrado en mi `DATABASE`",
-    "noCommand": "Por favor introduzca el nombre de comando deseado para continuar!",
-    "noOption": "Por favor introduzca una opción: **`{{options}}`**",
-    "MaintenceList": {
-        "commands": "Comandos en Mantenimiento:\n**{{list}}**",
-        "me": "¿Estoy en Mantenimiento?\n**{{res}}**",
-        "ctx": "Mantenimiento",
-        "none": "cualquier",
-        "yes": "Si",
-        "no": "No"
     },
-    "subcommands": {
-        "client": {
-            "falseUnSet": "Lo siento pero no estoy en **Mantenimiento**!",
-            "falseSet": "Lo siento pero ya estoy en **Mantenimiento**!",
-            "trueSet": "Me he puesto en **Mantenimiento** con éxito!",
-            "trueUnSet": "me he retirado de la **Mantenimiento** con éxito!"
+    "bugreport": {
+        "wait": "Escriba lo sucedido **detalle `(2m)`**. Si puede proporcionar screenshots (link con la imagen de lo ocurrido)!.\nCuanto más detalles, más pronto será resuelto👍!",
+        "timeOut": "¡Lo siento el tiempo de respuesta se ha agotado! intentar **de nuevo**.",
+        "bugSend": "Lo bug se ha enviado con éxito! para más información entre en mi.**[servidor de soporte]({{support}})** 👍.\nAcceda a lo que ha enviado: **{{link}}**",
+        "fewFwords": "Por favor epecifique más el problema !! `(min. 30 carac.)`.",
+        "lotOfwords": "Por favor sea breve, escriba menos !! `(max 150 carac.)`."
+    },
+    "emojiinfo": {
+        "noArgs": "Por favor introduzca`[id||nombre]` del *emoji* deseado!",
+        "noEmoji": "Lo siento no puedo encontrar ** ningún ** enoji para la búsqueda: ***{{searsh}}***!",
+        "getHelp": "tengo las opciones:\n**`{{options}}`**\n\nUso `{{prefix}} {{name}} <emoji> <option>` y **se divierte!**"
+    },
+    "prefix": {
+        "noArgs": "Por favor introduzca el prefijo deseado!",
+        "setPrefix": "El prefijo de este servidor ahora es **{{PREFIX}}**",
+        "ultrapassedLength": "El prefijo insertado sobrepasó el límite de caractéres `(max 3)`!",
+        "containsSpaces": "el prefijo insertado tiene espacios, ** quítalos ** y vuelva a intentarlo!"
+    },
+    "language": {
+        "noArgs": "¡Por favor introduzca el idiomas deseado!.\nUso **`{{prefix}} {{name}} {{help}}`** y vea los **idiomas** disponibles.",
+        "noLang": "Disculpa el lenguaje insertado **({{lang}})** es inválida!\nUso **`{{prefix}} {{name}} {{help}}`** y vea los **idiomas** disponibles.",
+        "setLang": "El lenguaje del bot en el servidor se ha modificado para: **{{lang}}**",
+        "help": "Los lenguajes disponibles son:\n{{langs}}\n\nCambie el lenguaje que utiliza `{{prefix}} {{name}} <id>`"
+    },
+    "creatememe": {
+        "panel": "¡Bienvenido a mi panel de creación de ** memes **! \n Por favor responda con un número de ** 1 ** a ** {{size}} ** correspondiente al meme que desea ** crear ** justo debajo! `(30seg)`",
+        "unavailableTemplate": "¡Excusa la plantilla elegida no está **disponible** ahora mismo! \n No trate otro **día** o ponerse en mi [servidor de apoyo]({{support}}) ** y aprender!",
+        "noResponseNumber": "¡Lo siento la respuesta ** insertada ** no es un número! \n Execute el comando de nuevo insertando un número de **1 ** a**{{size}}**",
+        "unavailableNumber": "Lo siento el número insertado es invalido. \nExecute el comando ** de nuevo ** insertando un. número de **1** a **{{size}}**",
+        "timeOut": "¡Lo siento el tiempo de respuesta se ha agotado! Inténtalo de **nuevo*.",
+        "inserText": "Inserte el **{{i}}°** texto: `({{carac}}carac.)` `(60seg)`",
+        "surpassedLength": "¡Lo siento que has sobrepasado el límite de caractéres `({{length}}carac.)`! Inténtalo de **nuevo**."
+    },
+    "maintencecmd": {
+        "alreadyUnMaintence": "desculpe mas o comando **{{command}}** não está em manutenção!",
+        "alreadyInMaintence": "desculpe mas o comando **{{command}}** já está em manutenção!",
+        "commandInMaintence": "o comando **{{command}}** foi colocado em manutenção!",
+        "commandUnMaintence": "o comando **{{command}}** foi retirado da manutenção!",
+        "noCommandDatabase": "o comando **{{command}}** não está registrado em minha `DATABASE`",
+        "noCommand": "¡Ingrese el nombre del comando deseado para continuar!",
+        "noOption": "Por favor, introduzca una opción: **`{{options}}`**",
+        "MaintenceList": {
+            "commands": "Comandos en mantenimiento:\n**{{list}}**",
+            "me": "¿Estoy en mantenimiento?\n**{{res}}**",
+            "ctx": "mantenimiento",
+            "none": "Ninguno",
+            "yes": "Si",
+            "no": "No"
+        },
+        "subcommands": {
+            "client": {
+                "falseUnSet": "¡lo siento pero no estoy en **mantenimiento**!",
+                "falseSet": "¡lo siento pero ya estoy en **mantenimiento**!",
+                "trueSet": "¡Me pusieron en **mantenimiento** con éxito!",
+                "trueUnSet": "¡Fui eliminado con éxito de **mantenimiento**!"
             }
         }
-    }
+    },
+    "vip": {
+        "infoTitle": "información **vip {{user}}**",
+        "temp": "Tiempo restante",
+        "active": {
+            "ctx": "En ?",
+            "true": "Si",
+            "false": "No"
+        },
+        "getActiveInfo": {
+            "ctx": "Como Ativar ?",
+            "type": "**¡Vótame el {{vote}} o {{vote1}}**!"
+        },
+        "dmNotifier": {
+            "ctx": "¿Desea habilitar o deshabilitar las notificaciones en su DM?",
+            "usage": "** ¡Usa el notificador `{{prefix}} {{name}}`!**"
+        },
+        "notifier": {
+            "true": "¡Las notificaciones en tu privado han sido ** habilitadas **!",
+            "false": "¡Las notificaciones en tu privado han sido ** desactivadas **!"
+        }
+    },
+    "memetextcolor": {
+        "errArgs": "¡Ingrese el ** hexadecimal ** del color que desea configurar! **ex. `#0000FF`**",
+        "errColor": "Por favor, introduzca un color válido! **ex. `#0000FF`**",
+        "colorSet": "¡El color del texto de los memes **solicitados por usted ahora será: {{color}}** hasta que termine su vip!"
+    },
+    "spotify": {
+        "notListening": "No está escuchando a Spotify ..."
+    },
+    "lyrics": {
+        "noSong": "¡Ingrese el nombre de la ** canción ** deseada!",
+        "footer": "Pagina {{page}} de {{total}}"
+    },
+    "calc": {
+        "noArgs": "¡Debes proporcionar una ecuación para resolver en la calculadora!",
+        "error": "**Pregunta inválida** \n Use + para agregar\n - restar\n * multiplicar \n / dividir",
+        "answer": "**Respuesta:**",
+        "question": "**Pregunta:**"
+    },
+    "emojis": "Pagina {{page}} de {{total}}"
 }

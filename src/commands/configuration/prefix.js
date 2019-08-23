@@ -22,7 +22,7 @@ class prefix extends Command {
         if (args[0]) {
             const prefix = args.join(' ');
 
-            if (!(prefix.length > 3 || prefix.includes(' '))) {
+            if (!(prefix.length > 10 || prefix.includes(' '))) {
                 await this.client.DatabaseUtils.setPrefix(guild, prefix)
                     .catch((err) => { throw new ErrorCommand(err) });
 
@@ -30,7 +30,7 @@ class prefix extends Command {
                     .setDescription(`${Emojis.Settings} **${author.username}**, ${t('comandos:prefix.setPrefix', { prefix })}`)
                 )
             } else {
-                const error = (prefix.length > 3 ? 'comandos:prefix.ultrapassedLength' : 'comandos:prefix.containsSpaces');
+                const error = (prefix.length > 10 ? 'comandos:prefix.ultrapassedLength' : 'comandos:prefix.containsSpaces');
                 return channel.send(embed
                     .setDescription(`${Emojis.Errado} **${author.username}**, ${t(error)}`)
                     .setColor(process.env.ERROR_COLOR)

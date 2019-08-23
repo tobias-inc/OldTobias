@@ -7,6 +7,8 @@
         "notfound": "Não consegui encontrar nenhum resultado para a música inserida!",
         "noArgs": "Por favor insira o **link** ou o **nome** da música desejada! (Youtube)"
     },
+    "emojis": "Esse servidor não possui emojis",
+    "404": "Não foi possivel encontrar resultados para sua pesquisa",
     "noParameter": "Parametro não encontrado",
     "noArgs": "você precisa escrever algo para **prosseguir**!",
     "noClientDeveloper": "você precisa ser um desenvolvedor do **bot** para utilizar esse **comando**",

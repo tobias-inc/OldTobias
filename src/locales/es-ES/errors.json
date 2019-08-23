@@ -3,6 +3,13 @@
         "description": "Se ha producido un error - Intente ejecutar el comando de nuevo!\nSi el error persiste, envíe un ** report **:\nUso ***`{{prefix}} bugreport`***, o entre en mi ** [servidor de soporte]({{support}})** y reporte el bug!",
         "footer": "Recuerdos, equipo del Tobias de Chapéu Bot"
     },
+    "play":{
+        "notfound": "¡No pude encontrar ningún resultado para la canción insertada!",
+        "noArgs": "¡Ingrese el **enlace** o **nombre** de la canción deseada! (Youtube)"
+    },
+    "emojis": "Este servidor no tiene emojis",
+    "404": "No pudimos encontrar resultados para su búsqueda.",
+    "noParameter": "Parámetro no encontrado",
     "noArgs": "Usted necesita escribir algo para ** proseguir **!",
     "noClientDeveloper": "Usted necesita ser un desarrollador del ** bot ** para utilizar ese ** comando **",
     "noClientOwner": "Lo siento, usted necesita ser uno de mis dueños para utilizar este ** comando **",

@@ -10,7 +10,7 @@ class Avatar extends Command {
             name: "avatar",
             description: "Avatar de um usuário",
             usage: { args: true, argsNeed: false, argsTxt: "<user>", need: "{prefix} {cmd} {args}" },
-            category: "Fun",
+            category: "Information",
             cooldown: 3000,
             aliases: ["picture"],
             Permissions: ["ATTACH_FILES"],

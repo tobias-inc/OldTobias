@@ -1,4 +1,14 @@
 {
+    "commands": {
+    "ban": "Prohibir un miembro.",
+    "kick": "Patea a un miembro.",
+    "dell": "Elimina una cierta cantidad de mensajes.",
+    "ascii": " Convierte texto a formato ASCII.",
+    "beijar": "Besa a un miembro.",
+    "tapa": "Abofetear a un miembro.",
+    "lyrics": "Muestra la letra de una canción.",
+    "say": "Repito algo.",
+    "abraçar": "Abraza a un usuario.",
     "botinfo": "Información sobre el bot",
     "bugreport": "Reporta un mal acontecimiento ocurrido en el uso de alguna función",
     "help": "Panel de ayuda del Consejo bot",
@@ -16,5 +26,14 @@
     "prefix": "Modifica el prefijo del servidor",
     "language": "Modifica la traducción del servidor",
     "ping": "Tiempo de respuesta del bot",
-    "creatememe": "Crea un meme elegido por el usuario"
+    "creatememe": "Crea un meme elegido por el usuario",
+    "vip": "Información sobre su acceso vip",
+    "memetextcolor": "Cambia el color del texto del meme que se creará.",
+    "spotify": "Muestra la canción que el usuario está escuchando en spotify"
+},
+"subcommands": {
+    "vip": {
+        "notifier": "Habilitar o deshabilitar notificaciones sobre ** vip ** en DM"
+        }
+    }
 }

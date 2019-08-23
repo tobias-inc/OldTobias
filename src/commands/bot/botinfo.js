@@ -30,18 +30,20 @@ class BotInfo extends Command {
 
         const links = {
             support: await this.client.utils.get('links', 'support').then(({ redirect }) => redirect),
-            invite: await this.client.utils.get('links', 'invite').then(({ redirect }) => redirect.replace('{{userID}}', this.client.user.id)),
-            vote: await this.client.utils.get('links', 'vote').then(({ redirect }) => redirect.replace('{{userID}}', this.client.user.id))
+            invite: await this.client.utils.get('links', 'invite').then(({ redirect }) => redirect.replace(/{{userID}}/gi, this.client.user.id)),
+            vote: await this.client.utils.get('links', 'vote').then(({ redirect }) => redirect.replace('{{userID}}', this.client.user.id)),
+            vote1: await this.client.utils.get('links', 'vote1').then(({ redirect }) => redirect.replace('{{userID}}', this.client.user.id))
         }
         const embed = insertClient(await this.newInfo(author, language, links, t));
 
         return channel.send(embed).then(async (msg) => {
             await msg.react(Emojis.reactions.next);
             return ((N = 0) => {
-                const initializeCollector = msg.createReactionCollector((reaction, user) => (
-                    (reaction.emoji.name === Emojis.reactions.back || reaction.emoji.name === Emojis.reactions.next) && (
-                        user.id === author.id
-                    )), { time: 120000 });
+                const initializeCollector = (msg.createReactionCollector(
+                    (reaction, user) => [Emojis.reactions.back, Emojis.reactions.next].includes(reaction.emoji.id)
+                        && user.id === author.id,
+                    { time: 120000 })
+                );
 
                 msgTimeOut(msg, 120000);
                 return initializeCollector.on('collect', async (r) => {
@@ -70,7 +72,7 @@ class BotInfo extends Command {
         }).catch(() => { })
     }
 
-    async newInfo(author, language, { support, invite, vote }, t) {
+    async newInfo(author, language, { support, invite, vote,vote1 }, t) {
         return (new ClientEmbed(author)
             .addField(t('clientMessages:botinfo.stats.ctx'), (t('clientMessages:botinfo.stats.text'
                 , {
@@ -94,7 +96,7 @@ class BotInfo extends Command {
             ), false)
             .addField(t('clientMessages:botinfo.links.ctx'), (t('clientMessages:botinfo.links.urls'
                 , {
-                    support, invite, vote
+                    support, invite, vote, vote1
                 })
             ), false)
         )

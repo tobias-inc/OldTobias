@@ -1,11 +1,13 @@
-{  
-    "dell":{
+{
+    "Servericon": "O servidor {{guild}} **não possui** um icone",
+    "Ping": "Meu ping atual é **{{Ping}}**",
+    "dell": {
         "noArgs": "Informe o número de mensagens para eu deletar. Forma correta: ``{{PARTS}} 10``",
         "noNum": "Parece que você usou não são números. Forma correta: ``{{PARTS}} 10``",
         "maxLen": "Você só pode apagar até 100 mensagens por vez"
     },
     "say": "Você precisa inserir argumentos para que eu possa replicar",
-    "ascii":{
+    "ascii": {
         "noArgs": "Você precisa inserir argumentos para que eu possa converter",
         "maxLen": "Você excedeu o limite de caracteres ``26``"
     },
@@ -78,7 +80,7 @@
     },
     "prefix": {
         "noArgs": "por favor insira o prefixo desejado!",
-        "setPrefix": "meu prefixo neste servidor agora é **{{PREFIX}}**",
+        "setPrefix": "meu prefixo neste servidor agora é **{{prefix}}**",
         "ultrapassedLength": "o prefixo inserido ultrapassou o limite de caractéres `(max 3)`!",
         "containsSpaces": "o prefixo inserido possui espaços, **remova-os** e tente novamente!"
     },
@@ -105,35 +107,13 @@
         "noCommandDatabase": "o comando **{{command}}** não está registrado em minha `DATABASE`",
         "noCommand": "por favor insira o nome comando desejado para prosseguir!",
         "noOption": "por favor insira uma opção: **`{{options}}`**",
-        "maintence": {
-            "subcommands": {
-                "list": {
-                    "commands": "Comandos em Manutenção:\n**{{list}}**",
-                    "me": "Estou em Manutenção ?\n**{{res}}**",
-                    "ctx": "Manutenção",
-                    "none": "Nenhum",
-                    "yes": "Sim",
-                    "no": "Não"
-                },
-                "unset": {
-                    "commandUnMaintence": "o comando **{{command}}** foi retirado da manutenção!",
-                    "noCommand": "por favor insira o nome comando desejado para prosseguir!",
-                    "alreadyUnMaintence": "desculpe mas o comando **{{command}}** não está em manutenção!",
-                    "client": {
-                        "falseUnSet": "desculpe mas eu não estou em **manutenção**!",
-                        "trueUnSet": "fui retirado da **manutenção** com sucesso!"
-                    }
-                },
-                "set": {
-                    "noCommand": "por favor insira o nome comando desejado para prosseguir!",
-                    "commandInMaintence": "o comando **{{command}}** foi colocado em manutenção!",
-                    "alreadyInMaintence": "desculpe mas o comando **{{command}}** já está em manutenção!",
-                    "client": {
-                        "falseSet": "desculpe mas eu já estou em **manutenção**!",
-                        "trueSet": "fui colocado em **manutenção** com sucesso!"
-                    }
-                }
-            }
+        "MaintenceList": {
+            "commands": "Comandos em Manutenção:\n**{{list}}**",
+            "me": "Estou em Manutenção ?\n**{{res}}**",
+            "ctx": "Manutenção",
+            "none": "Nenhum",
+            "yes": "Sim",
+            "no": "Não"
         },
         "subcommands": {
             "client": {
@@ -154,7 +134,7 @@
         },
         "getActiveInfo": {
             "ctx": "Como Ativar ?",
-            "type": "**Vote em mim clicando [aqui]({{vote}})**!"
+            "type": "**Vote-me em  {{vote}} ou em {{vote1}}**!"
         },
         "dmNotifier": {
             "ctx": "Deseja ativar ou desativar as notificações em sua DM ?",
@@ -176,5 +156,12 @@
     "lyrics": {
         "noSong": "por favor insira o nome da **música** desejada!",
         "footer": "Página {{page}} de {{total}}"
-    }
+    },
+    "calc": {
+        "noArgs": "Você deve fornecer uma equação a ser resolvida na calculadora!",
+        "error": "**Questão invalida** \n Use + para somar\n - para subtrair\n * para multiplicar \n / para dividir",
+        "answer": "**Resposta:**",
+        "question": "**Questão:**"
+    },
+    "emojis": "Página {{page}} de {{total}}"
 }

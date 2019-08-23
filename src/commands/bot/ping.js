@@ -1,4 +1,4 @@
-const { Command } = require("../../");
+const { Command, Emojis, ClientEmbed } = require("../../");
 
 class Ping extends Command {
     constructor(client) {
@@ -8,7 +8,7 @@ class Ping extends Command {
             usage: { args: true, argsNeed: false },
             category: "Bot",
             cooldown: 3000,
-            aliases: [],
+            aliases: ["p","P"],
             Permissions: [],
             UserPermissions: [],
             devNeed: false,
@@ -16,9 +16,13 @@ class Ping extends Command {
         });
     }
 
-    async run({ message, channel }) {
+    async run({channel,author},t) {
         const parse = await this.getPing();
-        return channel.send(parse.replace(' MS', 'ms'));
+        const EMBED = new ClientEmbed(author)
+        return channel.send(EMBED
+            .setDescription(t("comandos:Ping", { Ping:parse.replace("MS","ms")}))
+            .setColor(process.env.COLOR_EMBED)
+        )
     }
 }
 

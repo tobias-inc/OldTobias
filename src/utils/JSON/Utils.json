@@ -6,7 +6,11 @@
         },
         {
             "name": "vote",
-            "redirect": "[DiscordBotList](https://discordbots.org/bot/{{userID}}), [BotsPraDiscord](https://botsparadiscord.xyz/bots/{{userID}})"
+            "redirect": "[DiscordBotList](https://discordbots.org/bot/{{userID}})"
+        },
+        {
+            "name": "vote1",
+            "redirect": "[BotsPraDiscord](https://botsparadiscord.xyz/bots/{{userID}})"
         },
         {
             "name": "invite",

@@ -2,7 +2,6 @@ try {
     (require("./src/utils/LoaderPrototypes.js")).loader();
 } catch (e) {
     console.log(e)
-    //process.kill()
 }
 
 const client = new (require("./src/Client.js"))({

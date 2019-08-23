@@ -25,6 +25,7 @@ class Say extends Command {
 let argsJunto = message.content.split(" ").slice(1).join(' ')
 
 if (!argsJunto) return channel.send(`${Emojis.Errado} |` + t('comandos:say'))
+if(argsJunto === "@everyone") return;
 if(!message.guild.member(this.client.user).hasPermission("MANAGE_MESSAGES")){
   return message.reply(t('clientMessages:Say') + "\n" + argsJunto);
 }

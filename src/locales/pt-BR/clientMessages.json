@@ -1,4 +1,13 @@
 {
+    "Arrancada":{
+        "noUser": "**Você não mencionou o usuario com quem você deseja correr!**",
+        "makes": "O usuario {{author}} fez {{action}} metros 🏎 ...........",
+        "draw": "Aconteceu um empate tecnico melhor fazer outra disputa né?",
+        "win": "Corridas de arrancada 🏎 \n Dessa vez o ganhador foi **{{ganhador}}** sorte ou habilidade?",
+        "challenger": "Desafiante ",
+        "challenged": "Desafiado "
+
+    },
     "Mute": {
         "time": "Tempo de mute",
         "Notime": "Insira por quanto tempo você deseja mutar o usuario mencionado ",
@@ -6,6 +15,15 @@
         "nouser": "Você precisa mencionar um usuario para silenciar",
         "unmute": "{{user}} foi desmutado",
         "muteAuthor": "Mutado por"
+    },
+    "Weather": {
+        "description": "Informaçoes de {{place}}",
+        "timezone": "Fuso Horário",
+        "currenttemp": "Temperatura",
+        "feelslike": "Sensacão termica",
+        "wind": "Velocidade e Direção do vento",
+        "humidity": "Umidade do ar",
+        "day": "Dia da semana"
     },
     "Command": {
         "connect": "Por favor conecte-se a um canal de voz!",
@@ -118,7 +136,6 @@
         "kissed": "Beijou"
     },
     "botinfo": {
-        "description": "",
         "usedCommands": "Total de Comandos Usados",
         "sharedServers": {
             "ctx": "Servidores Compartilhados **({{size}})**",
@@ -139,7 +156,7 @@
         },
         "links": {
             "ctx": "Apoio",
-            "urls": "[Servidor de Suporte]({{support}})\n[Me Convide]({{invite}})\n[Vote em Mim]({{vote}})"
+            "urls": "[Servidor de Suporte]({{support}})\n[Me Convide]({{invite}})\nVote em mim pelo {{vote}} ou pelo {{vote1}}"
         }
     },
     "serverinfo": {
