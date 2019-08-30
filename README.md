@@ -36,9 +36,9 @@ Agora só ligar seu bot! em sua linha de comando digite `node .`
 #### Pronto seu bot ficará **Online**!
 ## Setando os 'Managers':
 ### Se você chegou nesse tópico, é porque seu bot já está online. Porém deseja ter acesso ao **eval** e não sabe como....
-#### Primeiramente você terá que vizualizar a sua `Database Mongo`.
+#### Primeiramente você terá que vizualizar a sua `MongoDB Compass`.
 * Na aba `users` procure o item com o seu ID
-* Se você localizou, o item terá um campo em **Booblean**
+* Se você localizou, o item terá um campo em **Booblean** com o nome contributor.
 * Siga o passo abaixo.
 
 ##### No arquivo terá:
