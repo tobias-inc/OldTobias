@@ -1,4 +1,4 @@
-div align="center">
+<div align="center">
     <img width="128px" src="https://images.discordapp.net/avatars/539853186572222464/013ab8a9d61a878eb8a20d12ead27ace.png"><br>
 </div>
 
@@ -43,8 +43,8 @@ Agora só ligar seu bot! em sua linha de comando digite `node .`
 
 ##### No arquivo terá:
 ```javascript
-contributor
-:redirect:"None"
+contributor:
+redirect:"None"
 owner:false
 develope:false
 translater:false
