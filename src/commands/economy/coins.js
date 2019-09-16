@@ -1,4 +1,4 @@
-const { Command, Emojis, ClientEmbed, ErrorCommand } = require("../..");
+const { Command, Emojis, ClientEmbed } = require("../..");
 
 class Coins extends Command {
     constructor(client) {
