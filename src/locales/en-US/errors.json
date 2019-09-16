@@ -8,6 +8,16 @@
         "notfound": "I could not find any results for the inserted music!",
         "noArgs": "Please enter the **link** or **name** of the desired song! (Youtube)"
     },
+    "music":{
+        "speak": "speak",
+        "conect": "connect",
+        "title": "I do not have the necessary permissions for {{err}} on this voice channel!",
+        "enter": "Please connect to a voice channel!",
+        "comein": "Please connect to the voice channel I am on!"
+    },
+    "emojis": "This server has no emojis",
+    "404": "We could not find results for your search.",
+    "noParameter": "Parameter not found",
     "noArgs": "You need to write something to **continue**!",
     "noClientDeveloper": "You need to be a **bot** developer to use this **command**!",
     "noClientOwner": "Sorry, you need to be one of my owners to use this **command**!",

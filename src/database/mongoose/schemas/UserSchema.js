@@ -8,11 +8,15 @@ const PremiumSettings = {
 const UtilsSettings = {
     copyEmojis: []
 }
-
+const VipSettings = {
+        active: false,
+        notifier: true
+}
 const ContributorSettings = {
     redirect: 'None',
     owner: false,
     developer: false,
+    donator: false,
     translater: false,
     designer: false
 }
@@ -60,9 +64,10 @@ module.exports = new Schema({
     },
     vip: {
         type: Object,
-        default: {
-            active: false,
-            notifier: true
-        }
-    }
+        default: VipSettings
+    },
+    coins:{
+        type: Number,
+        default: 0
+    },
 })

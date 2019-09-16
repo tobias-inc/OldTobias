@@ -20,7 +20,7 @@ class Play extends Command {
         });
     }
 
-    async run({ args, channel, guild, author, voiceChannel, prefix }, t) {
+    async run({ args, channel, guild, author, voiceChannel}, t) {
         const trueResult = await this.verifyVoice(guild, t, channel, author, voiceChannel, true);
         if (trueResult) {
             const paramUrl = /^(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/;
@@ -44,14 +44,14 @@ class Play extends Command {
                         if (!queueBreak) this.responseMusic(guildQueue, channel, t);
                     } catch (err) {
                         return channel.send(embed
-                            .setTitle(t('errors:CommandError.description1', { prefix: prefix}))
+                            .setTitle(t('errors:CommandError.description1'))
                             .setDescription(err.message)
                             .setColor(process.env.ERROR_COLOR)
                         )
                     }
                 } else {
                     return channel.send(embed
-                        .setTitle(t('errors:CommandError.description1', { prefix: prefix}))
+                        .setTitle(t('errors:CommandError.description1'))
                         .setDescription(t('errors:play.notfound'))
                         .setColor(process.env.ERROR_COLOR)
                     )
@@ -73,7 +73,7 @@ class Play extends Command {
             return c ? e.setColor(process.env.ERR_COLOR) : e;
         }
 
-        queue.on('stop', (u, l) => l || send(embed(u, t('clientMessages:Play.stop'), true)));
+        queue.on('stop', (u, l) => l || send(embed(u, t('clientMessages:Play.stop'), true)))
         queue.on('start', (s) => send(embed(s.addedBy, t('clientMessages:Play.start', { song: `[${s.name}](${s.url})`, duration: `[${s.durationContent}]` }))).then((m) => queue.setLastMesage(m)));
         queue.on('errorSong', (s) => send(embed(s.addedBy, t('clientMessages:Play.errorsong', { song: `[${s.name}](${s.url})` }))))
         queue.on('queue', (s, u) => {
@@ -82,7 +82,6 @@ class Play extends Command {
                 send(embed(u, t('clientMessages:Play.addmusic', { song: `[${s[0].name}](${s[0].url})` }))).then(m => m.delete(20000));
             }
         })
-
     }
 }
 

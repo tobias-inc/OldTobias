@@ -37,6 +37,7 @@ module.exports = class GuildMusic extends EventEmitter {
     }
 
     async play(song) {
+        if(this.voiceChannel.members.size === "1") return this.voiceChannel.leave()
         if (!song || !song.url) throw new Error('No song identify');
         streamOptions['volume'] = this._queue.setVol(this._queue.volume);
         this._queue.songs.shift();

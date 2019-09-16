@@ -1,8 +1,37 @@
 {
-    "Command":{
+    "Arrancada":{
+        "noUser": "**You didn't mention the user you want to run with!**",
+        "makes": "User {{author}} makes {{action}} meters    ...........",
+        "draw": "It happened a better technical draw to make another dispute right?",
+        "win": "Street Races 🏎 \n This time the winner was **{{ganhador}}** luck or skill?",
+        "challenger": "challenger ",
+        "challenged": "challenged "
+
+    },
+    "Mute": {
+        "time": "Mute Time",
+        "Notime": "Enter how long you want to mutate the mentioned user",
+        "description": "The user {{USER}} has been punished for breaking the server rules!",
+        "nouser": "Você precisa mencionar um usuario para silenciar",
+        "unmute": "{{user}} has been unmuted",
+        "muteAuthor": "Mutated by"
+    },
+    "Weather": {
+        "description": "**{{place}}** information",
+        "timezone": "Timezone",
+        "currenttemp": "Temperature",
+        "feelslike": "Thermal sensation",
+        "wind": "Wind Speed ​​and Direction",
+        "humidity": "Air humidity",
+        "day": "Day of the week"
+    },
+    "Command": {
         "connect": "Please connect to a voice channel!",
-        "connectme": "Please connect to the voice channel that I am conected to!",
-        "roledj": "Sorry, you need to have the role ** dj ** or have the ** manage server ** permission to run this command!"
+        "connectme": "Please connect to the voice channel I am on!",
+        "roledj": "Sorry, you must have the role **dj** or have the **manage server** permission to execute this command!",
+        "noperm": "I don't have the necessary permissions to **{{ERR}}** on this voice channel!",
+        "speak": "speak",
+        "connecta": "connect"
     },
     "Clear": {
         "clearedqueue": "The was clean queue successfully!",

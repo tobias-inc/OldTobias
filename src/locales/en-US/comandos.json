@@ -1,4 +1,6 @@
 {
+    "Servericon": "Server {{guild}} **does not have** an icon",
+    "Ping": "My current ping is **{{Ping}}**",
     "dell":{
         "noArgs": "Enter the number of messages to delete. Correct form: ``{{PARTS}} 10``",
         "noNum": "Looks like you used are not numbers. Correct form: ``{{PARTS}} 10``",

@@ -1,11 +1,19 @@
 {
     "CommandError": {
         "description": "Ocorreu um Erro - Tente executar o comando novamente!\nCaso o erro persista mande um **report**:\nUtilizando ***`{{prefix}} bugreport`***, ou entre em meu **[servidor de suporte]({{support}})** e reporte o bug!",
+        "description1": "Ocorreu um Erro - Tente executar o comando novamente!",
         "footer": "Atenciosamente, equipe do {{user}}"
     },
     "play":{
         "notfound": "Não consegui encontrar nenhum resultado para a música inserida!",
         "noArgs": "Por favor insira o **link** ou o **nome** da música desejada! (Youtube)"
+    },
+    "music":{
+        "speak": "falar",
+        "conect": "conectar",
+        "title": "Não possuo permissões necessárias para {{err}} nesse canal de voz!",
+        "enter": "Por favor conecte-se a um canal de voz!",
+        "comein": "Por favor conecte-se ao canal de voz que eu estou!"
     },
     "emojis": "Esse servidor não possui emojis",
     "404": "Não foi possivel encontrar resultados para sua pesquisa",

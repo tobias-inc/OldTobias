@@ -8,8 +8,8 @@ module.exports = class GuildRepository extends MongoRepository {
 
     parse(entity) {
         return {
-            language: 'pt-BR',
-            prefix: 'tc.',
+            language: process.env.LANG_ROOT,
+            prefix: process.env.PREFIX,
             ...(super.parse(entity) || {})
         }
     }

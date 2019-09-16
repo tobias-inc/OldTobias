@@ -16,7 +16,7 @@ class Unban extends Command {
             Permissions: ["BAN_MEMBERS"],
             UserPermissions: ["BAN_MEMBERS"],
             devNeed: false,
-            needGuild: true
+            needGuild: false
         });
     }
 

@@ -20,7 +20,7 @@ class Jump extends Command {
         });
     }
 
-    async run({ args, channel, guild, author, voiceChannel }, t) {
+    async run({ args, channel, guild, author, voiceChannel,message }, t) {
         const trueResult = await this.verifyVoice(guild, t, channel, author, voiceChannel);
         if (trueResult) {
             const embed = new ClientEmbed(author);

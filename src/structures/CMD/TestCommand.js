@@ -79,7 +79,7 @@ module.exports = class TestCommand extends CommandUtils {
             }
 
             return message.channel.send(new ClientEmbed(user)
-                .setDescription(t(`${ERR_USAGE}`, { permission: ClientNeedPerm.perms.map(perm => `**"${perm}"**`).join(", ") }))
+                .setDescription(t(ERR_USAGE, { permission: ClientNeedPerm.perms.map(perm => `**"${perm}"**`).join(", ") }))
                 .setColor(process.env.ERROR_COLOR));
         } else {
             return true;
@@ -101,7 +101,7 @@ module.exports = class TestCommand extends CommandUtils {
                 ERR_USAGE = 'errors:missingOnePermission'
             }
             return message.channel.send(new ClientEmbed(user)
-                .setDescription(t(`${ERR_USAGE}`, { permission: UserNeedPerm.perms.map(perm => `**"${perm}"**`).join(", ") }))
+                .setDescription(t(ERR_USAGE, { permission: UserNeedPerm.perms.map(perm => `**"${perm}"**`).join(", ") }))
                 .setColor(process.env.ERROR_COLOR));
         } else {
             return true;

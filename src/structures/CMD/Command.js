@@ -1,5 +1,6 @@
 const ErrorCommand = require("./ErrorCommand.js");
 const TestCommand = require("./TestCommand.js");
+const ClientEmbed = require("../ClientEmbed.js");
 
 module.exports = class Command extends TestCommand {
     constructor(client, options, subcommand = false) {
@@ -13,7 +14,10 @@ module.exports = class Command extends TestCommand {
         this.aliases = options.aliases || []
         this.Permissions = options.Permissions || ["SEND_MESSAGES"]
         this.UserPermissions = options.UserPermissions || []
-        this.subcommand = subcommand
+        this.subcommand = subcommand,
+        this.aliases = options.aliases || []
+        this.djRoleNeed = options.roleDj != undefined ? options.roleDj : false
+        this.managerNeed = options.managerPermission != undefined ? options.managerPermission : false
 
         if (subcommand) {
             this.referenceCommand = options.referenceCommand || this.client.Error('No command reference!');
@@ -42,5 +46,36 @@ module.exports = class Command extends TestCommand {
                 e
             )
         }
+    }
+    verifyVoice({t}, guild, channel, author, voiceChannel, playCommand = false) {
+        const embed = new ClientEmbed(author);
+        const guildQueue = this.client.music.module.queue.get(guild.id);
+
+        if (voiceChannel && playCommand && !guildQueue && !(voiceChannel.joinable && voiceChannel.speakable)) {
+            const err = voiceChannel.joinable ? t('errors:music.speak') : t('errors:music.conect');
+            channel.send(embed
+                .setTitle(t('errors:music.title',{err}))
+                .setColor(process.env.ERR_COLOR)
+            )
+            return false;
+        }
+        if (!voiceChannel) {
+            let response = 'errors:music.enter'
+            if (guildQueue) response = 'errors:music.comein'
+            channel.send(embed
+                .setTitle(t(response))
+                .setColor(process.env.ERR_COLOR)
+            )
+            return false;
+        } else if (guildQueue) {
+            if (guildQueue.voiceChannel.id !== voiceChannel.id) {
+                channel.send(embed
+                    .setTitle(t('errors:music.comein'))
+                    .setColor(process.env.ERR_COLOR)
+                )
+                return false;
+            }
+        }
+        return true;
     }
 }

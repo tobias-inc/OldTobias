@@ -1,5 +1,5 @@
 {
-    "Arrancada":{
+    "Arrancada": {
         "noUser": "**¡No mencionaste al usuario con el que quieres correr!**",
         "makes": "El usuario {{author}} realizó {{action}} metros 🏎 ...........",
         "draw": "Sucedió un mejor empate técnico para resolver otra disputa?",

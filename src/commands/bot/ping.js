@@ -8,7 +8,7 @@ class Ping extends Command {
             usage: { args: true, argsNeed: false },
             category: "Bot",
             cooldown: 3000,
-            aliases: ["p","P"],
+            aliases: ["pi"],
             Permissions: [],
             UserPermissions: [],
             devNeed: false,

@@ -25,6 +25,11 @@ class Vip extends Command {
     }
 
     async run({ message, args, author, channel, guild, language, prefix }, t) {
+        const subcommand = args[0] && this.client.commands.subcommands.get(this.category).find(
+            cmd => cmd.name.toLowerCase() === args[0].toLowerCase() || cmd.aliases.includes(args[0].toLowerCase())
+        )
+        if (subcommand) return subcommand.run(author, channel, t);
+
         moment.locale(language);
         const user = (await this.GetUser(args, message, guild, author, true));
         await this.client.database.users.verificar(user.id) || await this.client.database.users.add({ _id: user.id });
@@ -46,8 +51,7 @@ class Vip extends Command {
             , `**\`${moment.duration(vipHours, 'milliseconds').format('hh:mm:ss', { stopTrim: 'm' })}\`**`);
         else embed.addField(t('comandos:vip.getActiveInfo.ctx'), t('comandos:vip.getActiveInfo.type'
             , {
-                vote: await this.client.utils.get('links', 'vote').then(({ redirect }) => { return redirect.replace('{{userID}}', this.client.user.id) }),
-                vote1: await this.client.utils.get('links', 'vote1').then(({ redirect }) => { return redirect.replace('{{userID}}', this.client.user.id) })
+                vote: await this.client.utils.get('links', 'vote').then(({ redirect }) => { return redirect.replace('{{userID}}', this.client.user.id) })
             }));
         return channel.send(embed
             .setTitle(`${Emojis.Vip} | ${t('comandos:vip.infoTitle', { user: user.username })}`, { user: user.tag })

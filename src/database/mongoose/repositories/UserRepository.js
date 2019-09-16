@@ -10,10 +10,7 @@ module.exports = class GuildRepository extends MongoRepository {
         return {
             usedCommands: 0,
             blacklist: false,
-            vip: {
-                active: false,
-                notifier: false
-            },
+            coins: 0,
             ...(super.parse(entity) || {})
         }
     }

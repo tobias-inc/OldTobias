@@ -19,26 +19,31 @@ class Wheater extends Command {
         });
     }
 
-    async run({ author, channel, args, client }, t, { displayAvatarURL } = this.client.user) {
-        weather.find({ search: args[0], degreeType: 'C', lang: 'pt-BR' }, function (err, result) {
+    async run({ channel, args, client , guild}, t, { displayAvatarURL } = this.client.user) {
+
+            if (!args[0]) return channel.send(t("errors:noArgs"));
+
+            let servidorlokão = await this.client.database.guilds.get(guild.id);
+
+        weather.find({ search: args.join(' '), degreeType: 'C', lang: servidorlokão.language }, function (err, result) {
+
+            if (err === undefined) return channel.send(t("errors:404"));
 
             var curent = result[0].current;
             var location = result[0].location;
-
-            if (err) return channel.send(t("errors:noArgs"));
-            if (result.length = 0) return channel.send(t("errors:404"));
 
             const EMBED = new ClientEmbed(client)
                 .setAuthor(client.user.username, displayAvatarURL)
                 .setThumbnail(curent.imageUrl);
 
+            
             return channel.send(EMBED
-                .setDescription(t('clientMessages:Weather.description', { place: curent.name }))
+                .setDescription(t('clientMessages:Weather.description', { place: curent.observationpoint }))
                 .addField(t('clientMessages:Weather.timezone'), `UTC${location.timezone}`, true)
                 .addField(t('clientMessages:Weather.currenttemp'), `${curent.temperature} ºC`, true)
                 .addField(t('clientMessages:Weather.feelslike'), `${curent.feelslike}ºC `, false)
                 .addField(t('clientMessages:Weather.wind'), curent.winddisplay, true)
-                .addField(t('clientMessages:Weather.humidity'), curent.humidity, true)
+                .addField(t('clientMessages:Weather.humidity'), `${curent.humidity}%`, true)
                 .addField(t('clientMessages:Weather.day'), curent.day, true)
             )
         })

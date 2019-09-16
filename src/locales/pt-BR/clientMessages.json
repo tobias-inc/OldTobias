@@ -1,4 +1,9 @@
 {
+    "Coins": {
+     "description": "Exibindo a quantidade de (Moedas) que o usuario {{user}} possui",
+     "field": "{{user}} possui atualmente "
+    },
+    "Daily": "Você recebeu {{money}} (Moedas) hoje use o comando novamente amanha para receber mais",
     "Arrancada":{
         "noUser": "**Você não mencionou o usuario com quem você deseja correr!**",
         "makes": "O usuario {{author}} fez {{action}} metros 🏎 ...........",
@@ -17,7 +22,7 @@
         "muteAuthor": "Mutado por"
     },
     "Weather": {
-        "description": "Informaçoes de {{place}}",
+        "description": "Informaçoes de **{{place}}**",
         "timezone": "Fuso Horário",
         "currenttemp": "Temperatura",
         "feelslike": "Sensacão termica",

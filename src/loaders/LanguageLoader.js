@@ -15,7 +15,8 @@ module.exports = class ClientLanguage {
                     {
                         aliase: [
                             "--help",
-                            "--ajuda"
+                            "--ajuda",
+                            "--ayuda"
                         ],
                         help: true
                     },
@@ -32,7 +33,7 @@ module.exports = class ClientLanguage {
             .then(() => this.client.LOG('i18next initialized', 'LanguageSystem'));
     }
 
-    async LoaderLanguage(dirPath = 'src/locales', rootDir = 'pt-BR') {
+    async LoaderLanguage(dirPath = 'src/locales', rootDir = process.env.LANG_ROOT) {
         const files = await readdirSync(dirPath + '/' + rootDir);
         const preloads = await readdirSync(dirPath);
         for (const file of files) this.client.language.options.files.push(file);

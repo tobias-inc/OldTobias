@@ -2,7 +2,7 @@
     "verify": true,
     "type": 0,
     "url": "https://www.twitch.tv/null",
-    "status": "online",
+    "status": "streaming",
     "txt": "@{{user}} help",
     "rich": []
 }

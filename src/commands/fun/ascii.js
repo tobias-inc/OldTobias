@@ -1,5 +1,4 @@
 const {
-    Discord = require("discord.js"),
     figlet = require('figlet'),
     Command, Emojis
 } = require("../../");
@@ -9,7 +8,7 @@ class Ascii extends Command {
         super(client, {
             name: "ascii",
             description: "Forma um texto no padrão ascii",
-            usage: { args: true, argsNeed: true, argsTxt: "<text>", need: "{prefix} {cmd} {args}" },
+            usage: { args: true, argsNeed: false, argsTxt: "<text>", need: "{prefix} {cmd} {args}" },
             category: "Fun",
             cooldown: 3000,
             aliases: ["asci"],
@@ -20,7 +19,7 @@ class Ascii extends Command {
         });
     }
 
-    async run({ message, args, channel}, t, ) {
+    async run({ message, args, channel}, t) {
 
         let argsJunto = message.content.split(" ").slice(1).join(' ')
           var maxLen = 13    
@@ -28,10 +27,11 @@ class Ascii extends Command {
           if(message.content === ".I."|| ".i.")return;
           if(argsJunto.length > maxLen) return channel.send(`${Emojis.Errado} |` + t('comandos:ascii.maxLen'))      
           if(!args[0])  return channel.send(`${Emojis.Errado} |` + t('comandos:ascii.noArgs')) 
-         
+
           figlet(`${argsJunto}`, function(err, data) {
               channel.send(`${data}`, {code: 'AsciiArt'});
-        });
+          
+        })
     }
 }
 module.exports = Ascii;

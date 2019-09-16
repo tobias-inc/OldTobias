@@ -1,9 +1,10 @@
 {
     "CommandError": {
         "description": "Se ha producido un error - Intente ejecutar el comando de nuevo!\nSi el error persiste, envíe un ** report **:\nUso ***`{{prefix}} bugreport`***, o entre en mi ** [servidor de soporte]({{support}})** y reporte el bug!",
+        "description1": "Se ha producido un error - Intente ejecutar el comando de nuevo!",
         "footer": "Recuerdos, equipo del Tobias de Chapéu Bot"
     },
-    "play":{
+    "play": {
         "notfound": "¡No pude encontrar ningún resultado para la canción insertada!",
         "noArgs": "¡Ingrese el **enlace** o **nombre** de la canción deseada! (Youtube)"
     },

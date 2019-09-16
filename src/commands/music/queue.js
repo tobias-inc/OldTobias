@@ -1,6 +1,6 @@
 const {
     Util = require('discord.js'),
-    Command, ClientEmbed
+    Command, ClientEmbed,Emojis
 } = require("../..");
 
 class Queue extends Command {
@@ -28,7 +28,7 @@ class Queue extends Command {
                 .setTitle(t('clientMessages:Queue.title'),{NAME:guild.name})
                 .setDescription(
                     [`🎵` + t('clientMessages:Queue.time')`**\[${guildQueue.queueFullDuration}]\`**`,
-                    `<a:wait:585264392711438344> Loop: **\`${guildQueue.loop ?  t('clientMessages:Loop.active') : t('clientMessages:Loop.desactivated')}\`**`,
+                    `${Emojis.Loading} Loop: **\`${guildQueue.loop ?  t('clientMessages:Loop.active') : t('clientMessages:Loop.desactivated')}\`**`,
                     `▶ Atual: **\`[${guildQueue.nowDuration}/${guildQueue.songPlaying.durationContent}]\`** - **[${guildQueue.songPlaying.name}](${guildQueue.songPlaying.url})**`,
                     '\n🎶' + t('clientMessages:Queue.songlist') + (!guildQueue.songs.length
                         ? t('clientMessages:Jump.noMusic')
