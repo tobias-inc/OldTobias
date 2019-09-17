@@ -64,7 +64,7 @@ class MaintenceCommand extends Command {
                     )
                     if (subcommand) return subcommand.run(settings, t, option)
                 }
-                return channel.send(EMBED
+                return channel.send(embed
                     .setDescription(`${Emojis.Errado} **${author.username}**, ${t(`comandos:maintencecmd.noCommand`)}`)
                     .setColor(process.env.ERROR_COLOR)
                 )
