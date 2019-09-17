@@ -28,6 +28,9 @@ class UserInfo extends Command {
 
     async run({ message, channel, guild, author, args, language }, t, { displayAvatarURL } = this.client.user) {
         const USER = (await this.GetUser(args, message, guild, author, true));
+        await this.client.database.users.verificar(USER.id) || await this.client.database.users.add({ _id: USER.id });
+        const user = await this.client.database.users.findOne(USER.id)
+
         const EMBED = new ClientEmbed(author)
             .setAuthor(this.client.user.username, displayAvatarURL)
             .setThumbnail(USER.avatarURL ? USER.avatarURL : displayAvatarURL);
@@ -39,7 +42,7 @@ class UserInfo extends Command {
         if(USER.presence.status === "streaming") Status = Emojis.Streaming
 
         return channel.send(EMBED
-            .addField(t('clientMessages:userinfo.name'), USER.tag, true)
+            .addField(t('clientMessages:userinfo.name'),  `[**${USER.tag}**](${user.contributor.redirect })` ? `[**${USER.tag}**](${user.contributor.redirect })` : USER.tag , true)
             .addField(t('clientMessages:userinfo.nickname.ctx'), (!!guild.member(USER.id).nickname ? guild.member(USER.id).nickname : t('clientMessages:userinfo.nickname.none')), true)
             .addField(t('clientMessages:userinfo.id'), USER.id, false)
             .addField(t('clientMessages:userinfo.createdAt'), (await this.Time(USER.createdAt, language)), false)
@@ -107,5 +110,4 @@ class UserInfo extends Command {
         return moment(ms).format('LLLL');
     }
 }
-
 module.exports = UserInfo;

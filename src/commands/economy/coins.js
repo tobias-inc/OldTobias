@@ -4,7 +4,7 @@ class Coins extends Command {
     constructor(client) {
         super(client, {
             name: "coins",
-            description: "Mostra os créditos ",
+            description: "Mostra a quantidade de Biscoitos Tobias que você tem",
             usage: { args: false, argsNeed: false},
             category: "Economy",
             cooldown: 3000,

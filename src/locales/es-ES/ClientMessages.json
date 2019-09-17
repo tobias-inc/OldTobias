@@ -276,24 +276,33 @@
             "usages": "Usos",
             "aliases": {
                 "ctx": "Alternativas",
-                "none": "Ninguno"
+                "none": "No definido"
             },
             "description": {
                 "ctx": "Descripción",
-                "none": "Ninguno"
+                "none": "No definido"
+            },
+            "usage": {
+                "ctx": "Uso",
+                "none": "No definido"
             },
             "mePerms": {
                 "ctx": "Mis permisos",
-                "none": "Ninguno"
+                "none": "No definido"
             },
             "userPerms": {
                 "ctx": "Permisos de usuario",
-                "none": "Ninguno"
+                "none": "No definido"
             },
             "needGuild": {
                 "ctx": "Responde DM",
                 "true": "No",
                 "false": "Si"
+            },
+            "subcommands": {
+                "ctx": "SubComandos",
+                "none": "Ninguno",
+                "usage": "¡Uso `{{prefix}} {{name}} [subcommand]` para saber mas!"
             }
         }
     },

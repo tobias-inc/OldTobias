@@ -1,9 +1,9 @@
 {
     "Coins": {
-     "description": "Exibindo a quantidade de (Moedas) que o usuario {{user}} possui",
+     "description": "Exibindo a quantidade de Biscoitos Tobias que o usuario {{user}} possui",
      "field": "{{user}} possui atualmente "
     },
-    "Daily": "Você recebeu {{money}} (Moedas) hoje use o comando novamente amanha para receber mais",
+    "Daily": "Você recebeu {{money}} Biscoitos Tobias hoje use o comando novamente amanha para receber mais",
     "Arrancada":{
         "noUser": "**Você não mencionou o usuario com quem você deseja correr!**",
         "makes": "O usuario {{author}} fez {{action}} metros 🏎 ...........",
@@ -287,6 +287,10 @@
                 "ctx": "Descrição",
                 "none": "Nenhuma"
             },
+            "usage": {
+                "ctx": "Utilização",
+                "none": "Não Definido"
+            },
             "mePerms": {
                 "ctx": "Minhas Permissões",
                 "none": "Nenhuma"
@@ -299,6 +303,11 @@
                 "ctx": "Responde DM",
                 "true": "Não",
                 "false": "Sim"
+            },
+            "subcommands": {
+                "ctx": "SubComandos",
+                "none": "Nenhum",
+                "usage": "Utilize `{{prefix}} {{name}} [subcommand]` para saber mais!"
             }
         }
     },

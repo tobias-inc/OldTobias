@@ -283,6 +283,10 @@
                 "ctx": "Description",
                 "none": "None"
             },
+            "usage": {
+                "ctx": "Utilization",
+                "none": "doesn't defined"
+            },
             "mePerms": {
                 "ctx": "My Permissions",
                 "none": "None"
@@ -295,6 +299,11 @@
                 "ctx": "Reply DM",
                 "true": "No",
                 "false": "Yes"
+            },
+            "subcommands": {
+                "ctx": "SubCommands",
+                "none": "None",
+                "usage": "Use `{{prefix}} {{name}} [subcommand]` for know more!"
             }
         }
     },

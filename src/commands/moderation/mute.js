@@ -8,7 +8,7 @@ class Mute extends Command {
 	constructor(client) {
 		super(client, {
 			name: "Mute",
-			description: "Muta alguém",
+			description: "Silencia um membro",
 			usage: { args: true, argsNeed: true, argsTxt: "<USER>", need: "{prefix} {cmd} {args}" },
 			category: "Moderation",
 			cooldown: 3000,

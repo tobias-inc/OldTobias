@@ -8,7 +8,7 @@ class ServerIcon extends Command {
     constructor(client) {
         super(client, {
             name: "ServerIcon",
-            description: "Icone de um servidor",
+            description: "Mostra o icone de um servidor",
             usage: { args: false, argsNeed: false },
             category: "Information",
             cooldown: 3000,

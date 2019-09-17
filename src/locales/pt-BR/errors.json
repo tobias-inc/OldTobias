@@ -19,6 +19,7 @@
     "404": "Não foi possivel encontrar resultados para sua pesquisa",
     "noParameter": "Parametro não encontrado",
     "noArgs": "você precisa escrever algo para **prosseguir**!",
+    "noLink": "você deve inserir um **link** para prosseguir !",
     "noClientDeveloper": "você precisa ser um desenvolvedor do **bot** para utilizar esse **comando**",
     "noClientOwner": "desculpe, você precisa ser um de meus donos para utilizar esse **comando**",
     "noVipActive": "desculpe esse comando é so pra quem tem acesso **vip**!",

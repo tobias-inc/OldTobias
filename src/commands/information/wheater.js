@@ -7,7 +7,7 @@ class Wheater extends Command {
     constructor(client) {
         super(client, {
             name: "weather",
-            description: "Informações climaticas sobre um lugar",
+            description: "Mostra as informações climaticas sobre um lugar",
             usage: { args: true, argsNeed: false, argsTxt: "place", need: "{prefix} {cmd} {args}" },
             category: "Information",
             cooldown: 3000,

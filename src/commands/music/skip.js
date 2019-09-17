@@ -7,7 +7,7 @@ class Skip extends Command {
     constructor(client) {
         super(client, {
             name: "Skip",
-            description: "Pula uma musica",
+            description: "Pula a musica atual",
             usage: { args: true, argsNeed: true, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",
             cooldown: 3000,

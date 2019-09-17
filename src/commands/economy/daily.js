@@ -4,7 +4,7 @@ class Daily extends Command {
     constructor(client) {
         super(client, {
             name: "daily",
-            description: "Dá os creditos diarios",
+            description: "Te dá os Biscoitos Tobias diarios.",
             usage: { args: false, argsNeed: false},
             category: "Economy",
             cooldown: 3000,

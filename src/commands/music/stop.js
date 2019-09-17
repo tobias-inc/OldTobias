@@ -39,5 +39,3 @@ class Stop extends Command {
     }
 }
 module.exports = Stop;
-//sortuso@gmail.com:160488so
-//nikkielizabeth115@gmail.com:merlyn11
