@@ -7,7 +7,7 @@ const {
 class Unban extends Command {
     constructor(client) {
         super(client, {
-            name: "Unban",
+            name: "unban",
             description: "Desbane um membro",
             usage: { args: true, argsNeed: true, argsTxt: "<User [id, mention, name]>", need: "{prefix} {cmd} {args}" },
             category: "Moderation",

@@ -6,7 +6,7 @@ const {
 class Queue extends Command {
     constructor(client) {
         super(client, {
-            name: "Queue",
+            name: "queue",
             description: "Mostra a lista de musicas",
             usage: { args: true, argsNeed: true, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",

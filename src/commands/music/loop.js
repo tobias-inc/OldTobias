@@ -6,7 +6,7 @@ const {
 class Loop extends Command {
     constructor(client) {
         super(client, {
-            name: "Loop",
+            name: "loop",
             description: "Repete a musica",
             usage: { args: true, argsNeed: false, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",

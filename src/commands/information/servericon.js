@@ -7,7 +7,7 @@ const {
 class ServerIcon extends Command {
     constructor(client) {
         super(client, {
-            name: "ServerIcon",
+            name: "serverIcon",
             description: "Mostra o icone de um servidor",
             usage: { args: false, argsNeed: false },
             category: "Information",

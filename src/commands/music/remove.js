@@ -6,7 +6,7 @@ const {
 class Remove extends Command {
     constructor(client) {
         super(client, {
-            name: "Remove",
+            name: "remove",
             description: "Remove uma musica",
             usage: { args: true, argsNeed: true, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",

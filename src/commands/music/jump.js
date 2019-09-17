@@ -6,7 +6,7 @@ const {
 class Jump extends Command {
     constructor(client) {
         super(client, {
-            name: "Jump",
+            name: "jump",
             description: "Pula para uma determinada musica",
             usage: { args: true, argsNeed: true, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",

@@ -6,7 +6,7 @@ const {
 class Volume extends Command {
     constructor(client) {
         super(client, {
-            name: "Volume",
+            name: "volume",
             description: "Seta o volume das musicas",
             usage: { args: true, argsNeed: true, argsTxt: "<Music [volume]>", need: "{prefix} {cmd} {args}" },
             category: "Music",

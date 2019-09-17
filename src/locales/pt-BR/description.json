@@ -10,7 +10,7 @@
     "reset": "Reseta a queue.",
     "search" : "Procura as informações de uma musica.",
     "skip": "Pula a musica atual.",
-    "stop": "Para completamente uma musica.",
+    "stop": "Para completamente a queue.",
     "volume": "Seta o volume das musicas.",
     "servericon": "Mostra o icone de um servidor.",
     "calc": "Realiza uma operação aritmetrica.",

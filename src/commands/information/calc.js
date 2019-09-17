@@ -7,7 +7,7 @@ const {
 class Calc extends Command {
     constructor(client) {
         super(client, {
-            name: "Calc",
+            name: "calc",
             description: "Realiza uma operação aritmetrica",
             usage: { args: true, argsNeed: false, argsTxt: "<user>", need: "{prefix} {cmd} {args}" },
             category: "Information",

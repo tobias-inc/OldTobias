@@ -28,7 +28,7 @@ const {
 class Search extends Command {
     constructor(client) {
         super(client, {
-            name: "Search",
+            name: "search",
             description: "Procura as informações de uma musica",
             usage: { args: true, argsNeed: true, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",

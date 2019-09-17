@@ -6,7 +6,7 @@ const {
 class Clear extends Command {
     constructor(client) {
         super(client, {
-            name: "Clear",
+            name: "clear",
             description: "limpa a queue",
             usage: { args: true, argsNeed: false, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",

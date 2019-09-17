@@ -6,7 +6,7 @@ const {
 class NowPlaying extends Command {
     constructor(client) {
         super(client, {
-            name: "NowPlaying",
+            name: "nowplaying",
             description: "Mostra a musica que está sendo tocada",
             usage: { args: true, argsNeed: false, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",

@@ -6,7 +6,7 @@ const {
 class Reset extends Command {
     constructor(client) {
         super(client, {
-            name: "Reset",
+            name: "reset",
             description: "Reseta a queue",
             usage: { args: true, argsNeed: true, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",

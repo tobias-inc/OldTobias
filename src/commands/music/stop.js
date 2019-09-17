@@ -6,8 +6,8 @@ const {
 class Stop extends Command {
     constructor(client) {
         super(client, {
-            name: "Stop",
-            description: "Para completamente uma musica",
+            name: "stop",
+            description: "Para completamente a queue",
             usage: { args: true, argsNeed: false, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",
             cooldown: 3000,
