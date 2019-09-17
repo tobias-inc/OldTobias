@@ -27,7 +27,7 @@ class Queue extends Command {
             return channel.send(embed
                 .setTitle(t('clientMessages:Queue.title'),{NAME:guild.name})
                 .setDescription(
-                    [`🎵` + t('clientMessages:Queue.time')`**\[${guildQueue.queueFullDuration}]\`**`,
+                    [`🎵 ${t('clientMessages:Queue.time')}**\[${guildQueue.queueFullDuration}]\`**`,
                     `${Emojis.Loading} Loop: **\`${guildQueue.loop ?  t('clientMessages:Loop.active') : t('clientMessages:Loop.desactivated')}\`**`,
                     `▶ Atual: **\`[${guildQueue.nowDuration}/${guildQueue.songPlaying.durationContent}]\`** - **[${guildQueue.songPlaying.name}](${guildQueue.songPlaying.url})**`,
                     '\n🎶' + t('clientMessages:Queue.songlist') + (!guildQueue.songs.length
