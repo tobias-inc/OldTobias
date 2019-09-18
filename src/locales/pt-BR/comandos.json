@@ -1,4 +1,9 @@
 {
+    "pat": {
+        "patyourself": "Você não pode acariciar a você mesmo... Há algo de errado?",
+        "noArgs": "Você precisa mencionar alguém para dar um cafuné",
+        "Client": "Mano tu quer uma mordida?"
+    },
     "Servericon": "O servidor {{guild}} **não possui** um icone",
     "Ping": "Meu ping atual é **{{Ping}}**",
     "dell": {

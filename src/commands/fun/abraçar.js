@@ -38,30 +38,11 @@ class Abraçar extends Command {
         if (USER === message.author) return channel.send(`${Emojis.Triste} | ${t(`comandos:abraçar.hugyourself`)} `);
         if (USER === this.client.user) return channel.send(`${Emojis.Triste} | ${t(`comandos:abraçar.Client`)}`)
 
-        let hm = await channel.send(EMBED
-            .setDescription(`${Emojis.Love} | ${message.author} ${t(`clientMessages:Abracar.huged`)} ${USER}`)
+        await channel.send(EMBED
+            .setDescription(`${Emojis.Love} | ${message.author} ${t(`clientMessages:Abracar`)} ${USER}`)
             .setImage(body.url)
             .setColor(process.env.COLOR_EMBED)
         )
-        
-        const emojis = [`${Emojis.Again}`];
-        for (const i in emojis) {
-            await hm.react(emojis[i])
-        }
-        const filter = (reaction) => [Emojis.Again].includes(reaction.emoji.id);
-        const collector = hm.createReactionCollector(filter, { time: 90000 })
-        collector.on("collect", r => {
-            switch (r.emoji.id) {
-                case `${Emojis.Again}`:
-                    channel.send(EMBED
-                        .setDescription(`${Emojis.Love} | ${USER} ${t(`clientMessages:Abracar.huged`)} ${message.author}`)
-                        .setImage(body.url)
-                        .setColor(process.env.COLOR_EMBED)
-                    )
-                    break;
-            }
-        })
-        
     }
 }
 module.exports = Abraçar;

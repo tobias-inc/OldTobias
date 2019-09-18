@@ -1,4 +1,5 @@
 {
+    "Pat": "fez um cafuné em ",
     "Coins": {
      "description": "Exibindo a quantidade de Biscoitos Tobias que o usuario {{user}} possui",
      "field": "{{user}} possui atualmente "
@@ -131,15 +132,9 @@
         "reason": "Motivo da punição",
         "noReason": "Sem motivo "
     },
-    "Tapa": {
-        "slaped": "Deu um tapa em"
-    },
-    "Abracar": {
-        "huged": "Abraçou"
-    },
-    "Kiss": {
-        "kissed": "Beijou"
-    },
+    "Tapa": "Deu um tapa em",
+    "Abracar":  "Abraçou",
+    "Kiss": "Beijou",
     "botinfo": {
         "usedCommands": "Total de Comandos Usados",
         "sharedServers": {

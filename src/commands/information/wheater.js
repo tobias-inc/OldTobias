@@ -19,7 +19,7 @@ class Wheater extends Command {
         });
     }
 
-    async run({ channel, args, client , guild}, t, { displayAvatarURL } = this.client.user) {
+    async run({ channel, args, client , guild, author}, t, { displayAvatarURL } = this.client.user) {
 
             if (!args[0]) return channel.send(t("errors:noArgs"));
 
@@ -32,7 +32,7 @@ class Wheater extends Command {
             var curent = result[0].current;
             var location = result[0].location;
 
-            const EMBED = new ClientEmbed(client)
+            const EMBED = new ClientEmbed(author)
                 .setAuthor(client.user.username, displayAvatarURL)
                 .setThumbnail(curent.imageUrl);
 
