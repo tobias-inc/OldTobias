@@ -35,8 +35,8 @@ class Beijar extends Command {
             )
         };
 
-        if (USER === message.author) return channel.send(`${Emojis.Triste} | ${t(`comandos:kiss.kissyourself`)} `);
-        if (USER === this.client.user) return channel.send(`${Emojis.Triste} | ${t(`comandos:kiss.Client`, { USER: USER })}`)
+        if (USER === message.author) return channel.send(`${Emojis.Triste} | ${t(`comandos:kiss.kissyourself`,{ USER: message.author })} `);
+        if (USER === this.client.user) return channel.send(`${Emojis.Triste} | ${t(`comandos:kiss.Client`, { USER: message.author })}`)
 
         return channel.send(EMBED
             .setDescription(`${Emojis.Love} | ${message.author} ${t(`clientMessages:Kiss.kissed`)} ${USER}`)

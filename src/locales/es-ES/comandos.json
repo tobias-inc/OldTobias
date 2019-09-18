@@ -1,45 +1,46 @@
 {
-    "Servericon": "O servidor {{guild}} **não possui** um icone",
-    "Ping": "Meu ping atual é **{{Ping}}**",
+    "pat": {
+        "patyourself": "No podías acariciarte a ti mismo ... ¿Pasa algo?",
+        "noArgs": "Necesitas mencionar a alguien para tener un proxeneta",
+        "Client": "Hermano, ¿quieres un bocado?"
+    },
+    "Servericon": "El servidor {{guild}} **no tiene** un icono",
+    "Ping": "Mi ping actual es **{{Ping}}**",
     "dell": {
-        "noArgs": "Informe o número de mensagens para eu deletar. Forma correta: ``{{PARTS}} 10``",
-        "noNum": "Parece que você usou não são números. Forma correta: ``{{PARTS}} 10``",
-        "maxLen": "Você só pode apagar até 100 mensagens por vez"
+        "noArgs": "Ingrese la cantidad de mensajes que quiero eliminar. Forma correcta: ``{{PARTS}} 10``",
+        "noNum": "Parece que no usaste números. Forma correcta: ``{{PARTS}} 10``",
+        "maxLen": "Solo puede eliminar hasta ``100`` mensajes a la vez."
     },
-    "say": "Você precisa inserir argumentos para que eu possa replicar",
-    "ascii": {
-        "noArgs": "Você precisa inserir argumentos para que eu possa converter",
-        "maxLen": "Você excedeu o limite de caracteres ``26``"
-    },
+    "say": "Necesitas ingresar argumentos para que yo pueda replicar",
     "kick": {
-        "noUser": "Você precisa mencionar um usuario para chutar",
-        "Error": "Não foi possivel chutar {{USER}}... \n Você tem cargo maior que ele?",
-        "lucky": "{{AUTHOR}} desistiu de chutar {{USER}} que sorte não?"
+        "noUser": "Debes mencionar a un usuario para patear",
+        "Error": "Incapaz de patear {{USER}}... \n ¿Tienes una posición más alta que él?",
+        "lucky": "{{AUTHOR}} desistiu de chutar {{USER}} ¿Que suerte no?"
     },
     "unban": {
-        "noUser": "Você precisa mencionar um usuario para desbanir",
-        "Error": "Não foi possivel desbanir {{USER}}...",
-        "badluck": "{{AUTHOR}} desistiu de desbanir {{USER}} que azar não?"
+        "noUser": "Debes mencionar a un usuario para desbancar",
+        "Error": "Incapaz de deshacer {{USER}}...",
+        "badluck": "{{AUTHOR}} renunció a la disolución {{USER}} que azar não?"
     },
     "ban": {
-        "noUser": "Você precisa mencionar um usuario para banir",
-        "Error": "Não foi possivel banir {{USER}}... \n Você tem cargo maior que ele?",
-        "lucky": "{{AUTHOR}} desistiu de banir {{USER}} que sorte não?"
+        "noUser": "Debes mencionar a un usuario para prohibir",
+        "Error": "Incapaz de prohibir {{USER}}... \n ¿Tienes una posición más alta que él?",
+        "lucky": "{{AUTHOR}} desiriu de banir {{USER}}, ¿Que suerte no?"
     },
     "kiss": {
-        "kissyourself": "Você não pode se beijar",
-        "noArgs": "Você precisa mencionar alguém para beijar",
-        "Client": "Sái fora {{USER}} eu não quero te beijar"
+        "kissyourself": "Você não pode beijar",
+        "noArgs": "Necesitas mencionar a alguien para besar",
+        "Client": "Salga de {{USER}} No quiero besarte"
     },
     "tapa": {
-        "slapyourself": "Você não pode dar um tapa em você mesmo... Há algo de errado?",
-        "noArgs": "Você precisa mencionar alguém para dar um tapa",
-        "Client": "Oxi por que você quer me bater?"
+        "slapyourself": "No puedes abofetearte a ti mismo ... ¿Pasa algo malo?",
+        "noArgs": "Necesitas mencionar a alguien para abofetear",
+        "Client": "¿Por qué quieres pegarme {{USER}}?"
     },
     "abraçar": {
-        "hugyourself": "Você não pode se abraçar... Está tudo bem?",
+        "hugyourself": "No puedes abrazar ... ¿Está todo bien?",
         "noArgs": "Você precisa mencionar alguém para abraçar",
-        "Client": "Você não pode abraçar um bot... Está tudo bem?"
+        "Client": "No puedes abrazar a un bot {{USER}} ... ¿Está todo bien?"
     },
     "mentionBot": "Utilice **`{{prefix}} help`** para saber más!",
     "reloadlocales": {

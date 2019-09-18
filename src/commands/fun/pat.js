@@ -35,7 +35,7 @@ class pat extends Command {
             )
         };
 
-        if(USER === message.author) return channel.send(`${Emojis.Errado} | ${t(`comandos:pat.patyourself`)} `);
+        if(USER === message.author) return channel.send(`${Emojis.Errado} | ${t(`comandos:pat.patyourself`,{ USER: message.author })} `);
         if(USER === this.client.user) return channel.send(`${Emojis.Triste} | ${t(`comandos:pat.Client`)}`) 
 
         return channel.send(EMBED

@@ -35,8 +35,8 @@ class Abraçar extends Command {
             )
         };
 
-        if (USER === message.author) return channel.send(`${Emojis.Triste} | ${t(`comandos:abraçar.hugyourself`)} `);
-        if (USER === this.client.user) return channel.send(`${Emojis.Triste} | ${t(`comandos:abraçar.Client`)}`)
+        if (USER === message.author) return channel.send(`${Emojis.Triste} | ${t(`comandos:abraçar.hugyourself`,{ USER: message.author })} `);
+        if (USER === this.client.user) return channel.send(`${Emojis.Triste} | ${t(`comandos:abraçar.Client`,{ USER: message.author })}`)
 
         await channel.send(EMBED
             .setDescription(`${Emojis.Love} | ${message.author} ${t(`clientMessages:Abracar`)} ${USER}`)

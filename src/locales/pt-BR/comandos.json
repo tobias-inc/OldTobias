@@ -1,6 +1,6 @@
 {
     "pat": {
-        "patyourself": "Você não pode acariciar a você mesmo... Há algo de errado?",
+        "patyourself": "Você não pode acariciar a você mesmo ,{{USER}} ... Há algo de errado?",
         "noArgs": "Você precisa mencionar alguém para dar um cafuné",
         "Client": "Mano tu quer uma mordida?"
     },
@@ -32,19 +32,19 @@
         "lucky": "{{AUTHOR}} desistiu de banir {{USER}} que sorte não?"
     },
     "kiss": {
-        "kissyourself": "Você não pode se beijar",
+        "kissyourself": "Você não pode se beijar ,{{USER}}.",
         "noArgs": "Você precisa mencionar alguém para beijar",
         "Client": "Sái fora {{USER}} eu não quero te beijar"
     },
     "tapa": {
-        "slapyourself": "Você não pode dar um tapa em você mesmo... Há algo de errado?",
+        "slapyourself": "Você não pode dar um tapa em você mesmo , {{USER}} ... Há algo de errado?",
         "noArgs": "Você precisa mencionar alguém para dar um tapa",
-        "Client": "Oxi por que você quer me bater?"
+        "Client": "Oxi , {{USER}} ,por que você quer me bater?"
     },
     "abraçar": {
-        "hugyourself": "Você não pode se abraçar... Está tudo bem?",
+        "hugyourself": "Você não pode se abraçar ,{{USER}} ... Está tudo bem?",
         "noArgs": "Você precisa mencionar alguém para abraçar",
-        "Client": "Você não pode abraçar um bot... Está tudo bem?"
+        "Client": "Você não pode abraçar um bot, {{USER}} ,... Está tudo bem?"
     },
     "mentionBot": "utilize **`{{prefix}} help`** para saber mais!",
     "reloadlocales": {
@@ -167,6 +167,5 @@
         "error": "**Questão invalida** \n Use + para somar\n - para subtrair\n * para multiplicar \n / para dividir",
         "answer": "**Resposta:**",
         "question": "**Questão:**"
-    },
-    "emojis": "Página {{page}} de {{total}}"
+    }
 }

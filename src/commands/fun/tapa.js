@@ -35,8 +35,8 @@ class Tapa extends Command {
             )
         };
 
-        if(USER === message.author) return channel.send(`${Emojis.Errado} | ${t(`comandos:tapa.slapyourself`)} `);
-        if(USER === this.client.user) return channel.send(`${Emojis.Puto} | ${t(`comandos:tapa.Client`)}`) 
+        if(USER === message.author) return channel.send(`${Emojis.Errado} | ${t(`comandos:tapa.slapyourself`,{ USER: message.author })} `);
+        if(USER === this.client.user) return channel.send(`${Emojis.Puto} | ${t(`comandos:tapa.Client`,{ USER: message.author })}`) 
 
         return channel.send(EMBED
         .setDescription(`${Emojis.Popcorn} | ${message.author} ${t(`clientMessages:Tapa`)} ${USER}`)

@@ -25,14 +25,14 @@ class Dell extends Command {
 
                     if (parts.length > 1 && parts.length < 3) {
                         if (isNaN(toDeleteCount) === false) {
-                            if(toDeleteCount < 100) {
+                            if(toDeleteCount <= 100) {
                                 channel.bulkDelete(toDeleteCount + 1, true)
                                 channel.send(`${Emojis.Popcorn} | ${t('clientMessages:Dell',{USER: author.tag, COUNT: toDeleteCount})}`).then(message => {
                                     setTimeout(() => {message.delete()}, 5000)
                                 })
     
                             } else {
-                                channel.send(`${Emojis.Errado} | ${t('comandos:dell.mazLen')}`).then(message => {
+                                channel.send(`${Emojis.Errado} | ${t('comandos:dell.maxLen')}`).then(message => {
                                     setTimeout(() => {message.delete()}, 5000)
                                 })
                             }
