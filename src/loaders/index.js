@@ -13,6 +13,5 @@ module.exports = {
     LoaderMusic: require("./LoaderMusic.js"),
     ApiLoader: require("./LoaderApis"),
 
-    DblWebhook: require("./DblWebhook.js"),
     DatabaseLoader: require("./DatabaseLoader")
 }

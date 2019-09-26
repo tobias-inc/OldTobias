@@ -8,7 +8,7 @@ class Help extends Command {
             usage: { args: true, argsNeed: false },
             category: "Bot",
             cooldown: 3000,
-            aliases: ["ajuda", "h"],
+            aliases: ["ajuda", "h","help-me"],
             Permissions: [],
             UserPermissions: [],
             devNeed: false,
@@ -17,6 +17,7 @@ class Help extends Command {
     }
 
     async run({ channel, author, args, prefix, language }, t, usage = this.name, numField = 0) {
+
         const embed = new ClientEmbed(author)
             .setAuthor(this.client.user.username, this.client.user.displayAvatarURL)
             .setThumbnail(this.client.user.displayAvatarURL);
@@ -28,22 +29,25 @@ class Help extends Command {
             ) : false
 
         if (command) return this.commandHelp(channel, embed, command, language, prefix, args, t);
-
+        console.log(command)
         const categories = this.client.commands.categories.filter(({ name, size }) => name !== 'developer' && size);
+        console.log("\n \n \n")
 
         while (categories.length > numField && numField <= 25) {
             const current = categories[numField];
             embed.addField(`${t(`utils:categories.${current.name}`)} **(${current.size})**`, (
                 this.client.commands.all.filter(
                     file => file.commandHelp.category.toLowerCase() === current.name.toLowerCase()
-                ).map(cmd => `\`${cmd.commandHelp.name}\``).join(', ')
+                ).map(cmd =>`\`${cmd.commandHelp.name}\``).join(', ')
             ), false);
             ++numField
+  
         }
 
         return channel.send(embed
             .setDescription(t('clientMessages:help.description', { prefix, usage }))
-        )
+        );
+        
     }
 
     async commandHelp(channel, embed, command, language, prefix, args, t) {

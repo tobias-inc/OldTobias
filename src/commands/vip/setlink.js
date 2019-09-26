@@ -9,7 +9,7 @@ class Link extends Command {
         super(client, {
             name: "setlink",
             description: "Adiciona um link ao seu perfil",
-            usage: { args: true, argsNeed: true, argsTxt: "<emoji [id, name]> [option]", need: "{prefix} {cmd} {args}", },
+            usage: { args: true, argsNeed: true, argsTxt: "<link>", need: "{prefix} {cmd} {args}", },
             category: "Vip",
             cooldown: 3000,
             aliases: [],
@@ -23,17 +23,23 @@ class Link extends Command {
 
     async run({ channel, message, author, args }, t ,{ displayAvatarURL } = this.client.user) {
 
-        const USER = message.author
-        const EMBED = new ClientEmbed(author)
-        if(!args)return channel.send(t("errors:noLink"))
+
+        let reg = /[(http(s)?):\/\/(www\.)?a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/ig
+        if(!reg.test(message.content)) return channel.send(t("errors:noLink"))
         const link = args[1]
+
+
+        const USER = message.author
+
+        const EMBED = new ClientEmbed(author)
         .setAuthor(this.client.user.username, displayAvatarURL)
 
             let user = await this.client.database.users.get(USER.id);
             await this.client.DatabaseUtils.setLink(user, link)
+        
                 return channel.send(EMBED
                     .setDescription(Emojis.Certo + t("clientMessages:SetLink.description", {user:USER.username}))
-                    .addField(t("clientMessages:SetLink.field",{ user:USER.username}),user.redirect)
+                    .addField(t("clientMessages:SetLink.field") ,user.contributor.redirect)
                     .setColor(process.env.COLOR_EMBED)
         )
     }

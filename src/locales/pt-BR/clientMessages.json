@@ -1,4 +1,8 @@
 {
+    "SetLink":{
+        "description": "O link do usuario **{{user}}** foi alterado com sucesso",
+        "field":  "Novo link:"
+    },
     "Pat": "fez um cafuné em ",
     "Coins": {
      "description": "Exibindo a quantidade de Biscoitos Tobias que o usuario {{user}} possui",
@@ -12,7 +16,6 @@
         "win": "Corridas de arrancada 🏎 \n Dessa vez o ganhador foi **{{ganhador}}** sorte ou habilidade?",
         "challenger": "Desafiante ",
         "challenged": "Desafiado "
-
     },
     "Mute": {
         "time": "Tempo de mute",
@@ -63,7 +66,7 @@
     "Queue": {
         "title": "Lista de Reprodução em {{NAME}}",
         "time": "Tempo estimado de Reprodução:",
-        "songlist": "Lista de Reprodução",
+        "songlist": "Lista de Reprodução ",
         "more": "\ne mais {{LEN}} musicas",
         "by": "adicionado por"
     },
@@ -89,7 +92,7 @@
         "np": "Tocando Agora",
         "channel": "Canal Postado",
         "published": "Data de Postagem",
-        "noArgs": "Por favor insira o **nome** ou o **número** da música que deseja obter!"
+        "noargs": "Por favor insira o **nome** ou o **número** da música que deseja obter!"
     },
     "Skip": "Não há nehuma música depois dessa!",
     "Stop": "A queue foi finalizada!",

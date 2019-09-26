@@ -9,7 +9,7 @@ class EmojiInfo extends Command {
         super(client, {
             name: "emojiinfo",
             description: "Informações sobre um emoji",
-            usage: { args: true, argsNeed: true, argsTxt: "<emoji [id, name]> [option]", need: "{prefix} {cmd} {args}", },
+            usage: { args: true, argsNeed: true, argsTxt: "<emoji [id, name]>", need: "{prefix} {cmd} {args}", },
             category: "Information",
             cooldown: 3000,
             aliases: ["emojii", "ei"],

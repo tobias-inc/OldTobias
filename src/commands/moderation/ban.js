@@ -21,7 +21,7 @@ class Ban extends Command {
     }
 
     async run({ message, channel, guild, author, args, language }, t, { displayAvatarURL } = this.client.user) {
-        const USER = (await this.GetUser(args, message, guild, true));
+        const USER = (await this.GetUser(args, message, guild));
         const REASON = args.slice(1).join(" ")
 
         if (message.member.highestRole.comparePositionTo(guild.member(USER).highestRole) < 0) {
@@ -36,11 +36,8 @@ class Ban extends Command {
         if (!USER) {
             return channel.send(`${Emojis.Errado} | ` + t('comandos:ban.noUser'));
         }
-        if (USER === true) {
-            return channel.send(`${Emojis.Errado} | ` + t('comandos:ban.noUser'));
-        }
 
-        channel.send(`${Emojis.Popcorn} | ` + t('clientMessages:ban.initialmessage', { USER: USER }))
+        channel.send(`${Emojis.Popcorn} | ` + t('clientMessages:ban.initialmessage', { USER: USER,REACTION:Emojis.reactions.okay }))
             .then(async (msg) => {
                 await msg.react(Emojis.reactions.okay)
                 await msg.react(Emojis.reactions.error)
@@ -50,11 +47,8 @@ class Ban extends Command {
 
                     switch (r.emoji.id) {
                         case Emojis.reactions.okay:
-
                             moment.locale(language)
-
-                            message.guild.member(USER).ban(REASON).catch(e => (t(`comandos:ban.Error`, { USER: USER }))).then(
-
+                            console.log(message.guild.member(USER).ban(REASON).catch(e => e))
                                 channel.send(EMBED
                                     .setDescription(`${Emojis.Puto} | ` + t('clientMessages:ban.description', { USER: USER, REACTION: Emojis.Certo }))
                                     .addField(`${Emojis.Love} |` + t('clientMessages:ban.banauthor'), message.author.username)
@@ -62,8 +56,10 @@ class Ban extends Command {
                                     .addField(`${Emojis.Popcorn} | ` + t('clientMessages:ban.punished'), USER.username)
                                     .addField(`${Emojis.Ehmolekkk} | ` + t('clientMessages:ban.reason'), REASON || t('clientMessages:ban.noReason'))
                                     .setColor(process.env.COLOR_EMBED)
-                                )
+                                ).then(message.guild.member(USER).ban(REASON).catch(e => (t(`comandos:ban.Error`, { USER: USER })
                             )
+                        )
+                    )
                             break;
                         case Emojis.reactions.error:
                             msg.delete().then(channel.send(t(`comandos:ban.lucky`, { USER: USER, AUTHOR: message.author })));

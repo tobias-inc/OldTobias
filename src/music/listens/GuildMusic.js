@@ -21,13 +21,12 @@ module.exports = class GuildMusic extends EventEmitter {
             this.deleteLastMessage();
             this.connection.disconnect();
             this.client.music.module.queue.delete(this.guild.id);
-            return this.client.emit('updatePresenceForMusic');
         });
         this.on('stop', async () => {
             if (this._queue.loop) return this._queue.songsBackup && this.restartPlayerForLoop();
             this.removeAllListeners();
             this.client.music.module.queue.delete(this.guild.id);
-            return this.client.emit('updatePresenceForMusic');
+            this.connection.disconnect();
         });
         this.on('errorInStream', (s, e) => {
             console.log(('StreamError in guild ' + `${this.guild.name}/-ID: ${this.guild.id}`), e.message);
@@ -53,7 +52,6 @@ module.exports = class GuildMusic extends EventEmitter {
         this._queue.songPlaying = song
 
         if (!this._queue.modifyVolume) this.dispatcher.setVolumeLogarithmic(1.2);
-        return this.client.emit('updatePresenceForMusic');
     }
 
     async goPlay(num) {

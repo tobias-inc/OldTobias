@@ -39,10 +39,10 @@ module.exports = class ReadyEvent extends Event {
         const guilds = await this.client.shard.broadcastEval('this.guilds.size').then(res => res.reduce((a, b) => a + b, 0));
 
         if (this.client.user.presence.game && !!this.client.user.presence.game.name.match(/servers+/gi) && !GC) {
-            text = `${users} Users`
+            text = ` 🧍 ${users} Users`
             this.client.RandomMatch.type = 0
         } else {
-            text = `🔆 ${guilds} Servers`
+            text = ` 🖥️ ${guilds} Servers`
             this.client.RandomMatch.type = 0
         }
 

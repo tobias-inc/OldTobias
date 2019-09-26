@@ -52,6 +52,11 @@ class Volume extends Command {
                     .setColor(process.env.ERROR_COLOR)
                 )
             }
+        } if(!trueResult) {
+            return channel.send(embed
+                .setTitle(t('errors:music.comein'))
+                .setColor(process.env.ERROR_COLOR)
+            )
         }
     }
 }

@@ -29,7 +29,7 @@ class Remove extends Command {
                 if (args[0]) {
                     let remove = Number(args[0]);
                     if (!(!isNaN(Number(args[0])))) return channel.send(embed
-                        .setTitle(t('clientMessages:Remove.insertnum', { LEN: guildQueue.songs.length }))
+                        .setTitle(t('clientMessages:Remove.insertnumb', { LEN: guildQueue.songs.length }))
                         .setColor(process.env.ERROR_COLOR)
                     );
                     remove = Math.round(remove);
@@ -39,11 +39,11 @@ class Remove extends Command {
                     );
                     let song = guildQueue.songs[remove - 1];
                     return channel.send(embed
-                        .setDescription(t('clientMessages:Remove.removed'), { song: `[${song.name}](${song.url})` })
+                        .setDescription(t('clientMessages:Remove.removed', { song: `[${song.name}](${song.url})` }))
                     ).then(() => guildQueue.removeOne(remove));
                 } else {
                     return channel.send(embed
-                        .setTitle(t('clientMessages:Remove.insertnumb'), { LEN: guildQueue.songs.length })
+                        .setTitle(t('clientMessages:Remove.insertnumb', { LEN: guildQueue.songs.length }))
                         .setColor(process.env.ERROR_COLOR)
                     )
                 }

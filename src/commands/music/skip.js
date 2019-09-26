@@ -11,7 +11,7 @@ class Skip extends Command {
             usage: { args: true, argsNeed: true, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",
             cooldown: 3000,
-            aliases: ["Pular"],
+            aliases: ["pular","s"],
             Permissions: [],
             UserPermissions: [],
             devNeed: false,

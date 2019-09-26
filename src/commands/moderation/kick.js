@@ -21,7 +21,7 @@ class Kick extends Command {
     }
 
     async run({ message, channel, guild, author, args, language }, t, { displayAvatarURL } = this.client.user) {
-        const USER = (await this.GetUser(args, message, guild, true));
+        const USER = (await this.GetUser(args, message, guild));
         const REASON = args.slice(1).join(" ")
         const EMBED = new ClientEmbed(author)
             .setAuthor(this.client.user.username, displayAvatarURL)
@@ -30,15 +30,12 @@ class Kick extends Command {
         if (!USER) {
             return channel.send(`${Emojis.Errado} | ` + t('comandos:ban.noUser'));
         }
-        if (USER === true){
-            return channel.send(`${Emojis.Errado} | ` + t('comandos:ban.noUser'));
-        }
         if(message.member.highestRole.comparePositionTo(guild.member(USER).highestRole) < 0) {
             channel.send(t(`comandos:Kick.Error`, { USER: USER }));
             return
         }
 
-        channel.send(`${Emojis.Popcorn} | ` + t('clientMessages:Kick.initialmessage', { USER: USER }))
+        channel.send(`${Emojis.Popcorn} | ` + t('clientMessages:Kick.initialmessage', { USER: USER, REACTION:Emojis.reactions.okay}))
             .then(async (msg) => {
                 await msg.react(Emojis.reactions.okay)
                 await msg.react(Emojis.reactions.error)

@@ -47,7 +47,7 @@ module.exports = class Command extends TestCommand {
             )
         }
     }
-    verifyVoice({t}, guild, channel, author, voiceChannel, playCommand = false) {
+    verifyVoice(t, guild, channel, author, voiceChannel, playCommand = false) {
         const embed = new ClientEmbed(author);
         const guildQueue = this.client.music.module.queue.get(guild.id);
 
@@ -55,7 +55,7 @@ module.exports = class Command extends TestCommand {
             const err = voiceChannel.joinable ? t('errors:music.speak') : t('errors:music.conect');
             channel.send(embed
                 .setTitle(t('errors:music.title',{err}))
-                .setColor(process.env.ERR_COLOR)
+                .setColor(process.env.ERROR_COLOR)
             )
             return false;
         }
@@ -64,18 +64,21 @@ module.exports = class Command extends TestCommand {
             if (guildQueue) response = 'errors:music.comein'
             channel.send(embed
                 .setTitle(t(response))
-                .setColor(process.env.ERR_COLOR)
+                .setColor(process.env.ERROR_COLOR)
             )
             return false;
         } else if (guildQueue) {
             if (guildQueue.voiceChannel.id !== voiceChannel.id) {
                 channel.send(embed
                     .setTitle(t('errors:music.comein'))
-                    .setColor(process.env.ERR_COLOR)
+                    .setColor(process.env.ERROR_COLOR)
                 )
                 return false;
             }
-        }
+        };
         return true;
     }
-}
+    coolDownAdd(author){
+
+    }
+};

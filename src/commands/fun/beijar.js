@@ -39,7 +39,7 @@ class Beijar extends Command {
         if (USER === this.client.user) return channel.send(`${Emojis.Triste} | ${t(`comandos:kiss.Client`, { USER: message.author })}`)
 
         return channel.send(EMBED
-            .setDescription(`${Emojis.Love} | ${message.author} ${t(`clientMessages:Kiss.kissed`)} ${USER}`)
+            .setDescription(`${Emojis.Love} | ${message.author} ${t(`clientMessages:Kiss`)} ${USER}`)
             .setImage(body.url)
             .setColor(process.env.COLOR_EMBED)
         )

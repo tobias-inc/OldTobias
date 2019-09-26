@@ -30,10 +30,10 @@ class arrancada extends Command {
         const EMBED = new ClientEmbed(author)
             .setAuthor(this.client.user.username, displayAvatarURL)
 
-        var winner;
+        let winner;
         if (corrida < corrida2) winner = user;
         if (corrida > corrida2) winner = message.author;
-        if (corrida = corrida2) return channel.send(t("clientMessages:Arrancada.draw"))
+        if (corrida === corrida2) return channel.send(t("clientMessages:Arrancada.draw"))
 
         return channel.send(EMBED
             .setTitle(t("clientMessages:Arrancada.win", { ganhador: winner.username }))

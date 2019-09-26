@@ -6,7 +6,7 @@ module.exports = new Schema({
     },
     language: {
         type: String,
-        default: 'pt-BR'
+        default: process.env.LANG_ROOT
     },
     prefix: {
         type: String,

@@ -37,7 +37,7 @@ module.exports = class BotListEvent extends VotesUtils {
         if (vipMethod) {
             const { method, settings, user, msg, send, t } = args[0];
             const embed = new ClientEmbed(this.client.user);
-            if (method == 'unvip') embed.setColor(process.env.RED_COLOR);
+            if (method == 'unvip') embed.setColor(process.env.ERROR_COLOR);
             const logTitle = method == 'unvip' ? 'Vip Retirado' : 'Vip Adicionado';
 
             if (send) {
@@ -50,7 +50,7 @@ module.exports = class BotListEvent extends VotesUtils {
                             })}`)
                             .setFooter(t('clientMessages:footer.team', { user: this.client.user.username }), this.client.user.displayAvatarURL)
                             .setAuthor(user.username, user.displayAvatarURL)
-                            .setColor(process.env.GREEN_COLOR)
+                            .setColor(process.env.COLOR_EMBED)
                         ).catch(() => { });
                         break;
                     case 'unvip':
@@ -60,7 +60,7 @@ module.exports = class BotListEvent extends VotesUtils {
                             })}`)
                             .setFooter(t('clientMessages:footer.team', { user: this.client.user.username }), this.client.user.displayAvatarURL)
                             .setAuthor(user.username, user.displayAvatarURL)
-                            .setColor(process.env.RED_COLOR)
+                            .setColor(process.env.ERROR_COLOR)
                         ).catch(() => { });
                         break;
                 }

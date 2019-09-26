@@ -13,7 +13,7 @@ module.exports = class MusicPlayer {
             guildQueue = new (QueueMusic)(guild, voiceChannel, channel, this.client);
             guildQueue.set();
         }
-
+        
         if (guildQueue.songPlaying) {
             return guildQueue.pushSongs(songs, addedBy)
         } else {

@@ -28,13 +28,13 @@ class Queue extends Command {
                 .setTitle(t('clientMessages:Queue.title'),{NAME:guild.name})
                 .setDescription(
                     [`🎵 ${t('clientMessages:Queue.time')}**\[${guildQueue.queueFullDuration}]\`**`,
-                    `${Emojis.Loading} Loop: **\`${guildQueue.loop ?  t('clientMessages:Loop.active') : t('clientMessages:Loop.desactivated')}\`**`,
+                    `${Emojis.Loading} Loop: **\`${guildQueue.loop ?  t('clientMessages:Loop.active') : t('clientMessages:Loop.inactive')}\`**`,
                     `▶ Atual: **\`[${guildQueue.nowDuration}/${guildQueue.songPlaying.durationContent}]\`** - **[${guildQueue.songPlaying.name}](${guildQueue.songPlaying.url})**`,
                     '\n🎶' + t('clientMessages:Queue.songlist') + (!guildQueue.songs.length
                         ? t('clientMessages:Jump.noMusic')
                         : guildQueue.songs.length <= 10
-                            ? guildQueue.songs.map((s, n) => `\`${n + 1}.\` **[${s.name}](${s.url})**,` + t('clientMessages:Queue.by') `**${s.addedBy.toString()}**.`).join('\n')
-                            : guildQueue.songs.map((s, n) => `\`${n + 1}.\` **[${s.name}](${s.url})**, `+  t('clientMessages:Queue.by') `**${s.addedBy.toString()}**.`).slice(0, 10).join('\n')
+                            ? guildQueue.songs.map((s, n) => `\`${n + 1}.\` **[${s.name}](${s.url})**,` + t('clientMessages:Queue.by') + `**${s.addedBy.toString()}**.`).join('\n')
+                            : guildQueue.songs.map((s, n) => `\`${n + 1}.\` **[${s.name}](${s.url})**, ` + t('clientMessages:Queue.by') + `**${s.addedBy.toString()}**.`).slice(0, 10).join('\n')
                             + t('clientMessages:Queue.more',{LEN:guildQueue.songs.length - 10})
                     )].join('\n')
                 )

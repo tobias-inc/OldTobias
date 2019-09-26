@@ -1,1 +1,0 @@
-beicinRun: npm start
