@@ -1,5 +1,12 @@
 const { Command, Emojis, ClientEmbed } = require("../../");
 
+const msgTimeOut = async (msg, time) => {
+    await new Promise(function (resolve, reject) {
+        setTimeout(resolve, time)
+    })
+    return msg.clearReactions().catch(() => { });
+}
+
 class Help extends Command {
     constructor(client) {
         super(client, {

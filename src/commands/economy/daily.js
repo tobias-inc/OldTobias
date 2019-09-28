@@ -28,6 +28,7 @@ class Daily extends Command {
             if(vip.active = true) {
                 vip1 = Math.round(Math.random() * 99 )
             };
+            let user = await this.client.database.users.findOne(message.author.id)
                 let coins1 = Math.round(Math.random() * 200 ) + vip1;
                 let coins2 = user.coins + parseInt(coins1)
 

@@ -39,6 +39,8 @@ module.exports = class BotListEvent extends VotesUtils {
             const embed = new ClientEmbed(this.client.user);
             if (method == 'unvip') embed.setColor(process.env.ERROR_COLOR);
             const logTitle = method == 'unvip' ? 'Vip Retirado' : 'Vip Adicionado';
+            const GuiLdA = this.client.guilds.get(process.env.GUILD_ID)
+
 
             if (send) {
                 switch (method) {
@@ -52,6 +54,9 @@ module.exports = class BotListEvent extends VotesUtils {
                             .setAuthor(user.username, user.displayAvatarURL)
                             .setColor(process.env.COLOR_EMBED)
                         ).catch(() => { });
+                        if(GuiLdA.members.get(user)){
+                            GuiLdA.members.get(user).addRole(process.env.VIP_ID)
+                        }else { }
                         break;
                     case 'unvip':
                         user.send(new ClientEmbed(user)
@@ -62,6 +67,9 @@ module.exports = class BotListEvent extends VotesUtils {
                             .setAuthor(user.username, user.displayAvatarURL)
                             .setColor(process.env.ERROR_COLOR)
                         ).catch(() => { });
+                        if(GuiLdA.members.get(user)){
+                            GuiLdA.members.get(user).removeRole(process.env.VIP_ID)
+                        }else { }
                         break;
                 }
             }
