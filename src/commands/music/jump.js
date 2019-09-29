@@ -21,7 +21,7 @@ class Jump extends Command {
     }
 
     async run({ args, channel, guild, author, voiceChannel,message }, t) {
-        const trueResult = await this.verifyVoice(guild, t, channel, author, voiceChannel);
+        const trueResult = await this.verifyVoice(t,guild,  channel, author, voiceChannel);
         if (trueResult) {
             const embed = new ClientEmbed(author);
             const guildQueue = await this.client.music.module.queue.get(guild.id);

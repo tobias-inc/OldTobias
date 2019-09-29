@@ -21,7 +21,7 @@ class Volume extends Command {
     }
 
     async run({ args, channel, guild, author, voiceChannel }, t) {
-        const trueResult =await this.verifyVoice(t, guild, channel, author, voiceChannel);
+        const trueResult =await this.verifyVoice(t, guild, channel, author, voiceChannel, false);
         if (trueResult) {
             const embed = new ClientEmbed(author);
             const guildQueue = await this.client.music.module.queue.get(guild.id);

@@ -21,7 +21,7 @@ class Reset extends Command {
     }
 
     async run({channel, guild, author, voiceChannel}, t) {
-        const trueResult = await this.verifyVoice(guild, t, channel, author, voiceChannel);
+        const trueResult = await this.verifyVoice(t,guild, channel, author, voiceChannel);
         if (trueResult) {
             const embed = new ClientEmbed(author);
             const guildQueue = await this.client.music.module.queue.get(guild.id);
