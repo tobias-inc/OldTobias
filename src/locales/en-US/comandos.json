@@ -1,4 +1,9 @@
 {
+    "pat": {
+        "patyourself": "You can't pat the same, {{USER}} ... Is something wrong?",
+        "noArgs": "You need to mention someone to gave a pat",
+        "Client": "Bro do you want a bite?"
+    },
     "Servericon": "Server {{guild}} **does not have** an icon",
     "Ping": "My current ping is **{{Ping}}**",
     "dell":{

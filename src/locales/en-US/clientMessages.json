@@ -1,4 +1,14 @@
 {
+    "SetLink":{
+        "description": " **{{user}}'s** link successfully changed",
+        "field":  "New link:"
+    },
+    "Pat": "made a pat on",
+    "Coins": {
+     "description": "Displaying an amount of Tobias Snacks that user {{user}} has",
+     "field": "{{user}} Has "
+    },
+    "Daily": "You received {{money}} Tobias Snacks today use the command again tomorrow to receive more",
     "Arrancada":{
         "noUser": "**You didn't mention the user you want to run with!**",
         "makes": "User {{author}} makes {{action}} meters    ...........",
@@ -323,12 +333,12 @@
         }
     },
     "vip": {
-        "vipSet": "foram adicionadas **{{hours}}** horas de acesso **VIP** referente ao voto da {{dbl}}!\nObrigado por me apoiar. Faça bem proveito do acesso **VIP**!",
-        "vipSetMultiple": "foram adicionadas **{{hours}}** horas de acesso **VIP** referente aos votos da {{dbl}}!\nObrigado por me apoiar. Faça bem proveito do acesso **VIP**!",
-        "vipUnSet": "o **vip** referente ao voto da {{dbl}} se esgotou. Você já pode votar novamente! Vote e **reative** o seu vip!",
-        "vipUnSetMultiple": "o **vip** referente aos votos da {{dbl}}! se esgotaram. Você já pode votar novamente!\nVote e **reative** o seu vip!"
+        "vipSet": " **{{hours}}** hours of access **VIP** have been added for {{dbl}}'s vote! \nThank you for supporting me. Make the most of **VIP** access!",
+        "vipSetMultiple": "**{{hours}}** hours of access **VIP** have been added for {{dbl}} votes! \nThank you for supporting me. Make the most of **VIP** access!",
+        "vipUnSet": "the **vip** for {{dbl}}'s vote has run out. You can now vote again! Vote and **reactivate** your vip!",
+        "vipUnSetMultiple": "**vip** for {{dbl}}'s votes! sold out. You can now vote again! \n Vote and **reactivate** or your vip!"
     },
     "footer": {
-        "team": "por Equipe do {{user}} - todos os direitos reservados."
+        "team": "{{user}}'s team - All rights reserved."
     }
 }
