@@ -25,11 +25,10 @@ class Mute extends Command {
 			.setAuthor(this.client.user.username, displayAvatarURL)
 			.setThumbnail(guild.iconURL ? guild.iconURL : displayAvatarURL);
 
-		const USER = (await this.GetUser(args, message, guild, true));
+		const USER = (await this.GetUser(args, message, guild));
 		if (!USER) return channel.send(t('clientMessages:Mute.nouser')); //user exists
-		if (USER === true) return channel.send(t('clientMessages:Mute.nouser'));
 
-		let muteRole = roles.find(f => f.name == 'TobiaMuted')
+		let muteRole = message.guild.roles.find(f => f.name == 'TobiasMuted')
 		if (!muteRole) {
 			muteRole = await message.guild.createRole({
 				name: "TobiasMuted",
@@ -37,7 +36,7 @@ class Mute extends Command {
 				permissons: []
 			});
 			message.guild.channels.forEach(async (channel, id) => {
-				await channel.overwritePermissions(muterole, {
+				await channel.overwritePermissions(muteRole, {
 					SEND_MESSAGES: false,
 					ADD_REACTIONS: false,
 					VIEW_CHANNEL: false
@@ -46,8 +45,11 @@ class Mute extends Command {
 		}
 		let muteTime = args[1];
 		if (!muteTime) return channel.send(t('clientMessages:Mute.Notime'));
-
-		guild.member(USER.id).addRole(muteRole.id);
+		if (message.member.highestRole.comparePositionTo(guild.member(USER).highestRole) <= 0) {
+            channel.send(t(`comandos:mute`, { USER: USER }));
+            return
+        }
+		message.guild.member(USER.id).addRole(muteRole.id);
 
 		channel.send(EMBED
 			.setDescription(`${Emojis.Puto} | ` + t('clientMessages:Mute.description', { USER: USER }))
@@ -57,11 +59,10 @@ class Mute extends Command {
 			.addField(`${Emojis.Certo}|` + t('clientMessages:Mute.time'), `${ms(ms(muteTime))}`)
 			.setColor(process.env.COLOR_EMBED)
 		)
-		const resolveTime = async ms => await new Promisse((res, rej) => setTimeout(res, ms));
-		return resolveTime(ms).then(() => {
-			guild.member(USER.id).removeRole(muteRole.id);
+		setTimeout(function(){
+			message.guild.member(USER.id).removeRole(muteRole.id);
 			channel.send(t('clientMessages:Mute.unmute', { user: USER }));
-		})
+		}, ms(muteTime));
 	}
 }
 module.exports = Mute;

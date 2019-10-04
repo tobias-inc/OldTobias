@@ -18,7 +18,7 @@
     },
     "kick": {
         "noUser": "Você precisa mencionar um usuario para chutar",
-        "Error": "Não foi possivel chutar {{USER}}... \n Você tem cargo maior que ele?",
+        "Error": "Não foi possivel chutar {{USER}}... \nVocê tem cargo maior que ele(a)?",
         "lucky": "{{AUTHOR}} desistiu de chutar {{USER}} que sorte não?"
     },
     "unban": {
@@ -28,7 +28,7 @@
     },
     "ban": {
         "noUser": "Você precisa mencionar um usuario para banir",
-        "Error": "Não foi possivel banir {{USER}}... \n Você tem cargo maior que ele?",
+        "Error": "Não foi possivel banir {{USER}}... \nVocê tem cargo maior que ele(a)?",
         "lucky": "{{AUTHOR}} desistiu de banir {{USER}} que sorte não?"
     },
     "kiss": {
@@ -46,6 +46,7 @@
         "noArgs": "Você precisa mencionar alguém para abraçar",
         "Client": "Você não pode abraçar um bot, {{USER}} ,... Está tudo bem?"
     },
+    "mute": "Não foi possivel mutar {{USER}}... \nVocê tem cargo maior que ele(a)?",
     "mentionBot": "utilize **`{{prefix}} help`** para saber mais!",
     "reloadlocales": {
         "loaded": "recarreguei o sistema de linguagem com sucesso!",

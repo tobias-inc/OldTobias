@@ -22,8 +22,8 @@ class Volume extends Command {
 
     async run({ args, channel, guild, author, voiceChannel }, t) {
         const trueResult =await this.verifyVoice(t, guild, channel, author, voiceChannel, false);
+        const embed = new ClientEmbed(author);
         if (trueResult) {
-            const embed = new ClientEmbed(author);
             const guildQueue = await this.client.music.module.queue.get(guild.id);
             if (guildQueue && guildQueue.songPlaying) {
                 if (args[0]) {
@@ -52,11 +52,6 @@ class Volume extends Command {
                     .setColor(process.env.ERROR_COLOR)
                 )
             }
-        } if(!trueResult) {
-            return channel.send(embed
-                .setTitle(t('errors:music.comein'))
-                .setColor(process.env.ERROR_COLOR)
-            )
         }
     }
 }

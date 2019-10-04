@@ -24,7 +24,7 @@ class Ban extends Command {
         const USER = (await this.GetUser(args, message, guild));
         const REASON = args.slice(1).join(" ")
 
-        if (message.member.highestRole.comparePositionTo(guild.member(USER).highestRole) < 0) {
+        if (message.member.highestRole.comparePositionTo(guild.member(USER).highestRole) <= 0) {
             channel.send(t(`comandos:ban.Error`, { USER: USER }));
             return
         }
@@ -37,7 +37,7 @@ class Ban extends Command {
             return channel.send(`${Emojis.Errado} | ` + t('comandos:ban.noUser'));
         }
 
-        channel.send(`${Emojis.Popcorn} | ` + t('clientMessages:ban.initialmessage', { USER: USER,REACTION:Emojis.reactions.okay }))
+        channel.send(`${Emojis.Popcorn} | ` + t('clientMessages:ban.initialmessage', { USER: USER,REACTION: Emojis.Certo }))
             .then(async (msg) => {
                 await msg.react(Emojis.reactions.okay)
                 await msg.react(Emojis.reactions.error)
