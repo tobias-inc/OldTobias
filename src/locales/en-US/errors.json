@@ -15,6 +15,10 @@
         "enter": "Please connect to a voice channel!",
         "comein": "Please connect to the voice channel I am on!"
     },
+    "color":{
+        "args": "Please provide a color",
+        "format": "The color must be in the format of **#RRGGBB** or **#RGB**"
+    },
     "emojis": "This server has no emojis",
     "404": "We could not find results for your search.",
     "noParameter": "Parameter not found",

@@ -20,7 +20,7 @@ class Play extends Command {
         });
     }
 
-    async run({ args, channel, guild, author, voiceChannel,t}) {
+    async run({ args, channel, guild, author, voiceChannel},t) {
         const trueResult = await this.verifyVoice(t, guild, channel, author, voiceChannel, true);
         if (trueResult) {
             const paramUrl = /^(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/;

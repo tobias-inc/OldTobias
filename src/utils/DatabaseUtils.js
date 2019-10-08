@@ -24,7 +24,7 @@ module.exports = class DatabaseUtils {
 
     async setLink(user, redirect) {
         if (!user) throw new Error('unidentified user');
-        return await this.client.database.users.update(user.id, { $set: { 'contributor.redirect': redirect } })
+        return await this.client.database.users.update(user.id, { $set: { 'vip.redirect': redirect } })
     }
 
     async setOwner(user, owner) {

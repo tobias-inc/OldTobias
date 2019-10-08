@@ -34,7 +34,10 @@ class Kick extends Command {
             channel.send(t(`comandos:Kick.Error`, { USER: USER }));
             return
         }
-
+        if ( message.guild.members.get(this.client.user.id).highestRole.comparePositionTo(guild.member(USER).highestRole) <= 0) {
+            channel.send(t(`comandos:Kick.Error1`, { USER: USER }));
+            return
+        }
         channel.send(`${Emojis.Popcorn} | ` + t('clientMessages:Kick.initialmessage', { USER: USER, REACTION:Emojis.reactions.okay}))
             .then(async (msg) => {
                 await msg.react(Emojis.reactions.okay)

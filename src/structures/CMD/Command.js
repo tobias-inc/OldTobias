@@ -84,4 +84,4 @@ module.exports = class Command extends TestCommand {
         this.cooldown.delete(author.id); 
         }, this.cooldownTime);
     }
-};
+};  

@@ -14,8 +14,8 @@ class BotInfo extends Command {
             description: "Informações sobre o bot",
             usage: { args: false, argsNeed: false },
             category: "Bot",
-            cooldown: 3000,
-            aliases: ["bi", "boti"],
+            cooldownTime: 3000,
+            aliases: ["bi", "boti","info"],
             Permissions: ["ADD_REACTIONS"], // MANAGE_MESSAGES
             UserPermissions: [],
             devNeed: false,

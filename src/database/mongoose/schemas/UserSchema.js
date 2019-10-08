@@ -9,6 +9,7 @@ const UtilsSettings = {
     copyEmojis: []
 }
 const VipSettings = {
+        redirect: "None",
         active: false,
         notifier: true
 }

@@ -35,7 +35,7 @@ module.exports = class Event {
         }
     }
 
-    async VerifyCommand({ blacklist, developer, owner, translater, vip }, command, verfy = false) {
+    async VerifyCommand({ blacklist, developer, owner, translater, vip, author }, command, verfy = false) {
         verfy = await this.client.database.comandos.verificar(command.commandHelp.name);
         try {
             if (!verfy) {
@@ -56,6 +56,8 @@ module.exports = class Event {
 
             if (blacklist) {
                 return { aproved: false, because: 'errors:isClientBlackListed' }
+            } else if (command.commandHelp.cooldown.has(author.id)) {
+                return { aproved: false, because: 'errors:isUserCooldowned' }
             } if (client.maintence && (!developer) && (!owner)) {
                 return { aproved: false, because: 'errors:isClientMaintence' }
             } else if (maintence && (!developer) && (!owner)) {

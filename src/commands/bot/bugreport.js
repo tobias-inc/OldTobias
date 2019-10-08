@@ -10,7 +10,7 @@ class BugReport extends Command {
             description: "Reporta um mal acontecimento ocorrido no uso de alguma função",
             usage: { args: false, argsNeed: false },
             category: "Bot",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["reportbug", "bug"],
             Permissions: ["ADD_REACTIONS"], // MANAGE_MESSAGES
             UserPermissions: [],

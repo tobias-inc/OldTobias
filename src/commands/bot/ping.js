@@ -7,7 +7,7 @@ class Ping extends Command {
             description: "Tempo de resposta do bot",
             usage: { args: true, argsNeed: false },
             category: "Bot",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["pi"],
             Permissions: [],
             UserPermissions: [],

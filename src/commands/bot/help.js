@@ -14,7 +14,7 @@ class Help extends Command {
             description: "Painel de ajuda do bot",
             usage: { args: true, argsNeed: false },
             category: "Bot",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["ajuda", "h","help-me"],
             Permissions: [],
             UserPermissions: [],

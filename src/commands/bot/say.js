@@ -1,7 +1,7 @@
 const {
     Discord = require("discord.js"),
     Command, Emojis
-} = require("../../");
+} = require("../..");
 
 class Say extends Command {
     constructor(client) {
@@ -9,8 +9,8 @@ class Say extends Command {
             name: "say",
             description: "Repete os seus argumentos",
             usage: { args: true, argsNeed: true, argsTxt: "<text>", need: "{prefix} {cmd} {args}" },
-            category: "Fun",
-            cooldown: 3000,
+            category: "Bot",
+            cooldownTime: 3000,
             aliases: ["speak", "falar", "sai"],
             Permissions: [],
             UserPermissions: [],
@@ -19,17 +19,22 @@ class Say extends Command {
         });
     }
 
-    async run({ message, channel}, t, ) {
-
+    async run({ message, channel}, t ) {
 
 let argsJunto = message.content.split(" ").slice(1).join(' ')
 
 if (!argsJunto) return channel.send(`${Emojis.Errado} |` + t('comandos:say'))
 if(argsJunto === "@everyone") return;
-if(!message.guild.member(this.client.user).hasPermission("MANAGE_MESSAGES")){
-  return message.reply(t('clientMessages:Say') + "\n" + argsJunto);
-}
-channel.send(`${argsJunto}`) 
+
+let dev = await this.client.database.users.get(message.author.id).then(b => b.contributor.developer || b.contributor.owner)
+
+if(dev || message.guild.member(this.client.user).hasPermission("MANAGE_MESSAGES")){
+  return channel.send(`${argsJunto}`) 
+
+}else{
+
+message.reply(t('clientMessages:Say') + "\n" + argsJunto);
+            }
+        }
     }
-}
 module.exports = Say;

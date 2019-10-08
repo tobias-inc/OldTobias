@@ -19,6 +19,7 @@
     "kick": {
         "noUser": "Você precisa mencionar um usuario para chutar",
         "Error": "Não foi possivel chutar {{USER}}... \nVocê tem cargo maior que ele(a)?",
+        "Error1": "Não foi possivel chutar {{USER}}... \nEu tenho cargo maior que ele(a)?",
         "lucky": "{{AUTHOR}} desistiu de chutar {{USER}} que sorte não?"
     },
     "unban": {
@@ -29,6 +30,7 @@
     "ban": {
         "noUser": "Você precisa mencionar um usuario para banir",
         "Error": "Não foi possivel banir {{USER}}... \nVocê tem cargo maior que ele(a)?",
+        "Error1": "Não foi possivel banir {{USER}}... \nEu tenho cargo maior que ele(a)?",
         "lucky": "{{AUTHOR}} desistiu de banir {{USER}} que sorte não?"
     },
     "kiss": {

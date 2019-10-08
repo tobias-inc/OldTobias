@@ -28,7 +28,10 @@ class Ban extends Command {
             channel.send(t(`comandos:ban.Error`, { USER: USER }));
             return
         }
-
+        if ( message.guild.members.get(this.client.user.id).highestRole.comparePositionTo(guild.member(USER).highestRole) <= 0) {
+            channel.send(t(`comandos:ban.Error1`, { USER: USER }));
+            return
+        }
         const EMBED = new ClientEmbed(author)
             .setAuthor(this.client.user.username, displayAvatarURL)
             .setThumbnail(guild.iconURL ? guild.iconURL : displayAvatarURL);

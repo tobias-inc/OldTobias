@@ -55,7 +55,7 @@ module.exports = class MessageEvent extends Event {
                 )
 
                 if (command) {
-                    const { aproved, because } = await this.VerifyCommand({ blacklist, developer, owner, translater, vip: vip.active }, command);
+                    const { aproved, because } = await this.VerifyCommand({ blacklist, developer, owner, translater, vip: vip.active, author: message.author }, command);
 
                     if (!(aproved)) {
                         const support = await this.client.utils.get('links', 'support').then(({ redirect }) => redirect);
@@ -85,10 +85,10 @@ module.exports = class MessageEvent extends Event {
                         args,
                         language,
                     });
-                    command.commandHelp.coolDown(message.author)
 
                     return command.commandHelp.verify(settings)
                         .then(() => {
+                            command.commandHelp.coolDown(message.author)
                             return this.UserUtils(message.author)
                                 .then(() => this.CommandUtils(command))
                         })

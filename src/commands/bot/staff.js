@@ -7,7 +7,7 @@ class Staff extends Command {
             description: "Envolvidos em minha criação",
             usage: { args: false, argsNeed: false },
             category: "Bot",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["stf"],
             Permissions: [],
             UserPermissions: [],
