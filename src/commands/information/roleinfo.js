@@ -10,7 +10,7 @@ class RoleInfo extends Command {
             description: "Informações sobre um cargo",
             usage: { args: true, argsNeed: true, argsTxt: "<role [id, mention, name]>", need: "{prefix} {cmd} {args}" },
             category: "Information",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["role", "ri"],
             Permissions: [],
             UserPermissions: [],

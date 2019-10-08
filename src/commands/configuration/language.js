@@ -7,7 +7,7 @@ class Language extends Command {
             description: "Modifica a tradução do servidor",
             usage: { args: true, argsNeed: true, argsTxt: "<language>", need: "{prefix} {cmd} {args}" },
             category: "Configuration",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["lang"],
             Permissions: [],
             UserPermissions: ["MANAGE_GUILD"],

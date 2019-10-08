@@ -17,7 +17,7 @@ class UserInfo extends Command {
             description: "Informações sobre um usuário",
             usage: { args: true, argsNeed: false, argsTxt: "<user [id, mention, name]>", need: "{prefix} {cmd} {args}" },
             category: "Information",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["useri", "ui"],
             Permissions: ["ADD_REACTIONS"], // MANAGE_MESSAGES
             UserPermissions: [],

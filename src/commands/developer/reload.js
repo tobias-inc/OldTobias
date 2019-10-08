@@ -7,7 +7,7 @@ class Reload extends Command {
             description: "Recarrega o comando inserido",
             usage: { args: true, argsNeed: true, argsTxt: "<command>", need: "{prefix} {cmd} {args}" },
             category: "Developer",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["r", "rl"],
             Permissions: [],
             UserPermissions: [],

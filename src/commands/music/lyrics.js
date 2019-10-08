@@ -14,7 +14,7 @@ class Lyrics extends Command {
             description: "Mostra a letra da música inserida",
             usage: { args: true, argsNeed: false, argsTxt: "<music name> [or music listen in spotify]", need: "{prefix} {cmd} {args}" },
             category: "Music",
-            cooldown: 5000,
+            cooldownTime: 5000,
             aliases: ["lyr", "letra"],
             Permissions: [],
             UserPermissions: [],

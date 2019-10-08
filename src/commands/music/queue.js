@@ -10,7 +10,7 @@ class Queue extends Command {
             description: "Mostra a lista de musicas",
             usage: { args: true, argsNeed: true, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["Playlist", "List", "Lista"],
             Permissions: [],
             UserPermissions: [],

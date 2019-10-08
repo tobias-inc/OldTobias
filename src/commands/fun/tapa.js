@@ -11,7 +11,7 @@ class Tapa extends Command {
             description: "Dá um tapa em um usuário",
             usage: { args: true, argsNeed: true, argsTxt: "<user>", need: "{prefix} {cmd} {args}" },
             category: "Fun",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["slap","tapão"],
             Permissions: ["ATTACH_FILES"],
             UserPermissions: [],

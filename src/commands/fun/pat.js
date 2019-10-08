@@ -11,7 +11,7 @@ class pat extends Command {
             description: "Faz carinho em alguém",
             usage: { args: true, argsNeed: true, argsTxt: "<user>", need: "{prefix} {cmd} {args}" },
             category: "Fun",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["carinho","cafune","cafuné"],
             Permissions: ["ATTACH_FILES"],
             UserPermissions: [],

@@ -11,7 +11,7 @@ class Emoji extends Command {
             description: "Transforma um emoji em imagem",
             usage: { args: true, argsNeed: true, argsTxt: "<emoji [link,ID]> ", need: "{prefix} {cmd} {args}", },
             category: "Information",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["Aumentar", "Large"],
             Permissions: [],
             UserPermissions: [],

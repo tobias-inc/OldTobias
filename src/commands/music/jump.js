@@ -10,7 +10,7 @@ class Jump extends Command {
             description: "Pula para uma determinada musica",
             usage: { args: true, argsNeed: true, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["pular", "jm", "jumpto"],
             Permissions: [],
             UserPermissions: [],

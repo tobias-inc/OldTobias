@@ -11,7 +11,7 @@ class Abraçar extends Command {
             description: "Abraça um usuário",
             usage: { args: true, argsNeed: true, argsTxt: "<user>", need: "{prefix} {cmd} {args}" },
             category: "Fun",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["abracar", "hug"],
             Permissions: ["ATTACH_FILES"],
             UserPermissions: [],

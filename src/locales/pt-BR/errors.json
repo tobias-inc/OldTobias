@@ -19,7 +19,7 @@
         "args": "Você precisa inserir uma cor",
         "format": "A cor tem que estar no formato **#RRGGBB** ou **#RGB**"
     },
-    "isUserCooldowned":"Desculpe mas esse comando possui cooldown use-o comando novamente em {{TEMPO}}",
+    "isUserCooldowned":"Desculpe mas esse comando possui cooldown use-o comando novamente mais tarde",
     "emojis": "Esse servidor não possui emojis",
     "404": "Não foi possivel encontrar resultados para sua pesquisa",
     "noParameter": "Parametro não encontrado",

@@ -19,6 +19,7 @@
         "args": "Please provide a color",
         "format": "The color must be in the format of **#RRGGBB** or **#RGB**"
     },
+    "isUserCooldowned":"Sorry but this command has cooldown use it again later",
     "emojis": "This server has no emojis",
     "404": "We could not find results for your search.",
     "noParameter": "Parameter not found",

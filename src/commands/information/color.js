@@ -49,7 +49,7 @@ class Color extends Command {
             description: "Mostra uma cor",
             usage: { args: true, argsNeed: false, argsTxt: "<user>", need: "{prefix} {cmd} {args}" },
             category: "Information",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["cor","rgb"],
             Permissions: ["ATTACH_FILES"],
             UserPermissions: [],

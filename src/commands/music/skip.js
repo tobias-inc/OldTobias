@@ -10,7 +10,7 @@ class Skip extends Command {
             description: "Pula a musica atual",
             usage: { args: true, argsNeed: true, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["pular","s"],
             Permissions: [],
             UserPermissions: [],

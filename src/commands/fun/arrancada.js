@@ -10,7 +10,7 @@ class arrancada extends Command {
             description: "Aposta uma corrida com um usuario",
             usage: { args: true, argsNeed: true, argsTxt: "<user>", need: "{prefix} {cmd} {args}" },
             category: "Fun",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["racha", "arranca", "run"],
             Permissions: [],
             UserPermissions: [],

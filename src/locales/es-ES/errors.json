@@ -8,6 +8,18 @@
         "notfound": "¡No pude encontrar ningún resultado para la canción insertada!",
         "noArgs": "¡Ingrese el **enlace** o **nombre** de la canción deseada! (Youtube)"
     },
+    "music":{
+        "speak": "hablar",
+        "conect": "conectar",
+        "title": "¡No tengo los permisos necesarios para {{err}} en este canal de voz!",
+        "enter": "¡Conéctate a un canal de voz!",
+        "comein": "¡Conéctese al canal de voz en el que estoy!"
+    },
+    "color":{
+        "args": "Necesitas ingresar un color",
+        "format": "El color debe estar en formato ** # RRGGBB ** o ** # RGB **"
+    },
+    "isUserCooldowned":"Lo siento, pero este comando tiene tiempo de reutilización, úsalo nuevamente más tarde",
     "emojis": "Este servidor no tiene emojis",
     "404": "No pudimos encontrar resultados para su búsqueda.",
     "noParameter": "Parámetro no encontrado",

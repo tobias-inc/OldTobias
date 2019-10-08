@@ -7,7 +7,7 @@ class ReloadLocales extends Command {
             description: "Recarrega o sistema de linguagem",
             usage: { args: false, argsNeed: false },
             category: "Developer",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["locales", "rlc"],
             Permissions: [],
             UserPermissions: [],

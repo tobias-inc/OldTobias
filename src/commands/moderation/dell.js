@@ -10,7 +10,7 @@ class Dell extends Command {
             description: "deleta mensagens em massa",
             usage: { args: true, argsNeed: true, argsTxt: "<quantidade>", need: "{prefix} {cmd} {args}" },
             category: "Moderation",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["deletar","apagar"],
             Permissions: ["MANAGE_MESSAGES"],
             UserPermissions: ["MANAGE_MESSAGES"],

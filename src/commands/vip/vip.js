@@ -15,7 +15,7 @@ class Vip extends Command {
             description: "Informações sobre o seu acesso vip",
             usage: { args: true, argsNeed: false, argsTxt: "[subcommand]", need: "{prefix} {cmd} {args}" },
             category: "Vip",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: [],
             Permissions: [],
             UserPermissions: [],

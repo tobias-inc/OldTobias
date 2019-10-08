@@ -10,7 +10,7 @@ class Volume extends Command {
             description: "Seta o volume das musicas",
             usage: { args: true, argsNeed: true, argsTxt: "<Music [volume]>", need: "{prefix} {cmd} {args}" },
             category: "Music",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["Vol", "V"],
             Permissions: [],
             UserPermissions: [],

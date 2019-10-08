@@ -10,7 +10,7 @@ class Ascii extends Command {
             description: "Forma um texto no padrão ascii",
             usage: { args: true, argsNeed: false, argsTxt: "<text>", need: "{prefix} {cmd} {args}" },
             category: "Fun",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["asci"],
             Permissions: [],
             UserPermissions: [],

@@ -10,7 +10,7 @@ class Loop extends Command {
             description: "Repete a musica",
             usage: { args: true, argsNeed: false, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["repetir"],
             Permissions: [],
             UserPermissions: [],

@@ -11,7 +11,7 @@ class Calc extends Command {
             description: "Realiza uma operação aritmetrica",
             usage: { args: true, argsNeed: false, argsTxt: "<user>", need: "{prefix} {cmd} {args}" },
             category: "Information",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["math","calcular", "calculate","calculadora"],
             Permissions: ["ATTACH_FILES"],
             UserPermissions: [],

@@ -10,7 +10,7 @@ class Remove extends Command {
             description: "Remove uma musica",
             usage: { args: true, argsNeed: true, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["Remover", "tirar"],
             Permissions: [],
             UserPermissions: [],

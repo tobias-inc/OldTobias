@@ -11,7 +11,7 @@ class Unban extends Command {
             description: "Desbane um membro",
             usage: { args: true, argsNeed: true, argsTxt: "<User [id, mention, name]>", need: "{prefix} {cmd} {args}" },
             category: "Moderation",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["desbanir", "disbane"],
             Permissions: ["BAN_MEMBERS"],
             UserPermissions: ["BAN_MEMBERS"],

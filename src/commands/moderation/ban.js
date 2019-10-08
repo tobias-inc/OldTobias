@@ -11,7 +11,7 @@ class Ban extends Command {
             description: "Bane um membro",
             usage: { args: true, argsNeed: true, argsTxt: "<User [id, mention, name]>", need: "{prefix} {cmd} {args}" },
             category: "Moderation",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["banir", "bane"],
             Permissions: ["BAN_MEMBERS"],
             UserPermissions: ["BAN_MEMBERS"],

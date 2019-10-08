@@ -11,7 +11,7 @@ class Spotify extends Command {
             description: "Mostra a música que o usuário está ouvindo no spotify",
             usage: { args: true, argsNeed: false, argsTxt: "[user]", need: "{prefix} {cmd} {args}" },
             category: "Music",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["sptf"],
             Permissions: ["ATTACH_FILES"],
             UserPermissions: [],

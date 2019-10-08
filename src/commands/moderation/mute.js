@@ -11,7 +11,7 @@ class Mute extends Command {
 			description: "Silencia um membro",
 			usage: { args: true, argsNeed: true, argsTxt: "<USER>", need: "{prefix} {cmd} {args}" },
 			category: "Moderation",
-			cooldown: 3000,
+			cooldownTime: 3000,
 			aliases: ["silenciar", "mutar"],
 			Permissions: ["MANAGE_ROLES"],
 			UserPermissions: ["MANAGE_MESSAGES"],

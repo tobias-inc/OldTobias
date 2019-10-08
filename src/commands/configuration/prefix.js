@@ -7,7 +7,7 @@ class prefix extends Command {
             description: "Modifica o prefixo do servidor",
             usage: { args: true, argsNeed: true, argsTxt: "<prefix>", need: "{prefix} {cmd} {args}" },
             category: "Configuration",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: [],
             Permissions: [],
             UserPermissions: ["MANAGE_GUILD"],

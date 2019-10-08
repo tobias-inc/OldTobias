@@ -10,7 +10,7 @@ class NowPlaying extends Command {
             description: "Mostra a musica que está sendo tocada",
             usage: { args: true, argsNeed: false, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["np", "Tocandoagora", "Ta"],
             Permissions: [],
             UserPermissions: [],

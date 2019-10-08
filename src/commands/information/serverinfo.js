@@ -10,7 +10,7 @@ class ServerInfo extends Command {
             description: "Informações sobre o servidor",
             usage: { args: false, argsNeed: false },
             category: "Information",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["sinfo", "svi"],
             Permissions: [],
             UserPermissions: [],

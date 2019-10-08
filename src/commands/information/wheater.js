@@ -10,7 +10,7 @@ class Wheater extends Command {
             description: "Mostra as informações climaticas sobre um lugar",
             usage: { args: true, argsNeed: false, argsTxt: "place", need: "{prefix} {cmd} {args}" },
             category: "Information",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["clima", "tempo", "wheater", "wheather"],
             Permissions: [], // MANAGE_MESSAGES
             UserPermissions: [],

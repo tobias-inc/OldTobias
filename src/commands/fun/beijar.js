@@ -11,7 +11,7 @@ class Beijar extends Command {
             description: "beija um usuário",
             usage: { args: true, argsNeed: true, argsTxt: "<user>", need: "{prefix} {cmd} {args}" },
             category: "Fun",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["kiss", "beijo"],
             Permissions: ["EMBED_LINKS"],
             UserPermissions: [],

@@ -14,7 +14,7 @@ class MemeTextColor extends Command {
             description: "Altera a cor do texto do meme a ser criado",
             usage: { args: true, argsNeed: true, argsTxt: "<color>", need: "{prefix} {cmd} {args}" },
             category: "Vip",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["meme-color", "color-meme"],
             Permissions: [],
             UserPermissions: [],

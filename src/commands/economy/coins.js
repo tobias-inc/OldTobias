@@ -7,7 +7,7 @@ class Coins extends Command {
             description: "Mostra a quantidade de Biscoitos Tobias que você tem",
             usage: { args: false, argsNeed: false},
             category: "Economy",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["bal", "contra-cheque"],
             Permissions: ["EMBED_LINKS"],
             UserPermissions: [],

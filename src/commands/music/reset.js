@@ -10,7 +10,7 @@ class Reset extends Command {
             description: "Reseta a queue",
             usage: { args: true, argsNeed: true, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["Resetar"],
             Permissions: [],
             UserPermissions: [],

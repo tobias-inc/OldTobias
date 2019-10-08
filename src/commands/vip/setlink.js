@@ -11,7 +11,7 @@ class Link extends Command {
             description: "Adiciona um link ao seu perfil",
             usage: { args: true, argsNeed: true, argsTxt: "<link>", need: "{prefix} {cmd} {args}", },
             category: "Vip",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["link","linkar"],
             Permissions: [],
             UserPermissions: [],

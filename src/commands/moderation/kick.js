@@ -11,7 +11,7 @@ class Kick extends Command {
             description: "Chuta um membro",
             usage: { args: true, argsNeed: true, argsTxt: "<User [id, mention, name]>", need: "{prefix} {cmd} {args}" },
             category: "Moderation",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["kickar", "Chutar"],
             Permissions: ["KICK_MEMBERS"],
             UserPermissions: ["KICK_MEMBERS"],

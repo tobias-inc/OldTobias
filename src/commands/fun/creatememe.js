@@ -40,7 +40,7 @@ class CreateMeme extends Command {
             description: "Cria um meme escolhido pelo usuário",
             usage: { args: false, argsNeed: false },
             category: "Fun",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["criarmeme", "crmeme", "memecreate", "c-meme", "criar-meme", "create-meme", "cmeme"],
             Permissions: ["ATTACH_FILES"], // MANAGE_MESSAGES
             UserPermissions: [],

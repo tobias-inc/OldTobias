@@ -10,7 +10,7 @@ class Clear extends Command {
             description: "limpa a queue",
             usage: { args: true, argsNeed: false, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["limpo", "limpar"],
             Permissions: [],
             UserPermissions: [],

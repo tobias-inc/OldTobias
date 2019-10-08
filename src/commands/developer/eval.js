@@ -7,7 +7,7 @@ class Eval extends Command {
             description: "Executa códigos em JS",
             usage: { args: true, argsNeed: true, argsTxt: "<code>", need: "{prefix} {cmd} {args}" },
             category: "Developer",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["e"],
             Permissions: [],
             UserPermissions: [],

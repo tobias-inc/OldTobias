@@ -11,7 +11,7 @@ class ServerIcon extends Command {
             description: "Mostra o icone de um servidor",
             usage: { args: false, argsNeed: false },
             category: "Information",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["sicon", "svicon"],
             Permissions: [],
             UserPermissions: [],

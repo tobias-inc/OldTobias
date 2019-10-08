@@ -10,7 +10,7 @@ class Play extends Command {
             description: "Toca uma musica",
             usage: { args: true, argsNeed: true, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["p", "Tocar"],
             Permissions: [],
             UserPermissions: [],

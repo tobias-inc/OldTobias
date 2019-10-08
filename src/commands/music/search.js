@@ -32,7 +32,7 @@ class Search extends Command {
             description: "Procura as informações de uma musica",
             usage: { args: true, argsNeed: true, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["Procurar", "achar", "find"],
             Permissions: [],
             UserPermissions: [],

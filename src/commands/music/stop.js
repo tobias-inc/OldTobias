@@ -10,7 +10,7 @@ class Stop extends Command {
             description: "Para completamente a queue",
             usage: { args: true, argsNeed: false, argsTxt: "<Music [name]>", need: "{prefix} {cmd} {args}" },
             category: "Music",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["Pause", "parar"],
             Permissions: [],
             UserPermissions: [],

@@ -7,7 +7,7 @@ class MaintenceCommand extends Command {
             description: "",
             usage: { args: true, argsNeed: true, argsTxt: "<option> <command>", need: "{prefix} {cmd} {args}" },
             category: "Developer",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["maintence", "manu", "manucmd", "manu-cmd", "manumanu", "cmd-manu"],
             Permissions: [],
             UserPermissions: [],

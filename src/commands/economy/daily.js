@@ -7,7 +7,7 @@ class Daily extends Command {
             description: "Te dá os Biscoitos Tobias diarios.",
             usage: { args: false, argsNeed: false},
             category: "Economy",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["diario", "pagamento"],
             Permissions: ["EMBED_LINKS"],
             UserPermissions: [],

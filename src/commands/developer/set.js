@@ -7,7 +7,7 @@ class SetRole extends Command {
             description: "Seta um cargo ao usuário inserido",
             usage: { args: true, argsNeed: true, argsTxt: "<parameter> <user>", need: "{prefix} {cmd} {args}" },
             category: "Developer",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["setar"],
             Permissions: [],
             UserPermissions: [],

@@ -11,7 +11,7 @@ class EmojiInfo extends Command {
             description: "Informações sobre um emoji",
             usage: { args: true, argsNeed: true, argsTxt: "<emoji [id, name]>", need: "{prefix} {cmd} {args}", },
             category: "Information",
-            cooldown: 3000,
+            cooldownTime: 3000,
             aliases: ["emojii", "ei"],
             Permissions: [],
             UserPermissions: [],
