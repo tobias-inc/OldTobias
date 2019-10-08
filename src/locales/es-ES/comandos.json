@@ -14,7 +14,8 @@
     "say": "Necesitas ingresar argumentos para que yo pueda replicar",
     "kick": {
         "noUser": "Debes mencionar a un usuario para patear",
-        "Error": "Incapaz de patear {{USER}}... \n ¿Tienes una posición más alta que él?",
+        "Error": "Incapaz de patear {{USER}}... \n ¿Tienes una posición más alta que  él / ella?",
+        "Error1": "Incapaz de patear {{USER}}... \n ¿Tengo una posición más alta que él / ella?",
         "lucky": "{{AUTHOR}} desistiu de chutar {{USER}} ¿Que suerte no?"
     },
     "unban": {
@@ -24,9 +25,14 @@
     },
     "ban": {
         "noUser": "Debes mencionar a un usuario para prohibir",
-        "Error": "Incapaz de prohibir {{USER}}... \n ¿Tienes una posición más alta que él?",
+        "Error": "Incapaz de prohibir {{USER}}... \n ¿Tienes una posición más alta que  él / ella?",
+        "Error1": "Incapaz de prohibir {{USER}}... \n ¿Tengo una posición más alta que él?",
         "lucky": "{{AUTHOR}} desiriu de banir {{USER}}, ¿Que suerte no?"
     },
+    "mute": {
+        "Error": "No se puede silenciar {{USER}} ... \n ¿Tiene una posición más alta que él / ella?",
+        "Error1": "No se puede silenciar {{USER}}... \n ¿Tengo una posición más alta que él / ella?"
+        },
     "kiss": {
         "kissyourself": "Você não pode beijar",
         "noArgs": "Necesitas mencionar a alguien para besar",

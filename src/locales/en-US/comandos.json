@@ -21,16 +21,22 @@
         "noUser": "You need to mention a user to kick",
         "noPerm": "I do not have to forgive to kick",
         "authorNoPerm": "It looks like you do not have the necessary permissions to run a kick",
-        "Error": "Could not kick {{USER}}... \n Do I have a bigger position than him?",
+        "Error": "Could not kick {{USER}}... \nDo you have a higher position than he / she?",
+        "Error1": "Could not kick {{USER}}... \n Do I have a higher position than he / she?",
         "lucky": "{{AUTHOR}} gave up kick {{USER}} How lucky isn't it?"
     },
     "ban": {
         "noUser": "You need to mention a user to ban",
         "noPerm": "I do not have to forgive to ban",
         "authorNoPerm": "It looks like you do not have the necessary permissions to run a ban",
-        "Error": "Could not ban {{USER}}... \n Do I have a bigger position than him?",
+        "Error": "Could not ban {{USER}}... \n Do you have a higher position than he / she?",
+        "Error1": "Could not ban {{USER}}... \n Do I have a higher position than he / she?",
         "lucky": "{{AUTHOR}} gave up ban {{USER}} How lucky isn't it?"
     },
+    "mute": { 
+        "Error": "Could not mute {{USER}}... \nDo you have a higher position than he / she?",
+        "Error1": "Could not mute {{USER}}... \n Do I have a higher position than he / she?"
+        },
     "kiss": {
         "kissyourself": "You can`t kiss yourself",
         "noArgs": "You need to mention someone to give a kiss",

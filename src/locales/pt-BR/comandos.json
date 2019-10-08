@@ -48,7 +48,7 @@
         "noArgs": "Você precisa mencionar alguém para abraçar",
         "Client": "Você não pode abraçar um bot, {{USER}} ,... Está tudo bem?"
     },
-    "mute":{
+    "mute": {
     "Error": "Não foi possivel mutar {{USER}}... \nVocê tem cargo maior que ele(a)?",
     "Error1": "Não foi possivel mutar {{USER}}... \n Eu tenho cargo maior que ele(a)?"
     },

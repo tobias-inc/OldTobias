@@ -46,7 +46,11 @@ class Mute extends Command {
 		let muteTime = args[1];
 		if (!muteTime) return channel.send(t('clientMessages:Mute.Notime'));
 		if (message.member.highestRole.comparePositionTo(guild.member(USER).highestRole) <= 0) {
-            channel.send(t(`comandos:mute`, { USER: USER }));
+            channel.send(t(`comandos:mute.Error`, { USER: USER }));
+            return
+        }
+        if ( message.guild.members.get(this.client.user.id).highestRole.comparePositionTo(guild.member(USER).highestRole) <= 0) {
+            channel.send(t(`comandos:mute.Error1`, { USER: USER }));
             return
         }
 		message.guild.member(USER.id).addRole(muteRole.id);
