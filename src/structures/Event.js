@@ -54,6 +54,10 @@ module.exports = class Event {
                 utils: { vipUser, ownerPermission, devPermission }
             } = await this.client.database.comandos.findOne(command.commandHelp.name);
 
+
+            const moment = require("moment")
+            const momformat = require("moment-duration-format");
+            moment.duration(parseInt(), 'milliseconds').format('hh:mm:ss', { stopTrim: 'm' })
             if (blacklist) {
                 return { aproved: false, because: 'errors:isClientBlackListed' }
             } else if (command.commandHelp.cooldown.has(author.id)) {

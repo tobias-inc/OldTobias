@@ -22,7 +22,7 @@ module.exports = class Command extends TestCommand {
         if (subcommand) {
             this.referenceCommand = options.referenceCommand || this.client.Error('No command reference!');
         } else {
-            this.cooldownTime = options.cooldown || 5000
+            this.cooldownTime = options.cooldownTime || 5000
             this.devNeed = options.devNeed !== undefined ? options.devNeed : false
             this.ownerNeed = options.ownerNeed !== undefined ? options.ownerNeed : false
             this.needGuild = options.needGuild !== undefined ? options.needGuild : true

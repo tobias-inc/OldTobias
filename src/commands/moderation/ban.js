@@ -25,6 +25,7 @@ class Ban extends Command {
         const REASON = args.slice(1).join(" ")
 
         if (message.member.highestRole.comparePositionTo(guild.member(USER).highestRole) <= 0) {
+            console.log(USER)
             channel.send(t(`comandos:ban.Error`, { USER: USER }));
             return
         }
