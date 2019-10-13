@@ -55,7 +55,7 @@ module.exports = class MessageEvent extends Event {
                 )
 
                 if (command) {
-                    const { aproved, because } = await this.VerifyCommand({ blacklist, developer, owner, translater, vip: vip.active, author: message.author }, command);
+                    const { aproved, because, other = none } = await this.VerifyCommand({ blacklist, developer, owner, translater, vip: vip.active, author: message.author }, command);
 
                     if (!(aproved)) {
                         const support = await this.client.utils.get('links', 'support').then(({ redirect }) => redirect);
@@ -64,7 +64,7 @@ module.exports = class MessageEvent extends Event {
                                 message.channel.send(new ClientEmbed(message.author)
                                     .setDescription(`${Emojis.Errado} **${message.author.username}**, ${this.client.language.i18next.getFixedT(language)(because
                                         , {
-                                            support
+                                            support,other
                                         })}`
                                     )
                                     .setColor(process.env.ERROR_COLOR)
