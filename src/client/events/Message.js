@@ -85,10 +85,9 @@ module.exports = class MessageEvent extends Event {
                         args,
                         language,
                     });
-
+                    command.commandHelp.coolDown(message.author)
                     return command.commandHelp.verify(settings)
                         .then(() => {
-                            command.commandHelp.coolDown(message.author)
                             return this.UserUtils(message.author)
                                 .then(() => this.CommandUtils(command))
                         })
