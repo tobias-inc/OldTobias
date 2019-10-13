@@ -58,7 +58,7 @@
         "noloaded": "desculpe ocorreu um erro ao tentar recarregar!"
     },
     "reload": {
-        "noArgs": "por favor insira o `[nome|aliase]` do comando a ser **recarregado**!",
+        "noArgs": "por favor insira o `[nome | aliase]` do comando a ser **recarregado**!",
         "noCommand": "desculpe mas o comando **{{cmd}}** não foi encontrado",
         "error": "ocorreu um erro ao tentar recarregar: **{{err}}**",
         "reloaded": "o comando **{{cmd}}** foi recarregado com **sucesso**!"
@@ -75,7 +75,7 @@
         "unSetTo": "o usuário **{{user}}** foi removido de **`{{type}}`**!"
     },
     "roleinfo": {
-        "noArgs": "por favor insira [id||menção||nome]` do *cargo* desejado!",
+        "noArgs": "por favor insira [id | menção |nome]` do *cargo* desejado!",
         "noRole": "desculpe não consegui encontrar **nenhum** cargo para a pesquisa: ***{{searsh}}***!"
     },
     "bugreport": {
@@ -86,7 +86,7 @@
         "lotOfwords": "por favor seja breve, escreva menos!! `(max 150 carac.)`."
     },
     "emojiinfo": {
-        "noArgs": "por favor insira `[id|nome]` do **emoji** desejado!",
+        "noArgs": "por favor insira `[id| nome]` do **emoji** desejado!",
         "noEmoji": "desculpe não consegui encontrar **nenhum** emoji para a pesquisa: ***{{searsh}}***!"
     },
     "prefix": {
