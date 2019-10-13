@@ -8,7 +8,7 @@
      "description": "Displaying an amount of Tobias Snacks that user {{user}} has",
      "field": "{{user}} Has "
     },
-    "Daily": "You received {{money}} Tobias Snacks today use the command again tomorrow to receive more",
+    "Daily": "You received {{money}} Tobias Snacks today\n use the command again tomorrow to receive more",
     "Arrancada":{
         "noUser": "**You didn't mention the user you want to run with!**",
         "makes": "User {{author}} makes {{action}} meters    ...........",

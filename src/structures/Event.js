@@ -62,7 +62,7 @@ module.exports = class Event {
                 return { aproved: false, because: 'errors:isClientBlackListed' }
             } else if (command.commandHelp.cooldown.get(author.id)) {
                 let authorDate = command.commandHelp.cooldown.get(author.id)
-                let time = moment.duration(command.commandHelp.cooldownTime - parseInt(authorDate - Date.now()), 'milliseconds').format('hh:mm:ss', { stopTrim: 'm' })
+                let time = moment.duration(command.commandHelp.cooldownTime - parseInt( new Date() - authorDate), 'milliseconds').format('hh:mm:ss', { stopTrim: 'm' })
                 return { aproved: false, because: 'errors:isUserCooldowned', other: time }
             } if (client.maintence && (!developer) && (!owner)) {
                 return { aproved: false, because: 'errors:isClientMaintence' }

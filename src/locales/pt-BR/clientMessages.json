@@ -8,7 +8,7 @@
      "description": "Exibindo a quantidade de Biscoitos Tobias que o usuario {{user}} possui",
      "field": "{{user}} possui atualmente "
     },
-    "Daily": "Você recebeu {{money}} Biscoitos Tobias hoje use o comando novamente amanha para receber mais",
+    "Daily": "Você recebeu {{money}} Biscoitos Tobias hoje\n use o comando novamente amanha para receber mais",
     "Arrancada":{
         "noUser": "**Você não mencionou o usuario com quem você deseja correr!**",
         "makes": "O usuario {{author}} fez {{action}} metros 🏎 ...........",
