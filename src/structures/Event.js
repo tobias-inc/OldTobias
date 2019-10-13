@@ -57,11 +57,13 @@ module.exports = class Event {
             } = await this.client.database.comandos.findOne(command.commandHelp.name);
 
 
-            moment.duration(parseInt(), 'milliseconds').format('hh:mm:ss', { stopTrim: 'm' })
+           
             if (blacklist) {
                 return { aproved: false, because: 'errors:isClientBlackListed' }
             } else if (command.commandHelp.cooldown.get(author.id)) {
-                return { aproved: false, because: 'errors:isUserCooldowned' }
+                let authorDate = command.commandHelp.cooldown.get(author.id)
+                let time = moment.duration(command.commandHelp.cooldownTime - parseInt(authorDate - Date.now()), 'milliseconds').format('hh:mm:ss', { stopTrim: 'm' })
+                return { aproved: false, because: 'errors:isUserCooldowned', time }
             } if (client.maintence && (!developer) && (!owner)) {
                 return { aproved: false, because: 'errors:isClientMaintence' }
             } else if (maintence && (!developer) && (!owner)) {
