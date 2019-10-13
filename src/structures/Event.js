@@ -1,6 +1,7 @@
 const { ErrorCommand } = require("../");
 const moment = require("moment")
 require("moment-duration-format");
+
 module.exports = class Event {
     constructor(client) {
         this.client = client
@@ -59,7 +60,7 @@ module.exports = class Event {
             moment.duration(parseInt(), 'milliseconds').format('hh:mm:ss', { stopTrim: 'm' })
             if (blacklist) {
                 return { aproved: false, because: 'errors:isClientBlackListed' }
-            } else if (command.commandHelp.cooldown.has(author.id)) {
+            } else if (command.commandHelp.cooldown.get(author.id)) {
                 return { aproved: false, because: 'errors:isUserCooldowned' }
             } if (client.maintence && (!developer) && (!owner)) {
                 return { aproved: false, because: 'errors:isClientMaintence' }

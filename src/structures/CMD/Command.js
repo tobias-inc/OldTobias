@@ -27,7 +27,7 @@ module.exports = class Command extends TestCommand {
             this.ownerNeed = options.ownerNeed !== undefined ? options.ownerNeed : false
             this.needGuild = options.needGuild !== undefined ? options.needGuild : true
             this.vipUser = options.vipUser !== undefined ? options.vipUser : false
-            this.cooldown = new Set();
+            this.cooldown = new Map();
         }
     }
 
@@ -79,7 +79,7 @@ module.exports = class Command extends TestCommand {
         return true;
     }
     coolDown(author){
-        this.cooldown.add(author.id); 
+        this.cooldown.set(author.id); 
         setTimeout(() => { 
         this.cooldown.delete(author.id); 
         }, this.cooldownTime);
