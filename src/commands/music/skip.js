@@ -25,12 +25,24 @@ class Skip extends Command {
         if (trueResult) {
             const embed = new ClientEmbed(author);
             const guildQueue = await this.client.music.module.queue.get(guild.id);
-            if (guildQueue && guildQueue.songs.length) {
+            const {song} = {
+                song: guildQueue.songPlaying
+            }
+            if(message.author === song.addedBy){
                 return message.react(Emojis.reactions.next).then(() => guildQueue.skip());
-            } else {
+            } 
+            if (guildQueue && guildQueue.songs.length) {
+               return channel.send(embed
+                    .setTitle(t('clientMessages:Skip'))
+                ).then(msg =>{ msg.react(Emojis.reactions.next)
+                    const filter = (reaction) => reaction.emoji.id === Emojis.reactions.next
+                    msg.awaitReactions(filter, { time: 30000 })
+                      .then(collected => collected.size >= voiceChannel.members.size)
+                })
+            }else {
                 if (guildQueue) {
                     return channel.send(embed
-                        .setTitle(t('clientMessages:Skip'))
+                        .setTitle(t('errors:skip'))
                         .setColor(process.env.ERROR_COLOR)
                     )
                 } else {

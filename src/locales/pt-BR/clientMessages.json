@@ -94,7 +94,7 @@
         "published": "Data de Postagem",
         "noargs": "Por favor insira o **nome** ou o **número** da música que deseja obter!"
     },
-    "Skip": "Não há nehuma música depois dessa!",
+    "Skip": "Reaja para pular de musica {{SIZE}} reações necesarias ",
     "Stop": "A queue foi finalizada!",
     "Volume": {
         "insertnum": "Por favor insira um valor numérico! de **1 á 300**`",
