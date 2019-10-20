@@ -1,4 +1,25 @@
 {
+    "copyemojis": {
+        "noEmojisInServer": "desculpe, mas este servidor não **possui** emojis!",
+        "copySucess": "copiei todos os emojis do servidor com sucesso!.\nAgora você já pode clonar em outros servidores!\nUtilize: **`{{prefix}} {{name}} add <[id|nome] do servidor salvo>`**",
+        "copyEmojisUpdate": "copiei e atualizei todos os emojis do servidor com sucesso!.\nAgora você já pode clonar em outros servidores!\nUtilize **`{{prefix}} {{name}} add <[id|nome] do servidor salvo>`**",
+        "subcommands": {
+            "list": {
+                "ctx": "Lista de seus emojis salvados:",
+                "noSavedEmojis": "Nenhum servidor salvo!",
+                "usage": "Use **`{{prefix}} copyemojis add <id>`** para adicionar em seu servidor!"
+            },
+            "noArgsRemove": "por favor insira o **id** ou o **nome** do servidor que você deseja retirar dos **emojis** salvos.",
+            "noArgsSet": "por favor insira o **nome** ou **id** do servidor que deseja copiar os emojis!",
+            "noGuildEmojis": "desculpe, mas o servidor inserido não está salvado!\nUse **`{{prefix}} copyemojis list`** e **verifique** os emojis salvos!",
+            "noSavedEmojis": "desculpe, mas você ainda não salvou nada!.",
+            "deleteSucess": "os emojis do servidor **{{guild}}** foram deletado com sucesso!",
+            "copyInItServer": "desculpe mas você **não** pode copiar os emojis no mesmo servidor!",
+            "noServerFind": "desculpe não encontrei nenhum servidor salvo com oque você inseriu!\nUse **`{{prefix}} copyemojis list`** e **verifique** os emojis salvos!",
+            "finallyCopy": "consegui colar **{{size}}** emojis para o servidor! algum **erro** aconteceu durante a operação ou não tinha **espaço** suficiente.",
+            "copySuccess": "consegui colar todos os emojis para o servidor! faça bem **proveito** dos emojis ^-^"
+        }
+    },
     "setChannel": "A partir de agora só responderei a comandos em #{{CHANNEL}}",
     "pat": {
         "patyourself": "Você não pode acariciar a você mesmo ,{{USER}} ... Há algo de errado?",
