@@ -6,7 +6,7 @@ class RemoveCopyEmojis extends Command {
             name: "removeemoji",
             description: "Remove um servidor clonado da lista!",
             usage: { args: true, argsNeed: true, argsTxt: "<id|name>", need: "{args}" },
-            category: "Utils",
+            category: "vip",
             aliases: ["emojiremove", "removeremoji", "re"],
             referenceCommand: 'copyemojis',
             Permissions: [],

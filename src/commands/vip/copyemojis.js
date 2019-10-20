@@ -6,7 +6,7 @@ class CopyEmojis extends Command {
             name: "copyemojis",
             description: "Copia todos emojis de um servidor e envia pra outro!",
             usage: { args: true, argsNeed: false, argsTxt: "[subcommand]", need: "{prefix} {cmd} {args}" },
-            category: "Utils",
+            category: "vip",
             cooldown: 5000,
             aliases: ["copy-emojis", "copiar-emojis", "ce"],
             Permissions: [],

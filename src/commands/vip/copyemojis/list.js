@@ -6,7 +6,7 @@ class ListCopyEmojis extends Command {
             name: "list",
             description: "Lista todos os servidores clonados!",
             usage: { args: false, argsNeed: false },
-            category: "Utils",
+            category: "vip",
             aliases: ["listar", "lista"],
             referenceCommand: 'copyemojis',
             Permissions: [],

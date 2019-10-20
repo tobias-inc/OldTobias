@@ -8,7 +8,7 @@ class SetCopyEmojis extends Command {
             name: "add",
             description: "Clona os emojis de um servidor para outro!",
             usage: { args: true, argsNeed: true, argsTxt: "<id|name>", need: "{args}" },
-            category: "Utils",
+            category: "vip",
             aliases: ["set", "setar", "adicionar"],
             referenceCommand: 'copyemojis',
             Permissions: ["MANAGE_EMOJIS"],
