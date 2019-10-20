@@ -16,6 +16,14 @@ module.exports = class DatabaseUtils {
         if (!guild) throw new Error('unidentified server');
         return await this.client.database.guilds.update(guild.id, { $set: { prefix } })
     }
+    async setChannel(guild, channel) {
+        if (!channel) throw new Error('unidentified server');
+        return await this.client.database.guilds.update(guild.id, { $set: { 'channel.id': channel } })
+    }
+    async turnChannel(guild, channel) {
+        if (!channel) throw new Error('unidentified server');
+        return await this.client.database.guilds.update(guild.id, { $set: { 'channel.on': on } })
+    }
 
     async setLanguage(guild, language) {
         if (!guild) throw new Error('unidentified server');

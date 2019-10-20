@@ -1,4 +1,5 @@
 {
+    "setChannel": "A partir de agora só responderei a comandos em #{{CHANNEL}}",
     "pat": {
         "patyourself": "Você não pode acariciar a você mesmo ,{{USER}} ... Há algo de errado?",
         "noArgs": "Você precisa mencionar alguém para dar um cafuné",

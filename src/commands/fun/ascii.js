@@ -29,8 +29,8 @@ class Ascii extends Command {
           if(!args[0])  return channel.send(`${Emojis.Errado} |` + t('comandos:ascii.noArgs')) 
 
           figlet(`${argsJunto}`, function(err, data) {
-              channel.send(`${data}`, {code: 'AsciiArt'});
-          
+              channel.send(data);
+              console.log(err || data)
         })
     }
 }
