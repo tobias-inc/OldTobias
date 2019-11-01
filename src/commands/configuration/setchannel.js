@@ -16,13 +16,13 @@ class setChannel extends Command {
         });
     }
 
-    async run({ channel, guild, author, args }, t) {
+    async run({ channel, guild, author, args, message }, t) {
         const embed = new ClientEmbed(author);
 
         if (args[0]) {
             const CHANNEL = await this.GetChannel(args, message, guild, channel);
 
-            if (!(CHANNEL)) {
+            if (CHANNEL) {
                 await this.client.DatabaseUtils.setChannel(guild, CHANNEL)
                     .catch((err) => { throw new ErrorCommand(err) });
 
