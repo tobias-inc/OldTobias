@@ -17,6 +17,9 @@ class Novidades extends Command {
     }
 
     async run( {message, channel, guild, author, args}, t, { displayAvatarURL } = this.client.user) {
+        const role = message.guild.roles.get("557555132645244958")
+        role.setMentionable(true, 'Role needs to be pinged')
+
         const CHANNEL = await this.GetChannel(args, message, guild, channel);
         const EMBED = new ClientEmbed(author)
             .setAuthor(this.client.user.username, displayAvatarURL)
@@ -25,9 +28,10 @@ class Novidades extends Command {
 
         CHANNEL.send(EMBED
                 .setTitle(`${Emojis.Love} Novidades no Tobias de Chapéu ${Emojis.Love}`)
-                .addField(Emojis.Popcorn ,NOVIDS)
+                .addField("⠀⠀⠀⠀⠀⠀⠀⠀",`**${NOVIDS}**`)
         )
-        return  CHANNEL.send("@<557555132645244958>").then(e => e.delete())
+          await CHANNEL.send(`<@${role.id}>`).then(e => e.delete())
+          return role.setMentionable(false, 'Role dont needs to be pinged')
     }
 }
 
