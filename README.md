@@ -15,8 +15,8 @@ Clone o repositório em sua máquina: `git clone https://github.com/tobias-inc/T
 Feito o passo anterior, você precisa instalar as dependências do projeto.  
 Em seu terminal, digite `npm install`.
 ### Terceiro Passo:
-##### Você precisará de **Sete** Keys para que o progeto funcione
-Chaves | Onde Adquirir
+##### Você precisará de **Sete** keys para que o progeto funcione
+Keys | Onde Adquirir
 ------------ | -------------
 Youtube Data v3 | [Clique Aqui](https://console.cloud.google.com/marketplace/details/google/youtube.googleapis.com)
 Spotify | [Clique Aqui](https://developer.spotify.com/dashboard/applications)
