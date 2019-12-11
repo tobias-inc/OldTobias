@@ -4,7 +4,7 @@
 
 # Tobias De Chápeu - Um Simples Bot Para Discord
 Um simples bot para Discord com base em javascript muito legal quer dar uma olhada nele? 
-Aposto que vai se surpreender com as funções dele aproveita e entra la no meu servidor pra me dar uma força la
+Aposto que vai se surpreender com as funções dele aproveita e entra la no meu servidor para me dar uma força la
 
 # Como Instalar:
 #### Nota:
@@ -15,7 +15,7 @@ Clone o repositório em sua máquina: `git clone https://github.com/tobias-inc/T
 Feito o passo anterior, você precisa instalar as dependências do projeto.  
 Em seu terminal, digite `npm install` + a respectiva dependencia.
 ### Terceiro Passo:
-##### Você precisará de **Sete** keys para que o progeto funcione
+##### Você precisará de **Sete** keys para que o projeto funcione
 Keys | Onde Adquirir
 ------------ | -------------
 Youtube Data v3 | [Clique Aqui](https://console.cloud.google.com/marketplace/details/google/youtube.googleapis.com)
