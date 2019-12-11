@@ -13,7 +13,7 @@ Caso você utilize a versão estável do **discord.js**, adquirida diretamente p
 Clone o repositório em sua máquina: `git clone https://github.com/tobias-inc/Tobias_Pc`
 ### Segundo Passo:
 Feito o passo anterior, você precisa instalar as dependências do projeto.  
-Em seu terminal, digite `npm install`.
+Em seu terminal, digite `npm install` + a respectiva dependencia.
 ### Terceiro Passo:
 ##### Você precisará de **Sete** keys para que o progeto funcione
 Keys | Onde Adquirir
