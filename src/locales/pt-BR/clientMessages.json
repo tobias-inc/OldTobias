@@ -1,4 +1,6 @@
 {
+    "work":"O seu trabalho hoje rendeu {{money}} biscoitos tobias",
+    "transfer": "Você transferiu todo seu dinheiro para o banco, {{money}}",
     "SetLink":{
         "description": "O link do usuario **{{user}}** foi alterado com sucesso",
         "field":  "Novo link:"
@@ -6,7 +8,8 @@
     "Pat": "fez um cafuné em ",
     "Coins": {
      "description": "Exibindo a quantidade de Biscoitos Tobias que o usuario {{user}} possui",
-     "field": "{{user}} possui atualmente "
+     "title": "{{user}} possui atualmente ",
+     "field": "Banco: {{Money}} Bolso: {{money}}"
     },
     "Daily": "Você recebeu {{money}} Biscoitos Tobias hoje\n use o comando novamente amanha para receber mais",
     "Arrancada":{

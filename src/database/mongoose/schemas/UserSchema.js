@@ -71,4 +71,12 @@ module.exports = new Schema({
         type: Number,
         default: 0
     },
+    bank:{
+        type: Number,
+        default: 0
+    },
+    cooldown:{
+        type: Number,
+        default: 0
+        }
 })

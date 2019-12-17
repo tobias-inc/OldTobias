@@ -79,6 +79,7 @@ module.exports = class Command extends TestCommand {
         return true;
     }
     coolDown(author){
+        console.log(this.client.database.users.findOne(author.id).coolDown)
         this.cooldown.set(author.id,Date.now()); 
         setTimeout(() => { 
         this.cooldown.delete(author.id); 

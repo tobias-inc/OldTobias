@@ -8,7 +8,7 @@ class Coins extends Command {
             usage: { args: false, argsNeed: false},
             category: "Economy",
             cooldownTime: 3000,
-            aliases: ["bal", "contra-cheque"],
+            aliases: ["bal", "contra-cheque","balance","balança"],
             Permissions: ["EMBED_LINKS"],
             UserPermissions: [],
             devNeed: false,
@@ -26,7 +26,7 @@ class Coins extends Command {
 
                 return channel.send(EMBED
                     .setDescription(Emojis.Certo + t("clientMessages:Coins.description", {user:USER.username}))
-                    .addField(t("clientMessages:Coins.field",{ user:USER.username}),user.coins)
+                    .addField(t("clientMessages:Coins.title",{user : USER.username}),t("clientMessages:Coins.field",{Money: user.bank,money: user.coins}))
                     .setColor(process.env.COLOR_EMBED)
         )  
     }
