@@ -41,4 +41,4 @@ class Daily extends Command {
         }
     }
 }
-module.exports = Daily
+module.exports = Daily;
