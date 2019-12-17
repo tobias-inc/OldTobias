@@ -2,7 +2,7 @@ const { Aliases, Errors, Match, Regions, } = require("./utils/JSON/");
 const { Client, Collection } = require("discord.js");
 const Modules = require("./loaders/");
 
-requuire('moment-duration-format')
+require('moment-duration-format')
 
 module.exports = class Tobias extends Client {
     constructor(settings = {}) {
