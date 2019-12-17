@@ -42,11 +42,11 @@ module.exports = class DatabaseUtils {
 
     async daily(user, coins) {
         if (!user) throw new Error('unidentified user');
-        return await this.client.database.users.update(user.id, { $set: { 'coins' : coins } })
+        return await this.client.database.users.update(user.id, { $inc: { coins }, $set: { 'cooldown': Date.now() } })
     }
-    async transfer(user, bank){
+    async transfer(user, bank) {
         if (!user) throw new Error('unidentified user');
-        return await this.client.database.users.update(user.id, { $set: { 'bank' : bank } })
+        return await this.client.database.users.update(user.id, { $set: { 'bank': bank } })
     }
     async setDeveloper(user, developer) {
         if (!user) throw new Error('unidentified user');
