@@ -40,6 +40,7 @@ class Lyrics extends Command {
                 let inPage = 0;
                 const body = this.splitLyric(await this.client.apis.GeniusApi.loadLyrics(id));
 
+                
                 (embed
                     .setTitle(`${title} - ${artist}`)
                     .setURL(`http://genius.com${path}`)
