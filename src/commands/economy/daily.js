@@ -18,14 +18,18 @@ class Daily extends Command {
     }
 
     async run({ channel, author }, t, { displayAvatarURL } = this.client.user) {
-      
+
         const { vip: { active }, coins, cooldown } = await this.client.database.users.get(author.id)
         const embed = new ClientEmbed(author).setAuthor(this.client.user.username, displayAvatarURL)
 
         if ((parseInt(cooldown) + 86400000) <= Date.now()) {
             const receivedCoins = (active ? 2 : 1) * Math.round(Math.random() * 350)
-            const res = await this.client.DatabaseUtils.daily(
-                author, (receivedCoins + coins)
+            const res = await this.client.database.users.update(
+                author,
+                {
+                    coins: (receivedCoins + coins),
+                    cooldown: Date.now()
+                }
             ).catch((err) => { throw new ErrorCommand(err) });
 
             channel.send(embed
