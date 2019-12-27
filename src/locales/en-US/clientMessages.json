@@ -1,4 +1,6 @@
 {
+    "work":"Your work payid today {{money}} Tobias Snacks",
+    "transfer": "You have transferred all your money to the bank \nYour total money at the bank is: {{money}}",
     "SetLink":{
         "description": " **{{user}}'s** link successfully changed",
         "field":  "New link:"

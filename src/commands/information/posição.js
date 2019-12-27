@@ -10,6 +10,12 @@ const msgTimeOut = async (msg, time) => {
     })
     return msg.clearReactions().catch(() => { });
 }
+Array.prototype.chunk = function(chunkSize) {
+    var R = [];
+    for (var i = 0; i < this.length; i += chunkSize)
+      R.push(this.slice(i, i + chunkSize));
+    return R;
+};
 
 class Position extends Command {
     constructor(client) {
@@ -28,19 +34,26 @@ class Position extends Command {
     }
 
     async run({ channel, author, message }, t) {
-        const body = message.guild.members.sort((a, b) => { return new Date(a.joinedAt) - new Date(b.joinedAt); }).map(x => x.user.username)
+        const body = await message.guild.fetchMembers().then(guild => {
+            return guild.members.sort((a, b) => {
+              return a.joinedTimestamp - b.joinedTimestamp
+            }).map(x => x.user.username)
+          })
+          
         const EMBED = new ClientEmbed(author)
             .setAuthor(this.client.user.username, this.client.user.displayAvatarURL);
-        let inPage = 0;
+
+        let inPage = 1;
+        let pages = body.chunk(10);
 
         channel.send(EMBED
-            .setDescription(body[0])
+            .setDescription(pages[inPage - 1])
             .setFooter(t('comandos:lyrics.footer', {
                 page: 1,
-                total: body.length
+                total: pages.length
             }), author.displayAvatarURL)
         ).then(async (msg) => {
-            if (body.length > 1) {
+            if (pages.length > 1) {
                 await msg.react(Emojis.reactions.back)
                 await msg.react(Emojis.reactions.next);
                 const initializeCollector = (msg.createReactionCollector(
@@ -52,33 +65,34 @@ class Position extends Command {
                 return initializeCollector.on('collect', async (r) => {
                     await r.remove(author.id).catch(() => { });
                     if (r.emoji.id == Emojis.reactions.next) {
-                        if ((inPage + 1) == body.length) {
-                            inPage = 0;
-                            msg.edit(EMBED.setDescription(body[inPage]).setFooter(t('comandos:lyrics.footer', {
-                                page: (inPage + 1),
-                                total: body.length
+                        if ((inPage) == pages.length) {
+                            inPage = 1;
+                            msg.edit(EMBED.setDescription(pages[inPage - 1]).setFooter(t('comandos:lyrics.footer', {
+                                page: (inPage ),
+                                total:  pages.length
                             }), author.displayAvatarURL))
                         } else {
                             inPage += 1;
-                            msg.edit(EMBED.setDescription(body[inPage]).setFooter(t('comandos:lyrics.footer', {
-                                page: (inPage + 1),
-                                total: body.length
+                            msg.edit(EMBED.setDescription(pages[inPage - 1]).setFooter(t('comandos:lyrics.footer', {
+                                page: (inPage ),
+                                total:  pages.length
                             }), author.displayAvatarURL))
                         }
                     } else if (r.emoji.id == Emojis.reactions.back) {
-                        if ((inPage - 1) == body.length) {
+                        if ((inPage - 1) == pages.length && inPage - 1 < 0) {
                             inPage = 0;
-                            msg.edit(EMBED.setDescription(body[inPage]).setFooter(t('comandos:lyrics.footer', {
-                                page: (inPage + 1),
-                                total: body.length
+                            msg.edit(EMBED.setDescription(pages[inPage - 1]).setFooter(t('comandos:lyrics.footer', {
+                                page: (inPage ),
+                                total:  pages.length
                             }), author.displayAvatarURL))
                         } else {
                             inPage -= 1;
-                            msg.edit(EMBED.setDescription(body[inPage]).setFooter(t('comandos:lyrics.footer', {
-                                page: (inPage + 1),
-                                total: body.length
+                            msg.edit(EMBED.setDescription(pages[inPage - 1]).setFooter(t('comandos:lyrics.footer', {
+                                page: (inPage ),
+                                total:  pages.length
                             }), author.displayAvatarURL))
                         }
+
                     }
                 })
             }

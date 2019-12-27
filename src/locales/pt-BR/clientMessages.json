@@ -1,6 +1,6 @@
 {
     "work":"O seu trabalho hoje rendeu {{money}} biscoitos tobias",
-    "transfer": "Você transferiu todo seu dinheiro para o banco, {{money}}",
+    "transfer": "Você transferiu todo seu dinheiro para o banco \nO seu total de dinheiro no banco é de: {{money}}",
     "SetLink":{
         "description": "O link do usuario **{{user}}** foi alterado com sucesso",
         "field":  "Novo link:"
@@ -100,8 +100,8 @@
     "Skip": "Reaja para pular de musica {{SIZE}} reações necesarias ",
     "Stop": "A queue foi finalizada!",
     "Volume": {
-        "insertnum": "Por favor insira um valor numérico! de **1 á 300**`",
-        "insertargs": "Por favor insira o volume desejado de **0 á 300**",
+        "insertnum": "Por favor insira um valor numérico! de **0 á 300**`",
+        "insertArgs": "Por favor insira o volume desejado de **0 á 300**",
         "changed": "O volume foi alterado para: **{{VOL}}**"
     },
     "Unban": {

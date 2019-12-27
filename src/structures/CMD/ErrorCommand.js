@@ -6,6 +6,7 @@ module.exports = class CommandError extends Error {
     }
 
     static async commandError(client, channel, command, used, prefix, t, error, { displayAvatarURL } = client.user) {
+        console.log(error)
         try {
             const support = await client.utils.get('links', 'support').then(({ redirect }) => redirect);
             return channel.send(new ClientEmbed(used)

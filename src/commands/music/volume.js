@@ -34,7 +34,7 @@ class Volume extends Command {
                     );
                     vol = Math.round(vol);
                     if (vol > 300 || vol < 0) return channel.send(embed
-                        .setTitle(t('clientMessages:Volume.insertargs'))
+                        .setTitle(t('clientMessages:Volume.insertArgs'))
                         .setColor(process.env.ERROR_COLOR)
                     );
                     return channel.send(embed
@@ -42,7 +42,7 @@ class Volume extends Command {
                     ).then(() => guildQueue.volUpdate(vol));
                 } else {
                     return channel.send(embed
-                        .setTitle('clientMessages:Volume.insertargs')
+                        .setTitle('clientMessages:Volume.insertArgs')
                         .setColor(process.env.ERROR_COLOR)
                     )
                 }
