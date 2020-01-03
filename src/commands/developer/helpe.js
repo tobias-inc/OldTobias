@@ -104,6 +104,7 @@ class Help extends Command {
                         ? t(`description:subcommands.${name}.${subcommand.name}`)
                         : t('clientMessages:help.command.description.none')
                 ), false)
+                
                 .addField(t('clientMessages:help.command.name'), subcommand.name, false)
                 .addField(t('clientMessages:help.command.aliases.ctx'), (
                     subcommand.aliases.length

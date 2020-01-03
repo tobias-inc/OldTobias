@@ -1,4 +1,8 @@
 {
+    "addemoji":{
+        "noImage": "Não encontrei nenhuma imagem,você tem certeza que mandou certo? ",
+        "noArgs": "Por favor insira o nome do Emoji"
+    },
     "copyemojis": {
         "noEmojisInServer": "desculpe, mas este servidor não **possui** emojis!",
         "copySucess": "copiei todos os emojis do servidor com sucesso!.\nAgora você já pode clonar em outros servidores!\nUtilize: **`{{prefix}} {{name}} add <[id|nome] do servidor salvo>`**",

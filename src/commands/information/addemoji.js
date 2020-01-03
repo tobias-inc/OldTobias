@@ -21,6 +21,8 @@ class addemoji extends Command {
     }
 
     async run({ channel, guild, author,message, args }, t, { displayAvatarURL } = this.client.user) {
+        let emojo = message.attachments.first().url
+
         const EMBED = new ClientEmbed(author)
             .setAuthor(this.client.user.username, displayAvatarURL);
 
@@ -32,17 +34,21 @@ class addemoji extends Command {
         }
           if(!message.attachments) {
             return channel.send(EMBED
-                .setDescription(Emojis.Errado + "**" + author.username + "**" + t('comandos:addemoji.noEmoji'))
+                .setDescription(Emojis.Errado + "**" + author.username + "**" + t('comandos:addemoji.noImage'))
                 .setColor(process.env.ERROR_COLOR)
             )
           }
-
-         let emojo = message.attachments.map(a =>a.url)
-            guild.createEmoji(emojo, args[1])
+         if (!emojo) {
+            return channel.send(EMBED
+                .setDescription(Emojis.Errado + "**" + author.username + "**" + t('comandos:addemoji.noImage'))
+                .setColor(process.env.ERROR_COLOR)
+            )
+        }
+            guild.createEmoji(emojo, args[0])
 
         let type = message.attachments.animated ? '.gif' : '.png'
-        let emoji = new Attachment(emojo, args[1] + type);
-        channel.send(`\`${args[1]}\``, emoji)
+        let emoji = new Attachment( emojo, args[0] + type);
+        channel.send(`\`${args[0]}\``, emoji)
     }
 }
 
