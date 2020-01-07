@@ -24,13 +24,10 @@ module.exports = class BotListEvent extends VotesUtils {
             headers: {
                 Authorization: process.env.BPD_TOKEN
             }
-        }).catch(
-            () => { }
-        ).then(() => this.client.LOG('Informations updated successfully', 'BotsPraDiscord'));
+        }).then(() => this.client.LOG('Informations updated successfully', 'BotsPraDiscord'));
 
-        return this.client.dbl.postStats(this.client.guilds.size, this.client.shard.id, this.client.shard.count).catch(
-            () => { }
-        ).then(() => this.client.LOG('Informations updated successfully', 'DiscordBotList'));
+        return this.client.dbl.postStats(this.client.guilds.size, this.client.shard.id, this.client.shard.count)
+            .then(() => this.client.LOG('Informations updated successfully', 'DiscordBotList'));
     }
 
     async send(vipMethod, ...args) {
@@ -40,7 +37,6 @@ module.exports = class BotListEvent extends VotesUtils {
             if (method == 'unvip') embed.setColor(process.env.ERROR_COLOR);
             const logTitle = method == 'unvip' ? 'Vip Retirado' : 'Vip Adicionado';
             const GuiLdA = this.client.guilds.get(process.env.GUILD_ID)
-
 
             if (send) {
                 switch (method) {
@@ -54,9 +50,9 @@ module.exports = class BotListEvent extends VotesUtils {
                             .setAuthor(user.username, user.displayAvatarURL)
                             .setColor(process.env.COLOR_EMBED)
                         ).catch(() => { });
-                        if(GuiLdA.members.get(user)){
+                        if (GuiLdA.members.get(user)) {
                             GuiLdA.members.get(user).addRole(process.env.VIP_ID)
-                        }else { }
+                        } else { }
                         break;
                     case 'unvip':
                         user.send(new ClientEmbed(user)
@@ -67,9 +63,9 @@ module.exports = class BotListEvent extends VotesUtils {
                             .setAuthor(user.username, user.displayAvatarURL)
                             .setColor(process.env.ERROR_COLOR)
                         ).catch(() => { });
-                        if(GuiLdA.members.get(user)){
+                        if (GuiLdA.members.get(user)) {
                             GuiLdA.members.get(user).removeRole(process.env.VIP_ID)
-                        }else { }
+                        } else { }
                         break;
                 }
             }
